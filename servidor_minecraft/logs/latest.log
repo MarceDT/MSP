@@ -1,9 +1,9 @@
-[18:16:25] [main/INFO]: Loading Minecraft 1.21 with Fabric Loader 0.16.0
-[18:16:25] [ForkJoinPool-1-worker-1/WARN]: Mod travelersbackpack uses the version fabric-1.21-10.0.4 which isn't compatible with Loader's extended semantic version format (Could not parse version number component 'fabric'!), SemVer is recommended for reliably evaluating dependencies and prioritizing newer version
-[18:16:25] [main/WARN]: Warnings were found!
+[21:05:04] [main/INFO]: Loading Minecraft 1.21 with Fabric Loader 0.16.0
+[21:05:04] [ForkJoinPool-1-worker-3/WARN]: Mod travelersbackpack uses the version fabric-1.21-10.0.4 which isn't compatible with Loader's extended semantic version format (Could not parse version number component 'fabric'!), SemVer is recommended for reliably evaluating dependencies and prioritizing newer version
+[21:05:04] [main/WARN]: Warnings were found!
  - Mod 'Forge Config API Port' (forgeconfigapiport) 21.0.7 recommends any version of modmenu, which is missing!
 	 - You should install any version of modmenu for the optimal experience.
-[18:16:25] [main/INFO]: Loading 72 mods:
+[21:05:04] [main/INFO]: Loading 76 mods:
 	- armored-elytra 1.0.1
 	- cardinal-components 6.1.1
 	   |-- cardinal-components-base 6.1.1
@@ -17,6 +17,10 @@
 	- carryon 2.2.1
 	- cloth-config 15.0.128
 	   \-- cloth-basic-math 0.6.1
+	- cristellib 1.2.7
+	   \-- blue_endless_jankson 1.2.3
+	- ctov 3.5.1
+	- endorium 1.1.5
 	- fabric-api 0.100.8+1.21
 	   |-- fabric-api-base 0.4.42+6573ed8cd1
 	   |-- fabric-api-lookup-api-v1 1.6.67+b5597344d1
@@ -75,84 +79,108 @@
 	   \-- net_jodah_typetools 0.6.3
 	- hopobettermineshaft 1.2.6
 	- java 21
+	- lithostitched 1.2.5
 	- minecraft 1.21
 	- mining_dims 1.8.0
 	   \-- blue_endless_jankson 1.2.3
 	- mr_tidal_towns 1.3.2
-	- nullscape 1.2.7
 	- puzzleslib 21.0.18
 	- retraining 2.0.0
 	- simple_backpack 1.6.8
 	   \-- blue_endless_jankson 1.2.3
 	- structory 1.3.5
+	- t_and_t 1.13.2
 	- terrablender 4.0.0.1
 	- tradingpost 21.0.1
 	- travelersbackpack fabric-1.21-10.0.4
 	- trumpet-skeleton 1.21-1.2.1
-[18:16:25] [main/WARN]: Found 1 non-fabric mod:
+[21:05:04] [main/WARN]: Found 1 non-fabric mod:
 	- GlitchCore-forge-1.21-2.0.0.2.jar
-[18:16:25] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/workspaces/MSP/servidor_minecraft/libraries/net/fabricmc/sponge-mixin/0.15.0+mixin.0.8.7/sponge-mixin-0.15.0+mixin.0.8.7.jar Service=Knot/Fabric Env=SERVER
-[18:16:25] [main/INFO]: Compatibility level set to JAVA_21
-[18:16:26] [main/WARN]: Reference map 'forgeconfigapiport.common.refmap.json' for forgeconfigapiport.common.mixins.json could not be read. If this is a development environment you can ignore this message
-[18:16:26] [main/WARN]: Reference map 'tradingpost.fabric.refmap.json' for tradingpost.fabric.mixins.json could not be read. If this is a development environment you can ignore this message
-[18:16:26] [main/WARN]: Error loading class: net/fabricmc/fabric/api/client/rendering/v1/EntityModelLayerRegistry$TexturedModelDataProvider (java.lang.ClassNotFoundException: net/fabricmc/fabric/api/client/rendering/v1/EntityModelLayerRegistry$TexturedModelDataProvider)
-[18:16:26] [main/INFO]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.0).
-[18:16:34] [main/OFF]: mining_dims config settings json5 found
-[18:16:34] [main/INFO]: Constructing common components for puzzleslib:main
-[18:16:34] [main/OFF]: simple_backpack config settings json5 found
-[18:16:34] [main/INFO]: Constructing common components for tradingpost:main
-[18:16:35] [main/INFO]: Registered the FluidEffect with Unique ID of minecraft:water for minecraft:water 81000 with the ID 0
-[18:16:35] [main/INFO]: Registered the FluidEffect with Unique ID of minecraft:lava for minecraft:lava 81000 with the ID 1
-[18:16:35] [main/INFO]: Registered the FluidEffect with Unique ID of travelersbackpack:potion for travelersbackpack:potion_still 27000 with the ID 2
-[18:16:35] [main/INFO]: Registered the FluidEffect with Unique ID of travelersbackpack:milk for travelersbackpack:milk_still 81000 with the ID 3
-[18:16:35] [main/INFO]: Loaded configuration file "./config/trumpet-skeleton.properties"
-[18:16:35] [main/INFO]: Initializing
-[18:16:35] [main/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[18:16:38] [main/INFO]: Loaded 1440 recipes
-[18:16:38] [main/INFO]: Loaded 1528 advancements
-[18:16:39] [main/INFO]: Registered region minecraft:overworld to index 0 for type OVERWORLD
-[18:16:39] [main/INFO]: Registered region minecraft:nether to index 0 for type NETHER
-[18:16:39] [main/INFO]: Initialized TerraBlender biomes for level stem mining_dims:nethering_dim
-[18:16:39] [main/INFO]: Initialized TerraBlender biomes for level stem minecraft:the_nether
-[18:16:39] [main/INFO]: Initialized TerraBlender biomes for level stem minecraft:overworld
-[18:16:39] [main/INFO]: Applied 181 biome modifications to 70 of 70 new biomes in 39.56 ms
-[18:16:39] [Server thread/INFO]: Dispatching loading event for config at tradingpost-server.toml
-[18:16:39] [Server thread/INFO]: Starting minecraft server version 1.21
-[18:16:39] [Server thread/INFO]: Loading properties
-[18:16:39] [Server thread/INFO]: Default game type: SURVIVAL
-[18:16:39] [Server thread/INFO]: Generating keypair
-[18:16:39] [Server thread/INFO]: Starting Minecraft server on *:25565
-[18:16:39] [Server thread/INFO]: Using epoll channel type
-[18:16:39] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[18:16:39] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[18:16:39] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[18:16:39] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[18:16:39] [Server thread/INFO]: Preparing level "world"
-[18:16:50] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[18:16:50] [Worker-Main-3/INFO]: Preparing spawn area: 0%
-[18:16:50] [Server thread/INFO]: Time elapsed: 490 ms
-[18:16:50] [Server thread/INFO]: Done (11.352s)! For help, type "help"
-[18:19:59] [Server thread/INFO]: Stopping the server
-[18:19:59] [Server thread/INFO]: Stopping server
-[18:19:59] [Server thread/INFO]: Saving players
-[18:19:59] [Server thread/INFO]: Saving worlds
-[18:19:59] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[18:20:00] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/mining_dims:caving_dim
-[18:20:00] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/mining_dims:hunting_dim
-[18:20:00] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/mining_dims:mining_dim
-[18:20:00] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/mining_dims:nethering_dim
-[18:20:00] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
-[18:20:00] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
-[18:20:00] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/mining_dims:climbing_dim
-[18:20:00] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/mining_dims:sky_dim
-[18:20:00] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[18:20:00] [Server thread/INFO]: ThreadedAnvilChunkStorage (caving_dim): All chunks are saved
-[18:20:00] [Server thread/INFO]: ThreadedAnvilChunkStorage (hunting_dim): All chunks are saved
-[18:20:00] [Server thread/INFO]: ThreadedAnvilChunkStorage (mining_dim): All chunks are saved
-[18:20:00] [Server thread/INFO]: ThreadedAnvilChunkStorage (nethering_dim): All chunks are saved
-[18:20:00] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[18:20:00] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[18:20:00] [Server thread/INFO]: ThreadedAnvilChunkStorage (climbing_dim): All chunks are saved
-[18:20:00] [Server thread/INFO]: ThreadedAnvilChunkStorage (sky_dim): All chunks are saved
-[18:20:00] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
-[18:20:00] [Server thread/INFO]: Dispatching unloading event for config at tradingpost-server.toml
+[21:05:04] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/workspaces/MSP/servidor_minecraft/libraries/net/fabricmc/sponge-mixin/0.15.0+mixin.0.8.7/sponge-mixin-0.15.0+mixin.0.8.7.jar Service=Knot/Fabric Env=SERVER
+[21:05:04] [main/INFO]: Compatibility level set to JAVA_21
+[21:05:04] [main/WARN]: Reference map '[common]ctov-common-refmap.json' for ctov-common.mixins.json could not be read. If this is a development environment you can ignore this message
+[21:05:04] [main/WARN]: Reference map 'forgeconfigapiport.common.refmap.json' for forgeconfigapiport.common.mixins.json could not be read. If this is a development environment you can ignore this message
+[21:05:04] [main/WARN]: Reference map 'tradingpost.fabric.refmap.json' for tradingpost.fabric.mixins.json could not be read. If this is a development environment you can ignore this message
+[21:05:05] [main/WARN]: Error loading class: net/fabricmc/fabric/api/client/rendering/v1/EntityModelLayerRegistry$TexturedModelDataProvider (java.lang.ClassNotFoundException: net/fabricmc/fabric/api/client/rendering/v1/EntityModelLayerRegistry$TexturedModelDataProvider)
+[21:05:05] [main/INFO]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.0).
+[21:05:13] [main/OFF]: mining_dims config settings json5 found
+[21:05:13] [main/INFO]: Constructing common components for puzzleslib:main
+[21:05:13] [main/OFF]: simple_backpack config settings json5 found
+[21:05:13] [main/INFO]: Constructing common components for tradingpost:main
+[21:05:13] [main/INFO]: Registered the FluidEffect with Unique ID of minecraft:water for minecraft:water 81000 with the ID 0
+[21:05:13] [main/INFO]: Registered the FluidEffect with Unique ID of minecraft:lava for minecraft:lava 81000 with the ID 1
+[21:05:13] [main/INFO]: Registered the FluidEffect with Unique ID of travelersbackpack:potion for travelersbackpack:potion_still 27000 with the ID 2
+[21:05:13] [main/INFO]: Registered the FluidEffect with Unique ID of travelersbackpack:milk for travelersbackpack:milk_still 81000 with the ID 3
+[21:05:13] [main/INFO]: Loaded configuration file "./config/trumpet-skeleton.properties"
+[21:05:13] [main/INFO]: Initializing
+[21:05:13] [main/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[21:05:13] [main/INFO]: Found new data pack endorium, loading it automatically
+[21:05:15] [main/INFO]: Loaded 1518 recipes
+[21:05:16] [main/INFO]: Loaded 1532 advancements
+[21:05:16] [main/INFO]: Registered region minecraft:overworld to index 0 for type OVERWORLD
+[21:05:16] [main/INFO]: Registered region minecraft:nether to index 0 for type NETHER
+[21:05:16] [main/INFO]: Initialized TerraBlender biomes for level stem mining_dims:nethering_dim
+[21:05:16] [main/INFO]: Initialized TerraBlender biomes for level stem minecraft:overworld
+[21:05:16] [main/INFO]: Initialized TerraBlender biomes for level stem minecraft:the_nether
+[21:05:16] [main/INFO]: Applied 180 biome modifications to 67 of 67 new biomes in 35.30 ms
+[21:05:16] [Server thread/INFO]: Dispatching loading event for config at tradingpost-server.toml
+[21:05:16] [Server thread/INFO]: Starting minecraft server version 1.21
+[21:05:16] [Server thread/INFO]: Loading properties
+[21:05:16] [Server thread/INFO]: Default game type: SURVIVAL
+[21:05:16] [Server thread/INFO]: Generating keypair
+[21:05:16] [Server thread/INFO]: Starting Minecraft server on *:25565
+[21:05:16] [Server thread/INFO]: Using epoll channel type
+[21:05:17] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[21:05:17] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[21:05:17] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[21:05:17] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[21:05:17] [Server thread/INFO]: Preparing level "world"
+[21:05:23] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[21:05:23] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[21:05:23] [Server thread/INFO]: Time elapsed: 558 ms
+[21:05:23] [Server thread/INFO]: Done (6.640s)! For help, type "help"
+[21:05:30] [Server thread/INFO]: com.mojang.authlib.GameProfile@6b6b760b[id=c2faf585-96cf-3638-83c0-ce0c2ec1ab41,name=MarceX,properties={}] lost connection: Disconnected
+[21:05:39] [Server thread/INFO]: _jose_diaz_[/100.64.45.92:64749] logged in with entity id 34 at (220.17308322348248, 24.0, 155.54380575345436)
+[21:05:39] [Server thread/INFO]: Loading config from file...
+[21:05:39] [Server thread/INFO]: _jose_diaz_ joined the game
+[21:06:17] [Server thread/INFO]: [STDOUT]: class_1639['Wither Skeleton'/413, l='ServerLevel[world]', x=159.50, y=61.00, z=204.50]
+[21:06:17] [Server thread/INFO]: [STDOUT]: class_1639['Wither Skeleton'/414, l='ServerLevel[world]', x=159.50, y=61.00, z=203.50]
+[21:06:17] [Server thread/INFO]: [STDOUT]: class_1639['Wither Skeleton'/415, l='ServerLevel[world]', x=164.50, y=61.00, z=204.50]
+[21:06:47] [Server thread/INFO]: MarceX[/100.64.199.21:61645] logged in with entity id 550 at (-4553.953326723654, -36.0, 23288.990025866606)
+[21:06:47] [Server thread/INFO]: Loading config from file...
+[21:06:47] [Server thread/INFO]: MarceX joined the game
+[21:06:50] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2223ms or 44 ticks behind
+[21:07:27] [Server thread/INFO]: MarceX lost connection: Disconnected
+[21:07:27] [Server thread/INFO]: MarceX left the game
+[21:08:13] [Server thread/INFO]: [STDOUT]: class_1639['Wither Skeleton'/1224, l='ServerLevel[world]', x=141.50, y=67.00, z=247.50]
+[21:08:13] [Server thread/INFO]: [STDOUT]: class_1639['Wither Skeleton'/1225, l='ServerLevel[world]', x=147.50, y=67.00, z=252.50]
+[21:08:22] [Server thread/INFO]: [STDOUT]: class_1639['Wither Skeleton'/1250, l='ServerLevel[world]', x=149.50, y=61.00, z=212.50]
+[21:08:22] [Server thread/INFO]: [STDOUT]: class_1639['Wither Skeleton'/1251, l='ServerLevel[world]', x=151.50, y=61.00, z=212.50]
+[21:08:37] [Server thread/INFO]: [STDOUT]: class_1639['Wither Skeleton'/1300, l='ServerLevel[world]', x=120.50, y=60.00, z=161.50]
+[21:08:37] [Server thread/INFO]: [STDOUT]: class_1639['Wither Skeleton'/1301, l='ServerLevel[world]', x=119.50, y=60.00, z=157.50]
+[21:08:37] [Server thread/INFO]: [STDOUT]: class_1639['Wither Skeleton'/1302, l='ServerLevel[world]', x=121.50, y=60.00, z=158.50]
+[21:08:37] [Server thread/INFO]: [STDOUT]: class_1639['Wither Skeleton'/1303, l='ServerLevel[world]', x=119.50, y=60.00, z=154.50]
+[21:08:48] [Server thread/INFO]: Stopping the server
+[21:08:48] [Server thread/INFO]: Stopping server
+[21:08:48] [Server thread/INFO]: Saving players
+[21:08:48] [Server thread/INFO]: _jose_diaz_ lost connection: Server closed
+[21:08:48] [Server thread/INFO]: _jose_diaz_ left the game
+[21:08:48] [Server thread/INFO]: Saving worlds
+[21:08:48] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[21:08:48] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/mining_dims:nethering_dim
+[21:08:49] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/mining_dims:caving_dim
+[21:08:49] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/mining_dims:climbing_dim
+[21:08:49] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/mining_dims:hunting_dim
+[21:08:50] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/mining_dims:sky_dim
+[21:08:50] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/mining_dims:mining_dim
+[21:08:50] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[21:08:50] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[21:08:50] [Server thread/INFO]: ThreadedAnvilChunkStorage (nethering_dim): All chunks are saved
+[21:08:50] [Server thread/INFO]: ThreadedAnvilChunkStorage (caving_dim): All chunks are saved
+[21:08:50] [Server thread/INFO]: ThreadedAnvilChunkStorage (climbing_dim): All chunks are saved
+[21:08:50] [Server thread/INFO]: ThreadedAnvilChunkStorage (hunting_dim): All chunks are saved
+[21:08:50] [Server thread/INFO]: ThreadedAnvilChunkStorage (sky_dim): All chunks are saved
+[21:08:50] [Server thread/INFO]: ThreadedAnvilChunkStorage (mining_dim): All chunks are saved
+[21:08:50] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[21:08:50] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[21:08:50] [Server thread/INFO]: Dispatching unloading event for config at tradingpost-server.toml
