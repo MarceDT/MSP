@@ -467,6 +467,7 @@
       "bread": "2024-07-29 20:10:16 +0000",
       "honey_bottle": "2024-07-29 22:25:35 +0000",
       "rotten_flesh": "2024-07-28 23:25:58 +0000",
+      "suspicious_stew": "2024-08-03 22:46:12 +0000",
       "cooked_mutton": "2024-07-29 20:53:19 +0000",
       "glow_berries": "2024-07-28 21:48:15 +0000",
       "dried_kelp": "2024-07-28 20:37:45 +0000",
@@ -3311,7 +3312,9 @@
   "hopo:minecraft/adventure/all_mineshaft": {
     "criteria": {
       "locate_vanilla_mineshaft": "2024-08-02 03:27:48 +0000",
-      "locate_mud_mineshaft": "2024-08-03 18:49:02 +0000"
+      "locate_mud_mineshaft": "2024-08-03 18:49:02 +0000",
+      "locate_dark_oak_mineshaft": "2024-08-03 22:42:09 +0000",
+      "locate_vanilla_mineshaft_mesa": "2024-08-03 23:12:12 +0000"
     },
     "done": false
   },
@@ -3924,6 +3927,30 @@
   "minecraft:recipes/misc/red_dye_from_rose_bush": {
     "criteria": {
       "has_rose_bush": "2024-08-03 22:16:10 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/emerald_from_smelting_emerald_ore": {
+    "criteria": {
+      "has_emerald_ore": "2024-08-03 22:43:22 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/beacon": {
+    "criteria": {
+      "has_nether_star": "2024-08-03 23:07:59 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/emerald_from_blasting_emerald_ore": {
+    "criteria": {
+      "has_emerald_ore": "2024-08-03 22:43:22 +0000"
+    },
+    "done": true
+  },
+  "minecraft:nether/summon_wither": {
+    "criteria": {
+      "summoned": "2024-08-03 23:07:06 +0000"
     },
     "done": true
   },
