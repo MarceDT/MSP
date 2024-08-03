@@ -3891,27 +3891,15 @@
     },
     "done": true
   },
-  "travelersbackpack:recipes/misc/dragon_smithing": {
-    "criteria": {
-      "has_dragon": "2024-08-03 21:53:03 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/red_dye_from_rose_bush": {
-    "criteria": {
-      "has_rose_bush": "2024-08-03 22:16:10 +0000"
-    },
-    "done": true
-  },
   "minecraft:end/dragon_breath": {
     "criteria": {
       "dragon_breath": "2024-08-03 21:49:18 +0000"
     },
     "done": true
   },
-  "minecraft:adventure/voluntary_exile": {
+  "travelersbackpack:recipes/misc/dragon_smithing": {
     "criteria": {
-      "voluntary_exile": "2024-08-03 22:08:15 +0000"
+      "has_dragon": "2024-08-03 21:53:03 +0000"
     },
     "done": true
   },
@@ -3921,9 +3909,21 @@
     },
     "done": true
   },
+  "minecraft:adventure/voluntary_exile": {
+    "criteria": {
+      "voluntary_exile": "2024-08-03 22:08:15 +0000"
+    },
+    "done": true
+  },
   "minecraft:adventure/hero_of_the_village": {
     "criteria": {
       "hero_of_the_village": "2024-08-03 22:11:20 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/red_dye_from_rose_bush": {
+    "criteria": {
+      "has_rose_bush": "2024-08-03 22:16:10 +0000"
     },
     "done": true
   },
