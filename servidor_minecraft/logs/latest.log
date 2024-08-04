@@ -1,9 +1,9 @@
-[20:16:58] [main/INFO]: Loading Minecraft 1.21 with Fabric Loader 0.16.0
-[20:16:58] [ForkJoinPool-1-worker-1/WARN]: Mod travelersbackpack uses the version fabric-1.21-10.0.4 which isn't compatible with Loader's extended semantic version format (Could not parse version number component 'fabric'!), SemVer is recommended for reliably evaluating dependencies and prioritizing newer version
-[20:16:59] [main/WARN]: Warnings were found!
+[22:52:17] [main/INFO]: Loading Minecraft 1.21 with Fabric Loader 0.16.0
+[22:52:17] [ForkJoinPool-1-worker-2/WARN]: Mod travelersbackpack uses the version fabric-1.21-10.0.4 which isn't compatible with Loader's extended semantic version format (Could not parse version number component 'fabric'!), SemVer is recommended for reliably evaluating dependencies and prioritizing newer version
+[22:52:17] [main/WARN]: Warnings were found!
  - Mod 'Forge Config API Port' (forgeconfigapiport) 21.0.7 recommends any version of modmenu, which is missing!
 	 - You should install any version of modmenu for the optimal experience.
-[20:16:59] [main/INFO]: Loading 112 mods:
+[22:52:17] [main/INFO]: Loading 112 mods:
 	- armored-elytra 1.0.1
 	- bosses_of_mass_destruction 1.10.1-1.21
 	   \-- multipart_entities 1.7-1.21
@@ -32,6 +32,7 @@
 	- cristellib 1.2.7
 	   \-- blue_endless_jankson 1.2.3
 	- ctov 3.5.1
+	- easymagic 21.0.0
 	- endorium 1.1.5
 	- explorify 1.6.1
 	- fabric-api 0.100.8+1.21
@@ -130,228 +131,150 @@
 	- terrablender 4.0.0.1
 	- tradingpost 21.0.1
 	- travelersbackpack fabric-1.21-10.0.4
-	- trumpet-skeleton 1.21-1.2.1
-[20:16:59] [main/WARN]: Found 1 non-fabric mod:
+[22:52:17] [main/WARN]: Found 1 non-fabric mod:
 	- GlitchCore-forge-1.21-2.0.0.2.jar
-[20:16:59] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/workspaces/MSP/servidor_minecraft/libraries/net/fabricmc/sponge-mixin/0.15.0+mixin.0.8.7/sponge-mixin-0.15.0+mixin.0.8.7.jar Service=Knot/Fabric Env=SERVER
-[20:16:59] [main/INFO]: Compatibility level set to JAVA_21
-[20:16:59] [main/WARN]: Reference map '[common]ctov-common-refmap.json' for ctov-common.mixins.json could not be read. If this is a development environment you can ignore this message
-[20:16:59] [main/WARN]: Reference map 'forgeconfigapiport.common.refmap.json' for forgeconfigapiport.common.mixins.json could not be read. If this is a development environment you can ignore this message
-[20:17:00] [main/WARN]: Reference map 'tradingpost.fabric.refmap.json' for tradingpost.fabric.mixins.json could not be read. If this is a development environment you can ignore this message
-[20:17:00] [main/WARN]: Error loading class: net/minecraft/class_287 (java.lang.ClassNotFoundException: net/minecraft/class_287)
-[20:17:00] [main/WARN]: @Mixin target net.minecraft.class_287 was not found owo.mixins.json:BufferBuilderAccessor from mod owo
-[20:17:00] [main/WARN]: Error loading class: net/minecraft/class_8673 (java.lang.ClassNotFoundException: net/minecraft/class_8673)
-[20:17:00] [main/WARN]: @Mixin target net.minecraft.class_8673 was not found owo.mixins.json:ClientCommonNetworkHandlerAccessor from mod owo
-[20:17:00] [main/WARN]: Error loading class: xyz/nucleoid/server/translations/impl/language/SystemDelegatedLanguage (java.lang.ClassNotFoundException: xyz/nucleoid/server/translations/impl/language/SystemDelegatedLanguage)
-[20:17:00] [main/WARN]: Error loading class: net/fabricmc/fabric/api/client/rendering/v1/EntityModelLayerRegistry$TexturedModelDataProvider (java.lang.ClassNotFoundException: net/fabricmc/fabric/api/client/rendering/v1/EntityModelLayerRegistry$TexturedModelDataProvider)
-[20:17:00] [main/INFO]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.0).
-[20:17:08] [main/INFO]: Biolith for Fabric is initializing...
-[20:17:08] [main/INFO]: Enabling Biolith's TerraBlender compatibility layer.
-[20:17:09] [main/INFO]: Enabling Cinderscapes' Biolith worldgen module.
-[20:17:09] [main/INFO]: Loading Collective version 7.80.
-[20:17:09] [main/INFO]: Is initializing.
-[20:17:09] [main/INFO]: Has successfully been initialized.
-[20:17:09] [main/OFF]: mining_dims config settings json5 found
-[20:17:09] [main/ERROR]: No data fixer registered for summoned_bee
-[20:17:09] [main/ERROR]: No data fixer registered for summoned_zombie
-[20:17:09] [main/INFO]: There is a 1% chance that instead of Frog, you get Froge!
-[20:17:09] [main/INFO]: Constructing common components for puzzleslib:main
-[20:17:10] [main/OFF]: simple_backpack config settings json5 found
-[20:17:10] [main/INFO]: Constructing common components for tradingpost:main
-[20:17:10] [main/INFO]: Registered the FluidEffect with Unique ID of minecraft:water for minecraft:water 81000 with the ID 0
-[20:17:10] [main/INFO]: Registered the FluidEffect with Unique ID of minecraft:lava for minecraft:lava 81000 with the ID 1
-[20:17:10] [main/INFO]: Registered the FluidEffect with Unique ID of travelersbackpack:potion for travelersbackpack:potion_still 27000 with the ID 2
-[20:17:10] [main/INFO]: Registered the FluidEffect with Unique ID of travelersbackpack:milk for travelersbackpack:milk_still 81000 with the ID 3
-[20:17:10] [main/INFO]: Loaded configuration file "./config/trumpet-skeleton.properties"
-[20:17:10] [main/INFO]: Initializing
-[20:17:10] [main/ERROR]: Registry 'terraform:boat' was empty after loading
-[20:17:10] [main/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[20:17:12] [Worker-Main-3/ERROR]: Couldn't load tag mes:common_avoid as it is missing following references: mes:tower (from mes), mes:decoration (from mes)
-[20:17:12] [main/INFO]: Loaded 1636 recipes
-[20:17:13] [main/ERROR]: Couldn't load advancements: [nova_structures:adventure/find_shrine, minecraft:wander_add_map, minecraft:give_quest_trader_trade]
-[20:17:13] [main/INFO]: Loaded 1680 advancements
-[20:17:13] [main/WARN]: Not all defined tags for registry ResourceKey[minecraft:root / minecraft:item] are present in data pack: minecraft:enchantable/empty
-[20:17:13] [main/INFO]: Registered region minecraft:overworld to index 0 for type OVERWORLD
-[20:17:13] [main/INFO]: Registered region minecraft:nether to index 0 for type NETHER
-[20:17:13] [main/INFO]: Initialized TerraBlender biomes for level stem mining_dims:nethering_dim
-[20:17:14] [main/INFO]: Initialized TerraBlender biomes for level stem minecraft:overworld
-[20:17:14] [main/INFO]: Initialized TerraBlender biomes for level stem minecraft:the_nether
-[20:17:14] [main/INFO]: Applied 188 biome modifications to 71 of 71 new biomes in 40.09 ms
-[20:17:14] [Server thread/INFO]: Dispatching loading event for config at tradingpost-server.toml
-[20:17:14] [Server thread/INFO]: Adding waystone fwaystones:village_waystone to village kaisyn:village/sparse_jungle_polynesian/houses
-[20:17:14] [Server thread/INFO]: Adding waystone fwaystones:village_waystone to village kaisyn:village/flower_forest_japanese/houses
-[20:17:14] [Server thread/INFO]: Adding waystone fwaystones:village_waystone to village kaisyn:village/swamp_boat/houses
-[20:17:14] [Server thread/INFO]: Adding waystone fwaystones:village_waystone to village minecraft:village/savanna/houses
-[20:17:14] [Server thread/INFO]: Adding waystone fwaystones:village_waystone to village minecraft:village/plains/houses
-[20:17:14] [Server thread/INFO]: Adding waystone fwaystones:village_waystone to village kaisyn:village/badlands_pueblo/houses
-[20:17:14] [Server thread/INFO]: Adding waystone fwaystones:village_waystone to village kaisyn:village/sunflower_plains_farm/side/farms
-[20:17:14] [Server thread/INFO]: Adding waystone fwaystones:village_waystone to village kaisyn:village/exclusives/tudor/houses
-[20:17:14] [Server thread/INFO]: Adding waystone fwaystones:village_waystone to village kaisyn:village/exclusives/mediterranean/houses/regular
-[20:17:14] [Server thread/INFO]: Adding waystone fwaystones:village_waystone to village kaisyn:village/snowy_slopes_inn/decor
-[20:17:14] [Server thread/INFO]: Adding waystone fwaystones:village_waystone to village kaisyn:village/grove_villager_outpost/decor
-[20:17:14] [Server thread/INFO]: Adding waystone fwaystones:village_waystone to village minecraft:village/taiga/houses
-[20:17:14] [Server thread/INFO]: Adding waystone fwaystones:village_waystone to village kaisyn:village/meadow_swiss/houses
-[20:17:14] [Server thread/INFO]: Adding waystone fwaystones:village_waystone to village kaisyn:village/exclusives/iberian/houses
-[20:17:14] [Server thread/INFO]: Adding waystone fwaystones:village_waystone to village kaisyn:village/snowy_taiga_viking/houses
-[20:17:14] [Server thread/INFO]: Adding waystone fwaystones:village_waystone to village kaisyn:village/birch_forest_romanian/houses
-[20:17:14] [Server thread/INFO]: Adding waystone fwaystones:village_waystone to village kaisyn:village/jungle_tribal/houses
-[20:17:14] [Server thread/INFO]: Adding waystone fwaystones:village_waystone to village kaisyn:village/beach_lighthouse/side/cross
-[20:17:14] [Server thread/INFO]: Adding waystone fwaystones:village_waystone to village minecraft:village/snowy/houses
-[20:17:14] [Server thread/INFO]: Adding waystone fwaystones:village_waystone to village kaisyn:village/mushroom_fields_fantasy/houses
-[20:17:14] [Server thread/INFO]: Adding waystone fwaystones:village_waystone to village kaisyn:village/old_growth_taiga_polish/houses
-[20:17:14] [Server thread/INFO]: Adding waystone fwaystones:village_waystone to village kaisyn:village/exclusives/rustic/houses
-[20:17:14] [Server thread/INFO]: Adding waystone fwaystones:desert_village_waystone to village minecraft:village/desert/houses
-[20:17:14] [Server thread/INFO]: Adding waystone fwaystones:village_waystone to village kaisyn:village/exclusives/swedish/houses
-[20:17:14] [Server thread/INFO]: Starting minecraft server version 1.21
-[20:17:14] [Server thread/INFO]: Loading properties
-[20:17:14] [Server thread/INFO]: Default game type: SURVIVAL
-[20:17:14] [Server thread/INFO]: Generating keypair
-[20:17:14] [Server thread/INFO]: Starting Minecraft server on *:25565
-[20:17:14] [Server thread/INFO]: Using epoll channel type
-[20:17:14] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[20:17:14] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[20:17:14] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[20:17:14] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[20:17:14] [Server thread/INFO]: Preparing level "world"
-[20:17:17] [Server thread/INFO]: Ignoring world 'mining_dims:climbing_dim'; unknown dimension type: mining_dims:climbing_dim
-[20:17:19] [Server thread/INFO]: Ignoring world 'mining_dims:hunting_dim'; unknown dimension type: mining_dims:hunting_dim
-[20:17:19] [Server thread/INFO]: Ignoring world 'mining_dims:caving_dim'; unknown dimension type: mining_dims:caving_dim
-[20:17:19] [Server thread/INFO]: Ignoring world 'mining_dims:sky_dim'; unknown dimension type: mining_dims:sky_dim
-[20:17:19] [Server thread/INFO]: Ignoring world 'mining_dims:mining_dim'; unknown dimension type: mining_dims:mining_dim
-[20:17:20] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[20:17:27] [Worker-Main-2/INFO]: Preparing spawn area: 0%
-[20:17:27] [Worker-Main-2/INFO]: Preparing spawn area: 0%
-[20:17:27] [Worker-Main-2/INFO]: Preparing spawn area: 0%
-[20:17:27] [Worker-Main-2/INFO]: Preparing spawn area: 0%
-[20:17:27] [Worker-Main-2/INFO]: Preparing spawn area: 0%
-[20:17:27] [Worker-Main-2/INFO]: Preparing spawn area: 0%
-[20:17:27] [Worker-Main-2/INFO]: Preparing spawn area: 0%
-[20:17:27] [Worker-Main-2/INFO]: Preparing spawn area: 0%
-[20:17:27] [Worker-Main-2/INFO]: Preparing spawn area: 0%
-[20:17:27] [Worker-Main-2/INFO]: Preparing spawn area: 0%
-[20:17:27] [Worker-Main-2/INFO]: Preparing spawn area: 0%
-[20:17:27] [Worker-Main-2/INFO]: Preparing spawn area: 0%
-[20:17:27] [Worker-Main-2/INFO]: Preparing spawn area: 0%
-[20:17:27] [Worker-Main-2/INFO]: Preparing spawn area: 0%
-[20:17:27] [Worker-Main-2/INFO]: Preparing spawn area: 0%
-[20:17:28] [Server thread/INFO]: Time elapsed: 7149 ms
-[20:17:28] [Server thread/INFO]: Done (13.573s)! For help, type "help"
-[20:17:30] [Server thread/INFO]: MarceX[/100.64.199.21:49286] logged in with entity id 3 at (44.20088308431022, 65.16610926093821, -10.097888288107178)
-[20:17:30] [Server thread/INFO]: Sending server config values to client
-[20:17:30] [Server thread/INFO]: Loading config from file...
-[20:17:31] [Server thread/INFO]: MarceX joined the game
-[20:17:31] [Server thread/INFO]: Receiving client config
-[20:17:34] [Server thread/INFO]: _jose_diaz_[/100.64.45.92:55149] logged in with entity id 187 at (-14.834885918460577, 1.0625, -250.67265791392705)
-[20:17:34] [Server thread/INFO]: Sending server config values to client
-[20:17:34] [Server thread/INFO]: Loading config from file...
-[20:17:34] [Server thread/INFO]: _jose_diaz_ joined the game
-[20:17:34] [Server thread/INFO]: Receiving client config
-[20:21:36] [Server thread/INFO]: [_jose_diaz_: Teleported _jose_diaz_ to MarceX]
-[20:21:43] [Server thread/INFO]: [MarceX: Teleported MarceX to -1686.500000, -41.000000, 1203.500000]
-[20:22:31] [Server thread/INFO]: [MarceX: Teleported MarceX to _jose_diaz_]
-[20:27:00] [Server thread/INFO]: [MarceX: Teleported MarceX to _jose_diaz_]
-[20:28:05] [Server thread/WARN]: MarceX moved too quickly! -12.1909171835635,-1.8243164516646786,-12.870259953915138
-[20:28:39] [Server thread/INFO]: [MarceX: Teleported MarceX to _jose_diaz_]
-[20:30:20] [Server thread/INFO]: _jose_diaz_ has made the advancement [A Seedy Place]
-[20:32:52] [Server thread/INFO]: [Not Secure] <_jose_diaz_> -cordinates
-[20:32:59] [Server thread/INFO]: [Not Secure] <_jose_diaz_> -cordinates
-[20:34:02] [Server thread/INFO]: [_jose_diaz_: Placed 1 Item!]
-[20:34:57] [Server thread/INFO]: Locating element minecraft:village_desert took 7860 ms
-[20:34:57] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 7849ms or 156 ticks behind
-[20:34:57] [Server thread/WARN]: _jose_diaz_ moved too quickly! 11.076298346584338,-4.7606025403137835,-12.959408716690518
-[20:35:01] [Server thread/INFO]: [_jose_diaz_: Teleported _jose_diaz_ to -895.500000, 70.000000, -1455.500000]
-[20:35:06] [Server thread/WARN]: _jose_diaz_ moved too quickly! 0.0,-10.806526110009003,0.0
-[20:35:11] [Server thread/WARN]: Tried to load a block entity for block Block{fwaystones:desert_waystone}[active=false,facing=west,generated=true,half=upper,mossy=false,waterlogged=false] but failed at location class_2338{x=-886, y=50, z=-1517}
-[20:36:23] [Worker-Main-3/ERROR]: Block-attached entity at invalid position: class_2338{x=311, y=48, z=214}
-[20:36:23] [Worker-Main-3/ERROR]: Block-attached entity at invalid position: class_2338{x=310, y=48, z=214}
-[20:36:23] [Worker-Main-3/ERROR]: Block-attached entity at invalid position: class_2338{x=309, y=49, z=214}
-[20:36:23] [Worker-Main-3/ERROR]: Block-attached entity at invalid position: class_2338{x=309, y=48, z=214}
-[20:36:23] [Worker-Main-3/ERROR]: Block-attached entity at invalid position: class_2338{x=310, y=49, z=214}
-[20:36:23] [Worker-Main-3/ERROR]: Block-attached entity at invalid position: class_2338{x=311, y=49, z=214}
-[20:36:23] [Worker-Main-3/ERROR]: Block-attached entity at invalid position: class_2338{x=311, y=50, z=214}
-[20:36:23] [Worker-Main-3/ERROR]: Block-attached entity at invalid position: class_2338{x=310, y=50, z=214}
-[20:36:23] [Worker-Main-3/ERROR]: Block-attached entity at invalid position: class_2338{x=309, y=50, z=214}
-[20:36:23] [Worker-Main-2/ERROR]: Block-attached entity at invalid position: class_2338{x=311, y=48, z=214}
-[20:36:23] [Worker-Main-2/ERROR]: Block-attached entity at invalid position: class_2338{x=310, y=48, z=214}
-[20:36:23] [Worker-Main-2/ERROR]: Block-attached entity at invalid position: class_2338{x=309, y=49, z=214}
-[20:36:23] [Worker-Main-2/ERROR]: Block-attached entity at invalid position: class_2338{x=309, y=48, z=214}
-[20:36:23] [Worker-Main-2/ERROR]: Block-attached entity at invalid position: class_2338{x=310, y=49, z=214}
-[20:36:23] [Worker-Main-2/ERROR]: Block-attached entity at invalid position: class_2338{x=311, y=49, z=214}
-[20:36:23] [Worker-Main-2/ERROR]: Block-attached entity at invalid position: class_2338{x=311, y=50, z=214}
-[20:36:23] [Worker-Main-2/ERROR]: Block-attached entity at invalid position: class_2338{x=310, y=50, z=214}
-[20:36:23] [Worker-Main-2/ERROR]: Block-attached entity at invalid position: class_2338{x=309, y=50, z=214}
-[20:36:55] [Server thread/INFO]: [_jose_diaz_: Teleported _jose_diaz_ to 60.500000, 62.000000, -15.500000]
-[20:41:20] [Server thread/INFO]: [_jose_diaz_: Teleported _jose_diaz_ to 60.500000, 62.000000, -15.500000]
-[20:54:12] [Server thread/INFO]: [_jose_diaz_: Gave 64 [Glass] to _jose_diaz_]
-[20:54:43] [Server thread/INFO]: [_jose_diaz_: Gave 64 [Glass] to _jose_diaz_]
-[20:56:55] [Server thread/INFO]: MarceX was slain by Zombie
-[20:58:28] [Server thread/INFO]: [_jose_diaz_: Teleported _jose_diaz_ to MarceX]
-[21:07:43] [Server thread/INFO]: Locating element #bosses_of_mass_destruction:collections/cold (minecraft:snowy_slopes) took 369 ms
-[21:07:46] [Server thread/INFO]: [_jose_diaz_: Teleported _jose_diaz_ to -329.500000, 59.000000, 686.500000]
-[21:08:20] [Server thread/INFO]: [_jose_diaz_: Teleported _jose_diaz_ to -329.500000, 70.000000, 686.500000]
-[21:08:30] [Server thread/INFO]: [_jose_diaz_: Teleported _jose_diaz_ to -329.500000, 80.000000, 686.500000]
-[21:08:36] [Server thread/INFO]: [_jose_diaz_: Teleported _jose_diaz_ to -329.500000, 100.000000, 686.500000]
-[21:16:52] [Server thread/INFO]: [MarceX: Teleported MarceX to _jose_diaz_]
-[21:21:27] [Server thread/INFO]: [_jose_diaz_: Teleported _jose_diaz_ to MarceX]
-[21:21:43] [Server thread/INFO]: [_jose_diaz_: Teleported _jose_diaz_ to MarceX]
-[21:24:08] [Server thread/INFO]: Villager class_1646['Farmer'/39123, l='ServerLevel[world]', x=64.84, y=65.00, z=-15.07] died, message: 'Farmer was slain by MarceX using [Espadón]'
-[21:25:37] [Server thread/WARN]: MarceX moved wrongly!
-[21:29:08] [Server thread/WARN]: MarceX moved wrongly!
-[21:29:21] [Server thread/INFO]: [_jose_diaz_: Teleported _jose_diaz_ to MarceX]
-[21:29:51] [Server thread/INFO]: [MarceX: Teleported MarceX to _jose_diaz_]
-[21:31:50] [Server thread/INFO]: [MarceX: Teleported MarceX to _jose_diaz_]
-[21:33:57] [Server thread/INFO]: [MarceX: Teleported _jose_diaz_ to MarceX]
-[21:35:22] [Server thread/INFO]: [_jose_diaz_: Teleported _jose_diaz_ to MarceX]
-[21:36:56] [Server thread/INFO]: [MarceX: Set own game mode to Spectator Mode]
-[21:36:58] [Server thread/INFO]: [_jose_diaz_: Set own game mode to Spectator Mode]
-[21:37:14] [Server thread/INFO]: [MarceX: Set own game mode to Survival Mode]
-[21:37:46] [Server thread/INFO]: [MarceX: Set own game mode to Spectator Mode]
-[21:38:21] [Server thread/INFO]: [_jose_diaz_: Set own game mode to Survival Mode]
-[21:38:41] [Server thread/INFO]: [_jose_diaz_: Set own game mode to Spectator Mode]
-[21:40:05] [Server thread/INFO]: [MarceX: Teleported MarceX to _jose_diaz_]
-[21:42:14] [Server thread/INFO]: [MarceX: Set own game mode to Survival Mode]
-[21:42:23] [Server thread/INFO]: [MarceX: Gave 99 [Bread] to MarceX]
-[21:42:49] [Server thread/INFO]: [MarceX: Set own game mode to Spectator Mode]
-[21:43:01] [Server thread/INFO]: [_jose_diaz_: Set own game mode to Survival Mode]
-[21:43:15] [Server thread/INFO]: [_jose_diaz_: Gave 64 [Bone Meal] to _jose_diaz_]
-[21:44:53] [Server thread/INFO]: [_jose_diaz_: Set own game mode to Spectator Mode]
-[21:46:46] [Server thread/INFO]: [_jose_diaz_: Gave 64 [Bone Meal] to _jose_diaz_]
-[21:46:49] [Server thread/INFO]: [_jose_diaz_: Set own game mode to Survival Mode]
-[21:48:25] [Server thread/INFO]: [MarceX: Gave 99 [Bread] to MarceX]
-[21:48:29] [Server thread/INFO]: [MarceX: Set own game mode to Survival Mode]
-[21:48:41] [Server thread/INFO]: [MarceX: Set own game mode to Spectator Mode]
-[21:49:09] [Server thread/INFO]: [MarceX: Gave 150 [Bread] to MarceX]
-[21:49:11] [Server thread/INFO]: [MarceX: Set own game mode to Survival Mode]
-[21:49:27] [Server thread/INFO]: [MarceX: Set own game mode to Spectator Mode]
-[21:49:45] [Server thread/INFO]: [MarceX: Set own game mode to Survival Mode]
-[21:50:39] [Server thread/INFO]: [_jose_diaz_: Teleported _jose_diaz_ to MarceX]
-[21:56:10] [Server thread/INFO]: [_jose_diaz_: Teleported _jose_diaz_ to MarceX]
-[21:56:21] [Server thread/INFO]: [_jose_diaz_: Teleported _jose_diaz_ to MarceX]
-[22:05:12] [Server thread/INFO]: MarceX lost connection: Disconnected
-[22:05:12] [Server thread/INFO]: MarceX left the game
-[22:05:23] [Server thread/INFO]: Stopping the server
-[22:05:23] [Server thread/INFO]: Stopping server
-[22:05:23] [Server thread/INFO]: Saving players
-[22:05:23] [Server thread/INFO]: _jose_diaz_ lost connection: Server closed
-[22:05:23] [Server thread/INFO]: _jose_diaz_ left the game
-[22:05:23] [Server thread/INFO]: Saving worlds
-[22:05:23] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[22:05:25] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/mining_dims:climbing_dim
-[22:05:25] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/mining_dims:nethering_dim
-[22:05:25] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/mining_dims:hunting_dim
-[22:05:25] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/mining_dims:caving_dim
-[22:05:26] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/mining_dims:sky_dim
-[22:05:26] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
-[22:05:26] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/mining_dims:mining_dim
-[22:05:26] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
-[22:05:26] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[22:05:26] [Server thread/INFO]: ThreadedAnvilChunkStorage (climbing_dim): All chunks are saved
-[22:05:26] [Server thread/INFO]: ThreadedAnvilChunkStorage (nethering_dim): All chunks are saved
-[22:05:26] [Server thread/INFO]: ThreadedAnvilChunkStorage (hunting_dim): All chunks are saved
-[22:05:26] [Server thread/INFO]: ThreadedAnvilChunkStorage (caving_dim): All chunks are saved
-[22:05:26] [Server thread/INFO]: ThreadedAnvilChunkStorage (sky_dim): All chunks are saved
-[22:05:26] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[22:05:26] [Server thread/INFO]: ThreadedAnvilChunkStorage (mining_dim): All chunks are saved
-[22:05:26] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[22:05:26] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
-[22:05:27] [Server thread/INFO]: Dispatching unloading event for config at tradingpost-server.toml
+[22:52:17] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/workspaces/MSP/servidor_minecraft/libraries/net/fabricmc/sponge-mixin/0.15.0+mixin.0.8.7/sponge-mixin-0.15.0+mixin.0.8.7.jar Service=Knot/Fabric Env=SERVER
+[22:52:17] [main/INFO]: Compatibility level set to JAVA_21
+[22:52:18] [main/WARN]: Reference map '[common]ctov-common-refmap.json' for ctov-common.mixins.json could not be read. If this is a development environment you can ignore this message
+[22:52:18] [main/WARN]: Reference map 'forgeconfigapiport.common.refmap.json' for forgeconfigapiport.common.mixins.json could not be read. If this is a development environment you can ignore this message
+[22:52:18] [main/WARN]: Reference map 'tradingpost.fabric.refmap.json' for tradingpost.fabric.mixins.json could not be read. If this is a development environment you can ignore this message
+[22:52:18] [main/WARN]: Error loading class: net/minecraft/class_287 (java.lang.ClassNotFoundException: net/minecraft/class_287)
+[22:52:18] [main/WARN]: @Mixin target net.minecraft.class_287 was not found owo.mixins.json:BufferBuilderAccessor from mod owo
+[22:52:18] [main/WARN]: Error loading class: net/minecraft/class_8673 (java.lang.ClassNotFoundException: net/minecraft/class_8673)
+[22:52:18] [main/WARN]: @Mixin target net.minecraft.class_8673 was not found owo.mixins.json:ClientCommonNetworkHandlerAccessor from mod owo
+[22:52:18] [main/WARN]: Error loading class: xyz/nucleoid/server/translations/impl/language/SystemDelegatedLanguage (java.lang.ClassNotFoundException: xyz/nucleoid/server/translations/impl/language/SystemDelegatedLanguage)
+[22:52:18] [main/WARN]: Error loading class: net/fabricmc/fabric/api/client/rendering/v1/EntityModelLayerRegistry$TexturedModelDataProvider (java.lang.ClassNotFoundException: net/fabricmc/fabric/api/client/rendering/v1/EntityModelLayerRegistry$TexturedModelDataProvider)
+[22:52:18] [main/INFO]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.0).
+[22:52:27] [main/INFO]: Biolith for Fabric is initializing...
+[22:52:27] [main/INFO]: Enabling Biolith's TerraBlender compatibility layer.
+[22:52:28] [main/INFO]: Enabling Cinderscapes' Biolith worldgen module.
+[22:52:28] [main/INFO]: Loading Collective version 7.80.
+[22:52:28] [main/INFO]: Constructing common components for easymagic:main
+[22:52:28] [main/INFO]: Is initializing.
+[22:52:28] [main/INFO]: Has successfully been initialized.
+[22:52:28] [main/OFF]: mining_dims config settings json5 found
+[22:52:28] [main/ERROR]: No data fixer registered for summoned_bee
+[22:52:28] [main/ERROR]: No data fixer registered for summoned_zombie
+[22:52:28] [main/INFO]: make a man a mod, he'll be enteratined for a few minutes - teach a man to mod, and he'll mald till the end of time
+[22:52:28] [main/INFO]: Constructing common components for puzzleslib:main
+[22:52:28] [main/OFF]: simple_backpack config settings json5 found
+[22:52:28] [main/INFO]: Constructing common components for tradingpost:main
+[22:52:28] [main/INFO]: Registered the FluidEffect with Unique ID of minecraft:water for minecraft:water 81000 with the ID 0
+[22:52:28] [main/INFO]: Registered the FluidEffect with Unique ID of minecraft:lava for minecraft:lava 81000 with the ID 1
+[22:52:28] [main/INFO]: Registered the FluidEffect with Unique ID of travelersbackpack:potion for travelersbackpack:potion_still 27000 with the ID 2
+[22:52:28] [main/INFO]: Registered the FluidEffect with Unique ID of travelersbackpack:milk for travelersbackpack:milk_still 81000 with the ID 3
+[22:52:28] [main/ERROR]: Registry 'terraform:boat' was empty after loading
+[22:52:28] [main/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[22:52:31] [Worker-Main-3/ERROR]: Couldn't load tag mes:common_avoid as it is missing following references: mes:tower (from mes), mes:decoration (from mes)
+[22:52:31] [main/INFO]: Loaded 1636 recipes
+[22:52:31] [main/ERROR]: Couldn't load advancements: [nova_structures:adventure/find_shrine, minecraft:wander_add_map, minecraft:give_quest_trader_trade]
+[22:52:31] [main/INFO]: Loaded 1680 advancements
+[22:52:31] [main/WARN]: Not all defined tags for registry ResourceKey[minecraft:root / minecraft:item] are present in data pack: minecraft:enchantable/empty
+[22:52:32] [main/INFO]: Registered region minecraft:overworld to index 0 for type OVERWORLD
+[22:52:32] [main/INFO]: Registered region minecraft:nether to index 0 for type NETHER
+[22:52:32] [main/INFO]: Initialized TerraBlender biomes for level stem minecraft:overworld
+[22:52:32] [main/INFO]: Initialized TerraBlender biomes for level stem minecraft:the_nether
+[22:52:32] [main/INFO]: Initialized TerraBlender biomes for level stem mining_dims:nethering_dim
+[22:52:32] [main/INFO]: Applied 117 biome modifications to 64 of 71 new biomes in 49.71 ms
+[22:52:32] [Server thread/WARN]: Configuration file ./config/easymagic-server.toml is not correct. Correcting
+[22:52:32] [Server thread/INFO]: Dispatching loading event for config at easymagic-server.toml
+[22:52:32] [Server thread/INFO]: Dispatching loading event for config at tradingpost-server.toml
+[22:52:32] [Server thread/INFO]: Adding waystone fwaystones:village_waystone to village kaisyn:village/sparse_jungle_polynesian/houses
+[22:52:32] [Server thread/INFO]: Adding waystone fwaystones:village_waystone to village kaisyn:village/flower_forest_japanese/houses
+[22:52:32] [Server thread/INFO]: Adding waystone fwaystones:village_waystone to village kaisyn:village/swamp_boat/houses
+[22:52:32] [Server thread/INFO]: Adding waystone fwaystones:village_waystone to village minecraft:village/savanna/houses
+[22:52:32] [Server thread/INFO]: Adding waystone fwaystones:village_waystone to village minecraft:village/plains/houses
+[22:52:32] [Server thread/INFO]: Adding waystone fwaystones:village_waystone to village kaisyn:village/badlands_pueblo/houses
+[22:52:32] [Server thread/INFO]: Adding waystone fwaystones:village_waystone to village kaisyn:village/sunflower_plains_farm/side/farms
+[22:52:32] [Server thread/INFO]: Adding waystone fwaystones:village_waystone to village kaisyn:village/exclusives/tudor/houses
+[22:52:32] [Server thread/INFO]: Adding waystone fwaystones:village_waystone to village kaisyn:village/exclusives/mediterranean/houses/regular
+[22:52:32] [Server thread/INFO]: Adding waystone fwaystones:village_waystone to village kaisyn:village/snowy_slopes_inn/decor
+[22:52:32] [Server thread/INFO]: Adding waystone fwaystones:village_waystone to village kaisyn:village/grove_villager_outpost/decor
+[22:52:32] [Server thread/INFO]: Adding waystone fwaystones:village_waystone to village minecraft:village/taiga/houses
+[22:52:32] [Server thread/INFO]: Adding waystone fwaystones:village_waystone to village kaisyn:village/meadow_swiss/houses
+[22:52:32] [Server thread/INFO]: Adding waystone fwaystones:village_waystone to village kaisyn:village/exclusives/iberian/houses
+[22:52:32] [Server thread/INFO]: Adding waystone fwaystones:village_waystone to village kaisyn:village/snowy_taiga_viking/houses
+[22:52:32] [Server thread/INFO]: Adding waystone fwaystones:village_waystone to village kaisyn:village/birch_forest_romanian/houses
+[22:52:32] [Server thread/INFO]: Adding waystone fwaystones:village_waystone to village kaisyn:village/jungle_tribal/houses
+[22:52:32] [Server thread/INFO]: Adding waystone fwaystones:village_waystone to village kaisyn:village/beach_lighthouse/side/cross
+[22:52:32] [Server thread/INFO]: Adding waystone fwaystones:village_waystone to village minecraft:village/snowy/houses
+[22:52:32] [Server thread/INFO]: Adding waystone fwaystones:village_waystone to village kaisyn:village/mushroom_fields_fantasy/houses
+[22:52:32] [Server thread/INFO]: Adding waystone fwaystones:village_waystone to village kaisyn:village/old_growth_taiga_polish/houses
+[22:52:32] [Server thread/INFO]: Adding waystone fwaystones:village_waystone to village kaisyn:village/exclusives/rustic/houses
+[22:52:32] [Server thread/INFO]: Adding waystone fwaystones:desert_village_waystone to village minecraft:village/desert/houses
+[22:52:32] [Server thread/INFO]: Adding waystone fwaystones:village_waystone to village kaisyn:village/exclusives/swedish/houses
+[22:52:32] [Server thread/INFO]: Starting minecraft server version 1.21
+[22:52:32] [Server thread/INFO]: Loading properties
+[22:52:32] [Server thread/INFO]: Default game type: SURVIVAL
+[22:52:32] [Server thread/INFO]: Generating keypair
+[22:52:32] [Server thread/INFO]: Starting Minecraft server on *:25565
+[22:52:32] [Server thread/INFO]: Using epoll channel type
+[22:52:32] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[22:52:32] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[22:52:32] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[22:52:32] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[22:52:32] [Server thread/INFO]: Preparing level "world"
+[22:52:36] [Server thread/INFO]: Ignoring world 'mining_dims:sky_dim'; unknown dimension type: mining_dims:sky_dim
+[22:52:36] [Server thread/INFO]: Ignoring world 'mining_dims:hunting_dim'; unknown dimension type: mining_dims:hunting_dim
+[22:52:36] [Server thread/INFO]: Ignoring world 'mining_dims:climbing_dim'; unknown dimension type: mining_dims:climbing_dim
+[22:52:44] [Server thread/INFO]: Ignoring world 'mining_dims:caving_dim'; unknown dimension type: mining_dims:caving_dim
+[22:52:44] [Server thread/INFO]: Ignoring world 'mining_dims:mining_dim'; unknown dimension type: mining_dims:mining_dim
+[22:52:44] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[22:52:46] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[22:52:46] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[22:52:46] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[22:52:46] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[22:52:46] [Server thread/INFO]: Time elapsed: 1935 ms
+[22:52:46] [Server thread/INFO]: Done (13.759s)! For help, type "help"
+[22:53:12] [Server thread/INFO]: MarceX[/100.64.199.21:51364] logged in with entity id 3 at (-6.710990510622698, -8.998664020887851, 391.4927308237184)
+[22:53:12] [Server thread/INFO]: Sending server config values to client
+[22:53:13] [Server thread/INFO]: Loading config from file...
+[22:53:13] [Server thread/INFO]: MarceX joined the game
+[22:53:13] [Server thread/INFO]: Receiving client config
+[22:54:08] [Server thread/INFO]: MarceX lost connection: Timed out
+[22:54:08] [Server thread/INFO]: MarceX left the game
+[22:54:13] [Server thread/INFO]: MarceX[/100.64.199.21:51397] logged in with entity id 451 at (-6.710990510622698, -8.998664020887851, 391.4927308237184)
+[22:54:13] [Server thread/INFO]: Sending server config values to client
+[22:54:13] [Server thread/INFO]: Loading config from file...
+[22:54:13] [Server thread/INFO]: MarceX joined the game
+[22:54:13] [Server thread/INFO]: Receiving client config
+[22:56:56] [Server thread/INFO]: [MarceX: Set own game mode to Spectator Mode]
+[22:57:18] [Server thread/INFO]: [MarceX: Set own game mode to Survival Mode]
+[22:58:11] [Server thread/INFO]: [MarceX: Set own game mode to Spectator Mode]
+[22:58:33] [Server thread/INFO]: [MarceX: Set own game mode to Survival Mode]
+[23:00:44] [Server thread/INFO]: MarceX lost connection: Timed out
+[23:00:44] [Server thread/INFO]: MarceX left the game
+[23:01:02] [Server thread/INFO]: com.mojang.authlib.GameProfile@78cd3ebb[id=c2faf585-96cf-3638-83c0-ce0c2ec1ab41,name=MarceX,properties={}] lost connection: Disconnected
+[23:01:08] [Server thread/INFO]: MarceX[/100.64.199.21:51426] logged in with entity id 3517 at (56.30000001192093, -22.61047976028346, 475.327428995313)
+[23:01:08] [Server thread/INFO]: Sending server config values to client
+[23:01:08] [Server thread/INFO]: Loading config from file...
+[23:01:08] [Server thread/INFO]: MarceX joined the game
+[23:01:08] [Server thread/INFO]: Receiving client config
+[23:04:46] [Server thread/INFO]: Villager class_1646['Cleric'/4619, l='ServerLevel[world]', x=53.44, y=64.00, z=-2.48] died, message: 'Cleric was slain by Zombie'
+[23:05:01] [Server thread/INFO]: MarceX lost connection: Disconnected
+[23:05:01] [Server thread/INFO]: MarceX left the game
+[23:05:05] [Server thread/INFO]: Stopping the server
+[23:05:05] [Server thread/INFO]: Stopping server
+[23:05:05] [Server thread/INFO]: Saving players
+[23:05:05] [Server thread/INFO]: Saving worlds
+[23:05:05] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[23:05:05] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/mining_dims:sky_dim
+[23:05:06] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/mining_dims:hunting_dim
+[23:05:06] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[23:05:06] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/mining_dims:climbing_dim
+[23:05:06] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[23:05:06] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/mining_dims:caving_dim
+[23:05:06] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/mining_dims:nethering_dim
+[23:05:06] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/mining_dims:mining_dim
+[23:05:06] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[23:05:06] [Server thread/INFO]: ThreadedAnvilChunkStorage (sky_dim): All chunks are saved
+[23:05:06] [Server thread/INFO]: ThreadedAnvilChunkStorage (hunting_dim): All chunks are saved
+[23:05:06] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[23:05:06] [Server thread/INFO]: ThreadedAnvilChunkStorage (climbing_dim): All chunks are saved
+[23:05:06] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[23:05:06] [Server thread/INFO]: ThreadedAnvilChunkStorage (caving_dim): All chunks are saved
+[23:05:06] [Server thread/INFO]: ThreadedAnvilChunkStorage (nethering_dim): All chunks are saved
+[23:05:06] [Server thread/INFO]: ThreadedAnvilChunkStorage (mining_dim): All chunks are saved
+[23:05:06] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[23:05:06] [Server thread/INFO]: Dispatching unloading event for config at easymagic-server.toml
+[23:05:06] [Server thread/INFO]: Dispatching unloading event for config at tradingpost-server.toml

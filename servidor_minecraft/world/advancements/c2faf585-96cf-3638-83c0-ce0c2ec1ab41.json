@@ -21,6 +21,7 @@
       "minecraft:bamboo_jungle": "2024-07-29 20:07:09 +0000",
       "minecraft:wooded_badlands": "2024-08-03 23:12:01 +0000",
       "minecraft:warm_ocean": "2024-07-29 20:12:26 +0000",
+      "minecraft:deep_lukewarm_ocean": "2024-08-04 22:25:50 +0000",
       "minecraft:badlands": "2024-08-02 05:31:33 +0000",
       "minecraft:savanna_plateau": "2024-08-04 15:44:01 +0000",
       "minecraft:beach": "2024-08-04 15:43:02 +0000",
@@ -4634,9 +4635,9 @@
     },
     "done": true
   },
-  "travelersbackpack:recipes/misc/hay_smithing": {
+  "travelersbackpack:recipes/misc/lapis_smithing": {
     "criteria": {
-      "has_hay": "2024-08-04 21:55:27 +0000"
+      "has_lapis": "2024-08-04 21:13:38 +0000"
     },
     "done": true
   },
@@ -4646,9 +4647,9 @@
     },
     "done": true
   },
-  "travelersbackpack:recipes/misc/lapis_smithing": {
+  "minecraft:recipes/building_blocks/bone_block": {
     "criteria": {
-      "has_lapis": "2024-08-04 21:13:38 +0000"
+      "has_bone_meal": "2024-08-04 21:31:28 +0000"
     },
     "done": true
   },
@@ -4658,9 +4659,27 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/bone_block": {
+  "travelersbackpack:recipes/misc/hay_smithing": {
     "criteria": {
-      "has_bone_meal": "2024-08-04 21:31:28 +0000"
+      "has_hay": "2024-08-04 21:55:27 +0000"
+    },
+    "done": true
+  },
+  "travelersbackpack:recipes/misc/spider_smithing": {
+    "criteria": {
+      "has_spider": "2024-08-04 22:21:46 +0000"
+    },
+    "done": true
+  },
+  "travelersbackpack:recipes/misc/sheep_smithing": {
+    "criteria": {
+      "has_sheep": "2024-08-04 22:22:20 +0000"
+    },
+    "done": true
+  },
+  "minecraft:adventure/minecraft_trials_edition": {
+    "criteria": {
+      "minecraft_trials_edition": "2024-08-04 22:25:15 +0000"
     },
     "done": true
   },

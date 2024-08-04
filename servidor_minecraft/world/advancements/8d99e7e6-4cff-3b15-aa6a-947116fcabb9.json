@@ -4071,15 +4071,15 @@
     },
     "done": true
   },
-  "travelersbackpack:recipes/misc/wolf_smithing": {
+  "minecraft:husbandry/plant_seed": {
     "criteria": {
-      "has_wolf": "2024-08-04 21:11:03 +0000"
+      "wheat": "2024-08-04 20:30:20 +0000"
     },
     "done": true
   },
-  "travelersbackpack:recipes/misc/lapis_smithing": {
+  "travelersbackpack:recipes/misc/wolf_smithing": {
     "criteria": {
-      "has_lapis": "2024-08-04 21:13:16 +0000"
+      "has_wolf": "2024-08-04 21:11:03 +0000"
     },
     "done": true
   },
@@ -4089,15 +4089,45 @@
     },
     "done": true
   },
+  "travelersbackpack:recipes/misc/lapis_smithing": {
+    "criteria": {
+      "has_lapis": "2024-08-04 21:13:16 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/redstone/redstone_lamp": {
     "criteria": {
       "has_glowstone": "2024-08-04 21:57:39 +0000"
     },
     "done": true
   },
-  "minecraft:husbandry/plant_seed": {
+  "minecraft:recipes/building_blocks/waxed_oxidized_cut_copper_stairs_from_waxed_oxidized_cut_copper_stonecutting": {
     "criteria": {
-      "wheat": "2024-08-04 20:30:20 +0000"
+      "has_waxed_oxidized_cut_copper": "2024-08-04 22:25:02 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/waxed_oxidized_cut_copper_slab_from_waxed_oxidized_cut_copper_stonecutting": {
+    "criteria": {
+      "has_waxed_oxidized_cut_copper": "2024-08-04 22:25:02 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/waxed_oxidized_chiseled_copper_from_waxed_oxidized_cut_copper_stonecutting": {
+    "criteria": {
+      "has_waxed_oxidized_cut_copper": "2024-08-04 22:25:02 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/waxed_oxidized_cut_copper_stairs": {
+    "criteria": {
+      "has_waxed_oxidized_cut_copper": "2024-08-04 22:25:02 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/waxed_oxidized_cut_copper_slab": {
+    "criteria": {
+      "has_waxed_oxidized_cut_copper": "2024-08-04 22:25:02 +0000"
     },
     "done": true
   },
