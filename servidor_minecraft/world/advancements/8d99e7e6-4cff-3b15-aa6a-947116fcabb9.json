@@ -3963,6 +3963,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/redstone/crafter": {
+    "criteria": {
+      "has_dropper": "2024-08-04 19:12:53 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/redstone/dark_oak_fence_gate": {
     "criteria": {
       "has_planks": "2024-08-04 18:10:27 +0000"
