@@ -4549,6 +4549,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/paper": {
+    "criteria": {
+      "has_reeds": "2024-08-04 19:47:31 +0000"
+    },
+    "done": true
+  },
   "minecraft:story/lava_bucket": {
     "criteria": {
       "lava_bucket": "2024-08-04 18:16:35 +0000"
@@ -4570,6 +4576,12 @@
   "travelersbackpack:recipes/misc/melon_smithing": {
     "criteria": {
       "has_melon": "2024-08-04 19:39:01 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/sugar_from_sugar_cane": {
+    "criteria": {
+      "has_sugar_cane": "2024-08-04 19:47:31 +0000"
     },
     "done": true
   },
