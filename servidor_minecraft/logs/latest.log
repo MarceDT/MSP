@@ -306,3 +306,11 @@
 [18:44:41] [Server thread/INFO]: [MarceX: Gave 100 [Firework Rocket] to MarceX]
 [18:44:45] [Server thread/INFO]: [MarceX: Teleported MarceX to Reder]
 [18:46:02] [Server thread/WARN]: MarceX moved too quickly! 6.848183582964026,15.119388683114956,8.292513582286603
+[18:55:26] [Server thread/INFO]: [Reder: Teleported Reder to MarceX]
+[18:55:42] [Worker-Main-3/ERROR]: Block-attached entity at invalid position: class_2338{x=203, y=48, z=159}
+[18:56:40] [Worker-Main-3/WARN]: Tried to access a block entity before it was created. class_2338{x=-772, y=70, z=-1030}
+[18:56:40] [Worker-Main-3/WARN]: Tried to access a block entity before it was created. class_2338{x=-772, y=70, z=-1030}
+[18:56:49] [Server thread/WARN]: Tried to load a block entity for block Block{fwaystones:waystone}[active=false,facing=west,generated=true,half=upper,mossy=false,waterlogged=false] but failed at location class_2338{x=-772, y=70, z=-1030}
+[18:59:02] [Server thread/WARN]: MarceX moved wrongly!
+[18:59:09] [Server thread/INFO]: Reder fell from a high place
+[18:59:13] [Server thread/INFO]: [Reder: Teleported Reder to MarceX]
