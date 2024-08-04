@@ -349,3 +349,41 @@
 [19:55:45] [Server thread/INFO]: [MarceX: Teleported MarceX to -1686.500000, -41.000000, 1203.500000]
 [19:56:04] [Server thread/WARN]: MarceX moved too quickly! -1.8636118963804564,-0.6559667250509511,-17.392015646954476
 [20:00:32] [Server thread/INFO]: [_jose_diaz_: Teleported _jose_diaz_ to MarceX]
+[20:03:00] [Server thread/INFO]: [_jose_diaz_: Gave 20 [Black Terracotta] to _jose_diaz_]
+[20:03:06] [Server thread/INFO]: [_jose_diaz_: Gave 20 [Black Terracotta] to _jose_diaz_]
+[20:04:15] [Server thread/INFO]: [MarceX: Teleported MarceX to _jose_diaz_]
+[20:05:49] [Server thread/WARN]: MarceX moved too quickly! -18.472054045424112,-2.5517605677890884,-1.2137744361682792
+[20:10:32] [Server thread/INFO]: [MarceX: Teleported MarceX to -1686.500000, -41.000000, 1203.500000]
+[20:10:35] [Server thread/INFO]: [_jose_diaz_: Gave 20 [Black Concrete] to _jose_diaz_]
+[20:10:47] [Server thread/WARN]: MarceX moved too quickly! -8.100947735051754,-3.9525421429476317,-16.042405883624674
+[20:10:59] [Server thread/WARN]: MarceX moved too quickly! 2.098718896339829,-1.9442913052748345,-17.686749317649472
+[20:15:20] [Server thread/WARN]: MarceX was kicked for floating too long!
+[20:15:20] [Server thread/INFO]: MarceX lost connection: Flying is not enabled on this server
+[20:15:20] [Server thread/INFO]: MarceX left the game
+[20:15:20] [Server thread/WARN]: handleDisconnection() called twice
+[20:15:57] [Server thread/INFO]: Stopping the server
+[20:15:57] [Server thread/INFO]: Stopping server
+[20:15:57] [Server thread/INFO]: Saving players
+[20:15:57] [Server thread/INFO]: _jose_diaz_ lost connection: Server closed
+[20:15:57] [Server thread/INFO]: _jose_diaz_ left the game
+[20:15:57] [Server thread/INFO]: Saving worlds
+[20:15:57] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[20:15:58] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/mining_dims:nethering_dim
+[20:15:58] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[20:15:58] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[20:15:58] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/mining_dims:sky_dim
+[20:15:58] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/mining_dims:mining_dim
+[20:15:58] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/mining_dims:hunting_dim
+[20:15:58] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/mining_dims:caving_dim
+[20:15:58] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/mining_dims:climbing_dim
+[20:15:58] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[20:15:58] [Server thread/INFO]: ThreadedAnvilChunkStorage (nethering_dim): All chunks are saved
+[20:15:58] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[20:15:58] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[20:15:58] [Server thread/INFO]: ThreadedAnvilChunkStorage (sky_dim): All chunks are saved
+[20:15:58] [Server thread/INFO]: ThreadedAnvilChunkStorage (mining_dim): All chunks are saved
+[20:15:58] [Server thread/INFO]: ThreadedAnvilChunkStorage (hunting_dim): All chunks are saved
+[20:15:58] [Server thread/INFO]: ThreadedAnvilChunkStorage (caving_dim): All chunks are saved
+[20:15:58] [Server thread/INFO]: ThreadedAnvilChunkStorage (climbing_dim): All chunks are saved
+[20:15:58] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[20:16:01] [Server thread/INFO]: Dispatching unloading event for config at tradingpost-server.toml

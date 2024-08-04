@@ -3999,6 +3999,12 @@
     },
     "done": true
   },
+  "travelersbackpack:recipes/misc/squid_smithing": {
+    "criteria": {
+      "has_squid": "2024-08-04 20:13:30 +0000"
+    },
+    "done": true
+  },
   "cinderscapes:recipes/redstone/comparator": {
     "criteria": {
       "has_quartz": "2024-08-04 17:54:44 +0000"
@@ -4038,6 +4044,12 @@
   "cinderscapes:recipes/redstone/daylight_detector": {
     "criteria": {
       "has_quartz": "2024-08-04 17:54:44 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/black_glazed_terracotta": {
+    "criteria": {
+      "has_black_terracotta": "2024-08-04 20:03:06 +0000"
     },
     "done": true
   },
