@@ -261,3 +261,19 @@
 [17:50:46] [Server thread/INFO]: Receiving client config
 [17:51:40] [Server thread/INFO]: MarceX has completed the challenge [Serious Dedication]
 [18:06:00] [Server thread/INFO]: [MarceX: Gave 1 [Smithing Template] to MarceX]
+[18:10:00] [Server thread/INFO]: MarceX has made the advancement [Intruder Alert]
+[18:10:06] [Server thread/INFO]: _jose_diaz_ has made the advancement [Intruder Alert]
+[18:12:22] [Server thread/INFO]: Reder was slain by Zombie
+[18:13:37] [Server thread/INFO]: [STDOUT]: class_1639['Wither Skeleton'/21724, l='ServerLevel[world]', x=98.50, y=-23.00, z=-90.50]
+[18:13:54] [Worker-Main-2/WARN]: Couldn't find template pool reference: ctov:village/vampirism/totem
+[18:13:54] [Worker-Main-2/WARN]: Couldn't find template pool reference: ctov:village/bounty/plains
+[18:13:54] [Worker-Main-2/WARN]: Couldn't find template pool reference: ctov:village/waystone/normal
+[18:14:10] [Worker-Main-3/WARN]: Couldn't find template pool reference: ctov:village/bounty/plains
+[18:14:10] [Worker-Main-3/WARN]: Couldn't find template pool reference: ctov:village/waystone/normal
+[18:14:10] [Worker-Main-3/WARN]: Couldn't find template pool reference: ctov:village/vampirism/totem
+[18:14:21] [Worker-Main-3/ERROR]: Block-attached entity at invalid position: class_2338{x=202, y=47, z=211}
+[18:15:41] [Server thread/INFO]: [STDOUT]: class_1639['Wither Skeleton'/24142, l='ServerLevel[world]', x=5.50, y=71.00, z=29.50]
+[18:15:41] [Server thread/INFO]: [STDOUT]: class_1639['Wither Skeleton'/24143, l='ServerLevel[world]', x=5.50, y=71.00, z=27.50]
+[18:15:41] [Server thread/INFO]: [STDOUT]: class_1639['Wither Skeleton'/24144, l='ServerLevel[world]', x=2.50, y=71.00, z=28.50]
+[18:15:41] [Server thread/INFO]: [STDOUT]: class_1639['Wither Skeleton'/24145, l='ServerLevel[world]', x=1.50, y=71.00, z=18.50]
+[18:16:35] [Server thread/INFO]: MarceX has made the advancement [Hot Stuff]

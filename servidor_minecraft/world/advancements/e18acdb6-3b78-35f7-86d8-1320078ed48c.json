@@ -828,6 +828,7 @@
       "bread": "2024-07-30 23:57:07 +0000",
       "honey_bottle": "2024-07-30 14:31:46 +0000",
       "rotten_flesh": "2024-07-28 20:49:29 +0000",
+      "cooked_mutton": "2024-08-04 18:14:04 +0000",
       "glow_berries": "2024-07-28 21:19:45 +0000",
       "dried_kelp": "2024-07-28 20:39:55 +0000",
       "cooked_beef": "2024-07-28 20:53:43 +0000",
@@ -3635,6 +3636,12 @@
   "minecraft:recipes/misc/diamond": {
     "criteria": {
       "has_diamond_block": "2024-08-04 17:58:28 +0000"
+    },
+    "done": true
+  },
+  "travelersbackpack:recipes/misc/creeper": {
+    "criteria": {
+      "has_gunpowder": "2024-08-04 18:14:14 +0000"
     },
     "done": true
   },
