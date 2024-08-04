@@ -288,3 +288,11 @@
 [18:26:52] [Server thread/INFO]: Reder joined the game
 [18:26:52] [Server thread/INFO]: Receiving client config
 [18:27:01] [Server thread/INFO]: [Reder: Teleported Reder to MarceX]
+[18:36:12] [Server thread/WARN]: MarceX moved too quickly! 0.5965438419449072,-9.492513925739674,-4.251646369834873
+[18:36:16] [Server thread/WARN]: MarceX moved too quickly! 3.1874313929513605,-0.3794785456252695,9.474227539639855
+[18:36:59] [Server thread/WARN]: MarceX moved too quickly! 0.2156438749633196,-11.233119618979792,0.5633740050465974
+[18:38:54] [Server thread/INFO]: MarceX fell out of the world
+[18:38:58] [Server thread/INFO]: [MarceX: Teleported MarceX to Reder]
+[18:39:03] [Server thread/INFO]: [MarceX: Teleported MarceX to Reder]
+[18:39:07] [Server thread/INFO]: MarceX fell out of the world
+[18:39:10] [Server thread/INFO]: [MarceX: Teleported MarceX to Reder]
