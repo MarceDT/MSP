@@ -3632,5 +3632,11 @@
     },
     "done": true
   },
+  "bosses_of_mass_destruction:recipes/void_lily": {
+    "criteria": {
+      "has_amethyst_shard": "2024-08-04 17:54:49 +0000"
+    },
+    "done": true
+  },
   "DataVersion": 3953
 }

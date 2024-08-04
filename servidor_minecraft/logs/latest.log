@@ -246,3 +246,17 @@
 [17:44:35] [Worker-Main-2/WARN]: Tried to access a block entity before it was created. class_2338{x=-777, y=66, z=1231}
 [17:44:35] [Worker-Main-2/WARN]: Tried to access a block entity before it was created. class_2338{x=-777, y=66, z=1231}
 [17:44:37] [Server thread/WARN]: Tried to load a block entity for block Block{fwaystones:waystone}[active=false,facing=west,generated=true,half=upper,mossy=false,waterlogged=false] but failed at location class_2338{x=-777, y=66, z=1231}
+[17:47:51] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 3077ms or 61 ticks behind
+[17:47:59] [Server thread/INFO]: _jose_diaz_[/100.64.45.92:51962] logged in with entity id 9905 at (65.12988073901452, 64.0, -8.575671823376437)
+[17:47:59] [Server thread/INFO]: Sending server config values to client
+[17:47:59] [Server thread/INFO]: Loading config from file...
+[17:47:59] [Server thread/INFO]: _jose_diaz_ joined the game
+[17:48:00] [Server thread/INFO]: Receiving client config
+[17:49:19] [Server thread/INFO]: Reder lost connection: Disconnected
+[17:49:19] [Server thread/INFO]: Reder left the game
+[17:50:45] [Server thread/INFO]: Reder[/100.66.86.59:56528] logged in with entity id 10332 at (79.32177875240984, 58.0, -10.300000011920929)
+[17:50:45] [Server thread/INFO]: Sending server config values to client
+[17:50:45] [Server thread/INFO]: Loading config from file...
+[17:50:45] [Server thread/INFO]: Reder joined the game
+[17:50:46] [Server thread/INFO]: Receiving client config
+[17:51:40] [Server thread/INFO]: MarceX has completed the challenge [Serious Dedication]

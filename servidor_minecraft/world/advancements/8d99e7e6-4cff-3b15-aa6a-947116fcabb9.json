@@ -3936,12 +3936,6 @@
     },
     "done": true
   },
-  "minecraft:recipes/misc/beacon": {
-    "criteria": {
-      "has_nether_star": "2024-08-03 23:07:59 +0000"
-    },
-    "done": true
-  },
   "minecraft:recipes/misc/emerald_from_blasting_emerald_ore": {
     "criteria": {
       "has_emerald_ore": "2024-08-03 22:43:22 +0000"
@@ -3951,6 +3945,30 @@
   "minecraft:nether/summon_wither": {
     "criteria": {
       "summoned": "2024-08-03 23:07:06 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/beacon": {
+    "criteria": {
+      "has_nether_star": "2024-08-03 23:07:59 +0000"
+    },
+    "done": true
+  },
+  "cinderscapes:recipes/redstone/observer": {
+    "criteria": {
+      "has_quartz": "2024-08-04 17:54:44 +0000"
+    },
+    "done": true
+  },
+  "cinderscapes:recipes/redstone/comparator": {
+    "criteria": {
+      "has_quartz": "2024-08-04 17:54:44 +0000"
+    },
+    "done": true
+  },
+  "cinderscapes:recipes/redstone/daylight_detector": {
+    "criteria": {
+      "has_quartz": "2024-08-04 17:54:44 +0000"
     },
     "done": true
   },
