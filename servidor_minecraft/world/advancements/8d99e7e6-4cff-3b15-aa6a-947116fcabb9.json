@@ -3957,21 +3957,27 @@
     },
     "done": true
   },
+  "cinderscapes:recipes/redstone/observer": {
+    "criteria": {
+      "has_quartz": "2024-08-04 17:54:44 +0000"
+    },
+    "done": true
+  },
+  "cinderscapes:recipes/redstone/comparator": {
+    "criteria": {
+      "has_quartz": "2024-08-04 17:54:44 +0000"
+    },
+    "done": true
+  },
+  "cinderscapes:recipes/redstone/daylight_detector": {
+    "criteria": {
+      "has_quartz": "2024-08-04 17:54:44 +0000"
+    },
+    "done": true
+  },
   "travelersbackpack:recipes/misc/bee": {
     "criteria": {
       "has_honey_bottle": "2024-08-04 18:09:21 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/redstone/crafter": {
-    "criteria": {
-      "has_dropper": "2024-08-04 19:12:53 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/redstone/dark_oak_fence_gate": {
-    "criteria": {
-      "has_planks": "2024-08-04 18:10:27 +0000"
     },
     "done": true
   },
@@ -3981,33 +3987,27 @@
     },
     "done": false
   },
+  "nova_structures:adventure/find_pillager_outpost": {
+    "criteria": {
+      "minecraft:pillager_outpost": "2024-08-04 18:10:06 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/dark_oak_fence_gate": {
+    "criteria": {
+      "has_planks": "2024-08-04 18:10:27 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/redstone/dark_oak_trapdoor": {
     "criteria": {
       "has_planks": "2024-08-04 18:10:27 +0000"
     },
     "done": true
   },
-  "cinderscapes:recipes/redstone/observer": {
-    "criteria": {
-      "has_quartz": "2024-08-04 17:54:44 +0000"
-    },
-    "done": true
-  },
   "minecraft:recipes/redstone/dark_oak_button": {
     "criteria": {
       "has_planks": "2024-08-04 18:10:27 +0000"
-    },
-    "done": true
-  },
-  "travelersbackpack:recipes/misc/squid_smithing": {
-    "criteria": {
-      "has_squid": "2024-08-04 20:13:30 +0000"
-    },
-    "done": true
-  },
-  "cinderscapes:recipes/redstone/comparator": {
-    "criteria": {
-      "has_quartz": "2024-08-04 17:54:44 +0000"
     },
     "done": true
   },
@@ -4041,15 +4041,9 @@
     },
     "done": true
   },
-  "cinderscapes:recipes/redstone/daylight_detector": {
+  "minecraft:recipes/decorations/dark_oak_sign": {
     "criteria": {
-      "has_quartz": "2024-08-04 17:54:44 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/black_glazed_terracotta": {
-    "criteria": {
-      "has_black_terracotta": "2024-08-04 20:03:06 +0000"
+      "has_planks": "2024-08-04 18:10:27 +0000"
     },
     "done": true
   },
@@ -4059,15 +4053,51 @@
     },
     "done": true
   },
-  "nova_structures:adventure/find_pillager_outpost": {
+  "minecraft:recipes/redstone/crafter": {
     "criteria": {
-      "minecraft:pillager_outpost": "2024-08-04 18:10:06 +0000"
+      "has_dropper": "2024-08-04 19:12:53 +0000"
     },
     "done": true
   },
-  "minecraft:recipes/decorations/dark_oak_sign": {
+  "minecraft:recipes/decorations/black_glazed_terracotta": {
     "criteria": {
-      "has_planks": "2024-08-04 18:10:27 +0000"
+      "has_black_terracotta": "2024-08-04 20:03:06 +0000"
+    },
+    "done": true
+  },
+  "travelersbackpack:recipes/misc/squid_smithing": {
+    "criteria": {
+      "has_squid": "2024-08-04 20:13:30 +0000"
+    },
+    "done": true
+  },
+  "travelersbackpack:recipes/misc/wolf_smithing": {
+    "criteria": {
+      "has_wolf": "2024-08-04 21:11:03 +0000"
+    },
+    "done": true
+  },
+  "travelersbackpack:recipes/misc/lapis_smithing": {
+    "criteria": {
+      "has_lapis": "2024-08-04 21:13:16 +0000"
+    },
+    "done": true
+  },
+  "travelersbackpack:recipes/misc/iron_smithing": {
+    "criteria": {
+      "has_iron": "2024-08-04 21:12:02 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/redstone_lamp": {
+    "criteria": {
+      "has_glowstone": "2024-08-04 21:57:39 +0000"
+    },
+    "done": true
+  },
+  "minecraft:husbandry/plant_seed": {
+    "criteria": {
+      "wheat": "2024-08-04 20:30:20 +0000"
     },
     "done": true
   },

@@ -1,1341 +1,864 @@
-2024/08/04 17:36:26 logtail started
-2024/08/04 17:36:26 Program starting: v1.68.1-tf02ad8397-g8f9cb4763, Go 1.22.4: []string{"./tailscaled"}
-2024/08/04 17:36:26 LogID: 5469b3b11667bbe90b5a48688667ff878cd931d638109cb721ce768b76ef5e2f
-2024/08/04 17:36:26 logpolicy: using system state directory "/var/lib/tailscale"
-2024/08/04 17:36:26 dns: resolvedIsActuallyResolver error: resolv.conf doesn't point to systemd-resolved; points to [127.0.0.53 168.63.129.16]
-2024/08/04 17:36:26 dns: [rc=resolved resolved=not-in-use ret=direct]
-2024/08/04 17:36:26 dns: using "direct" mode
-2024/08/04 17:36:26 dns: using *dns.directManager
-2024/08/04 17:36:26 wgengine.NewUserspaceEngine(tun "tailscale0") ...
-2024/08/04 17:36:27 dns: resolvedIsActuallyResolver error: resolv.conf doesn't point to systemd-resolved; points to [127.0.0.53 168.63.129.16]
-2024/08/04 17:36:27 dns: [rc=resolved resolved=not-in-use ret=direct]
-2024/08/04 17:36:27 dns: using "direct" mode
-2024/08/04 17:36:27 dns: using *dns.directManager
-2024/08/04 17:36:27 link state: interfaces.State{defaultRoute=eth0 ifs={docker0:[172.17.0.1/16] eth0:[10.0.1.157/16 llu6]} v4=true v6=false}
-2024/08/04 17:36:27 onPortUpdate(port=49032, network=udp6)
-2024/08/04 17:36:27 router: using firewall mode pref 
-2024/08/04 17:36:27 router: default choosing iptables
-2024/08/04 17:36:27 router: ip6tables filtering is not supported on this host: running [/usr/sbin/ip6tables -t filter -S --wait]: exit status 3: ip6tables v1.8.4 (legacy): can't initialize ip6tables table `filter': Table does not exist (do you need to insmod?)
+2024/08/04 20:16:49 logtail started
+2024/08/04 20:16:49 Program starting: v1.68.1-tf02ad8397-g8f9cb4763, Go 1.22.4: []string{"./tailscaled"}
+2024/08/04 20:16:49 LogID: 5469b3b11667bbe90b5a48688667ff878cd931d638109cb721ce768b76ef5e2f
+2024/08/04 20:16:49 logpolicy: using system state directory "/var/lib/tailscale"
+2024/08/04 20:16:49 dns: resolvedIsActuallyResolver error: resolv.conf doesn't point to systemd-resolved; points to [127.0.0.53 168.63.129.16]
+2024/08/04 20:16:49 dns: [rc=resolved resolved=not-in-use ret=direct]
+2024/08/04 20:16:49 dns: using "direct" mode
+2024/08/04 20:16:49 dns: using *dns.directManager
+2024/08/04 20:16:49 wgengine.NewUserspaceEngine(tun "tailscale0") ...
+2024/08/04 20:16:49 dns: resolvedIsActuallyResolver error: resolv.conf doesn't point to systemd-resolved; points to [127.0.0.53 168.63.129.16]
+2024/08/04 20:16:49 dns: [rc=resolved resolved=not-in-use ret=direct]
+2024/08/04 20:16:49 dns: using "direct" mode
+2024/08/04 20:16:49 dns: using *dns.directManager
+2024/08/04 20:16:49 link state: interfaces.State{defaultRoute=eth0 ifs={docker0:[172.17.0.1/16] eth0:[10.0.1.157/16 llu6]} v4=true v6=false}
+2024/08/04 20:16:49 onPortUpdate(port=49066, network=udp6)
+2024/08/04 20:16:49 router: using firewall mode pref 
+2024/08/04 20:16:49 router: default choosing iptables
+2024/08/04 20:16:49 router: ip6tables filtering is not supported on this host: running [/usr/sbin/ip6tables -t filter -S --wait]: exit status 3: ip6tables v1.8.4 (legacy): can't initialize ip6tables table `filter': Table does not exist (do you need to insmod?)
 Perhaps ip6tables or your kernel needs to be upgraded.
-2024/08/04 17:36:27 router: netfilter running in iptables mode v6 = true, v6filter = false, v6nat = false
-2024/08/04 17:36:27 onPortUpdate(port=48415, network=udp4)
-2024/08/04 17:36:27 magicsock: disco key = d:7d905ec38f4a664b
-2024/08/04 17:36:27 Creating WireGuard device...
-2024/08/04 17:36:27 Bringing WireGuard device up...
-2024/08/04 17:36:27 Bringing router up...
-2024/08/04 17:36:27 external route: up
-2024/08/04 17:36:27 Clearing router settings...
-2024/08/04 17:36:27 Starting network monitor...
-2024/08/04 17:36:27 Engine created.
-2024/08/04 17:36:27 monitor: [unexpected] network state changed, but stringification didn't: interfaces.State{defaultRoute=eth0 ifs={docker0:[172.17.0.1/16] eth0:[10.0.1.157/16 llu6]} v4=true v6=false}
-2024/08/04 17:36:27 monitor: [unexpected] old: {"InterfaceIPs":{"docker0":["172.17.0.1/16"],"eth0":["10.0.1.157/16","fe80::20d:3aff:fee3:358d/64"],"lo":["127.0.0.1/8","::1/128"]},"Interface":{"docker0":{"Index":3,"MTU":1500,"Name":"docker0","HardwareAddr":"AkLuwoXz","Flags":19,"AltAddrs":null,"Desc":""},"eth0":{"Index":2,"MTU":1500,"Name":"eth0","HardwareAddr":"AA064zWN","Flags":51,"AltAddrs":null,"Desc":""},"lo":{"Index":1,"MTU":65536,"Name":"lo","HardwareAddr":null,"Flags":37,"AltAddrs":null,"Desc":""}},"HaveV6":false,"HaveV4":true,"IsExpensive":false,"DefaultRouteInterface":"eth0","HTTPProxy":"","PAC":""}
-2024/08/04 17:36:27 monitor: [unexpected] new: {"InterfaceIPs":{"docker0":["172.17.0.1/16"],"eth0":["10.0.1.157/16","fe80::20d:3aff:fee3:358d/64"],"lo":["127.0.0.1/8","::1/128"],"tailscale0":["fe80::a404:3cdd:b952:c169/64"]},"Interface":{"docker0":{"Index":3,"MTU":1500,"Name":"docker0","HardwareAddr":"AkLuwoXz","Flags":19,"AltAddrs":null,"Desc":""},"eth0":{"Index":2,"MTU":1500,"Name":"eth0","HardwareAddr":"AA064zWN","Flags":51,"AltAddrs":null,"Desc":""},"lo":{"Index":1,"MTU":65536,"Name":"lo","HardwareAddr":null,"Flags":37,"AltAddrs":null,"Desc":""},"tailscale0":{"Index":4,"MTU":1280,"Name":"tailscale0","HardwareAddr":null,"Flags":57,"AltAddrs":null,"Desc":""}},"HaveV6":false,"HaveV4":true,"IsExpensive":false,"DefaultRouteInterface":"eth0","HTTPProxy":"","PAC":""}
-2024/08/04 17:36:27 LinkChange: major, rebinding. New state: interfaces.State{defaultRoute=eth0 ifs={docker0:[172.17.0.1/16] eth0:[10.0.1.157/16 llu6]} v4=true v6=false}
-2024/08/04 17:36:27 onPortUpdate(port=49032, network=udp6)
-2024/08/04 17:36:27 onPortUpdate(port=48415, network=udp4)
-2024/08/04 17:36:27 Rebind; defIf="eth0", ips=[10.0.1.157/16 fe80::20d:3aff:fee3:358d/64]
-2024/08/04 17:36:27 magicsock: 0 active derp conns
-2024/08/04 17:36:27 monitor: gateway and self IP changed: gw=10.0.0.1 self=10.0.1.157
-2024/08/04 17:36:27 pm: using backend prefs for "profile-7fa0": Prefs{ra=false dns=true want=true routes=[] statefulFiltering=false nf=on update=check Persist{lm=, o=, n=[OH/SP] u="marceivandenis@gmail.com"}}
-2024/08/04 17:36:27 logpolicy: using system state directory "/var/lib/tailscale"
-2024/08/04 17:36:27 got LocalBackend in 26ms
-2024/08/04 17:36:27 Start
-2024/08/04 17:36:28 timeout waiting for initial portlist
-2024/08/04 17:36:28 Backend: logs: be:5469b3b11667bbe90b5a48688667ff878cd931d638109cb721ce768b76ef5e2f fe:
-2024/08/04 17:36:28 control: client.Login(0)
-2024/08/04 17:36:28 health("overall"): error: not in map poll
-2024/08/04 17:36:28 control: doLogin(regen=false, hasUrl=false)
-2024/08/04 17:36:28 control: control server key from https://controlplane.tailscale.com: ts2021=[fSeS+], legacy=[nlFWp]
-2024/08/04 17:36:28 control: RegisterReq: onode= node=[OH/SP] fup=false nks=false
-2024/08/04 17:36:28 control: RegisterReq: got response; nodeKeyExpired=false, machineAuthorized=true; authURL=false
-2024/08/04 17:36:28 control: netmap: got new dial plan from control
-2024/08/04 17:36:28 active login: marceivandenis@gmail.com
-2024/08/04 17:36:28 Switching ipn state NoState -> Starting (WantRunning=true, nm=true)
-2024/08/04 17:36:28 magicsock: SetPrivateKey called (init)
-2024/08/04 17:36:28 wgengine: Reconfig: configuring userspace WireGuard config (with 0/4 peers)
-2024/08/04 17:36:28 wgengine: Reconfig: configuring router
-2024/08/04 17:36:28 wgengine: Reconfig: configuring DNS
-2024/08/04 17:36:28 dns: Set: {DefaultResolvers:[] Routes:{tailff5cfc.ts.net.:[] ts.net.:[199.247.155.53 2620:111:8007::53]}+65arpa SearchDomains:[tailff5cfc.ts.net.] Hosts:3}
-2024/08/04 17:36:28 dns: Resolvercfg: {Routes:{.:[127.0.0.53 168.63.129.16] ts.net.:[199.247.155.53 2620:111:8007::53]} Hosts:3 LocalDomains:[tailff5cfc.ts.net.]+65arpa, cloud="azure"}
-2024/08/04 17:36:28 dns: OScfg: {Nameservers:[100.100.100.100] SearchDomains:[tailff5cfc.ts.net. as3oyaxyermercpknrxo0v1cld.cx.internal.cloudapp.net.] }
-2024/08/04 17:36:28 rename of "/etc/resolv.conf" to "/etc/resolv.pre-tailscale-backup.conf" failed (rename /etc/resolv.conf /etc/resolv.pre-tailscale-backup.conf: device or resource busy), falling back to copy+delete
-2024/08/04 17:36:28 restarted resolved after 1ms
-2024/08/04 17:36:28 peerapi: serving on http://100.77.104.102:57923
-2024/08/04 17:36:28 peerapi: serving on http://[fd7a:115c:a1e0::3501:6867]:42609
-2024/08/04 17:36:29 magicsock: home is now derp-21 (tor)
-2024/08/04 17:36:29 magicsock: adding connection to derp-21 for home-keep-alive
-2024/08/04 17:36:29 control: NetInfo: NetInfo{varies=false hairpin= ipv6=false ipv6os=true udp=true icmpv4=false derp=#21 portmap= link="" firewallmode="ipt-default"}
-2024/08/04 17:36:29 magicsock: 1 active derp conns: derp-21=cr0s,wr0s
-2024/08/04 17:36:29 Switching ipn state Starting -> Running (WantRunning=true, nm=true)
-2024/08/04 17:36:29 magicsock: endpoints changed: 172.210.174.83:1024 (stun), 10.0.1.157:48415 (local), 172.17.0.1:48415 (local)
-2024/08/04 17:36:29 derphttp.Client.Connect: connecting to derp-21 (tor)
-2024/08/04 17:36:29 magicsock: derp-21 connected; connGen=1
-2024/08/04 17:36:29 health("overall"): ok
-2024/08/04 17:36:31 wgengine: idle peer [Lzp+I] now active, reconfiguring WireGuard
-2024/08/04 17:36:31 wgengine: Reconfig: configuring userspace WireGuard config (with 1/4 peers)
-2024/08/04 17:36:31 magicsock: disco: node [Lzp+I] d:49d667dea604ffc9 now using 181.126.171.254:41641 mtu=1360 tx=69b36f55c8bb
-2024/08/04 17:36:31 Accept: TCP{100.66.86.59:56167 > 100.77.104.102:25565} 52 tcp ok
-2024/08/04 17:36:31 Accept: TCP{100.66.86.59:56168 > 100.77.104.102:25565} 52 tcp ok
-2024/08/04 17:36:31 Accept: TCP{100.77.104.102:25565 > 100.66.86.59:56167} 40 ok out
-2024/08/04 17:36:42 Accept: TCP{100.66.86.59:56193 > 100.77.104.102:25565} 52 tcp ok
-2024/08/04 17:36:52 Accept: TCP{100.66.86.59:56197 > 100.77.104.102:25565} 52 tcp ok
-2024/08/04 17:37:03 Accept: TCP{100.66.86.59:56205 > 100.77.104.102:25565} 52 tcp ok
-2024/08/04 17:37:11 wgengine: idle peer [BLsGf] now active, reconfiguring WireGuard
-2024/08/04 17:37:11 wgengine: Reconfig: configuring userspace WireGuard config (with 2/4 peers)
-2024/08/04 17:37:11 magicsock: disco: node [BLsGf] d:e17e23714b3c1c2c now using 186.158.200.226:16501 mtu=1360 tx=74af40d2402e
-2024/08/04 17:37:12 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:37:21 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:37:31 Accept: TCP{100.66.86.59:56211 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 17:37:41 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:37:51 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:38:01 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 599 ok out
-2024/08/04 17:38:11 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:38:17 magicsock: adding connection to derp-11 for [BLsGf]
-2024/08/04 17:38:17 magicsock: 2 active derp conns: derp-11=cr0s,wr0s derp-21=cr2m0s,wr1m0s
-2024/08/04 17:38:17 derphttp.Client.Recv: connecting to derp-11 (sao)
-2024/08/04 17:38:17 magicsock: derp-11 connected; connGen=1
-2024/08/04 17:38:21 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 235 ok out
-2024/08/04 17:38:31 Accept: TCP{100.77.104.102:25565 > 100.66.86.59:56211} 261 ok out
-2024/08/04 17:38:41 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:38:51 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 357 ok out
-2024/08/04 17:39:01 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 359 ok out
-2024/08/04 17:39:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 188 ok out
-2024/08/04 17:39:17 magicsock: closing connection to derp-11 (idle), age 1m0s
-2024/08/04 17:39:17 magicsock: 1 active derp conns: derp-21=cr3m0s,wr2m0s
-2024/08/04 17:39:20 magicsock: adding connection to derp-11 for [BLsGf]
-2024/08/04 17:39:20 magicsock: 2 active derp conns: derp-11=cr0s,wr0s derp-21=cr3m0s,wr2m0s
-2024/08/04 17:39:20 derphttp.Client.Recv: connecting to derp-11 (sao)
-2024/08/04 17:39:20 magicsock: derp-11 connected; connGen=1
-2024/08/04 17:39:21 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 256 ok out
-2024/08/04 17:39:31 Accept: TCP{100.66.86.59:56211 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:39:41 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 325 ok out
-2024/08/04 17:39:51 Accept: TCP{100.66.86.59:56211 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:40:01 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:40:11 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:40:20 magicsock: closing connection to derp-11 (idle), age 1m0s
-2024/08/04 17:40:20 magicsock: 1 active derp conns: derp-21=cr4m0s,wr3m0s
-2024/08/04 17:40:21 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:40:23 magicsock: adding connection to derp-11 for [BLsGf]
-2024/08/04 17:40:23 magicsock: 2 active derp conns: derp-11=cr0s,wr0s derp-21=cr4m0s,wr3m0s
-2024/08/04 17:40:23 derphttp.Client.Send: connecting to derp-11 (sao)
-2024/08/04 17:40:23 magicsock: derp-11 connected; connGen=1
-2024/08/04 17:40:31 Accept: TCP{100.66.86.59:56211 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:40:41 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:40:51 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:41:01 Accept: TCP{100.66.86.59:56211 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 17:41:11 Accept: TCP{100.66.86.59:56211 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:41:21 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:41:23 magicsock: closing connection to derp-11 (idle), age 1m0s
-2024/08/04 17:41:23 magicsock: 1 active derp conns: derp-21=cr5m0s,wr4m0s
-2024/08/04 17:41:26 magicsock: adding connection to derp-11 for [BLsGf]
-2024/08/04 17:41:26 magicsock: 2 active derp conns: derp-11=cr0s,wr0s derp-21=cr5m0s,wr4m0s
-2024/08/04 17:41:26 derphttp.Client.Send: connecting to derp-11 (sao)
-2024/08/04 17:41:26 magicsock: derp-11 connected; connGen=1
-2024/08/04 17:41:31 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:41:41 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 47 tcp non-syn
-2024/08/04 17:41:51 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:42:01 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:42:11 Accept: TCP{100.66.86.59:56211 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:42:21 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 96 ok out
-2024/08/04 17:42:31 Accept: TCP{100.66.86.59:56211 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:42:41 Accept: TCP{100.66.86.59:56211 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:42:51 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 201 ok out
-2024/08/04 17:43:01 Accept: TCP{100.66.86.59:56211 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:43:11 Accept: TCP{100.66.86.59:56211 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:43:21 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:43:31 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:43:41 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:43:51 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:44:01 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 17:44:11 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:44:21 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:44:31 Accept: TCP{100.66.86.59:56211 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:44:41 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:44:51 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 17:45:01 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 17:45:11 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 17:45:21 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 45 tcp non-syn
-2024/08/04 17:45:31 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 54 tcp non-syn
-2024/08/04 17:45:41 magicsock: closing connection to derp-11 (idle), age 4m15s
-2024/08/04 17:45:41 magicsock: 1 active derp conns: derp-21=cr9m0s,wr9m0s
-2024/08/04 17:45:41 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 17:45:51 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 432 ok out
-2024/08/04 17:46:01 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:46:11 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:46:21 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 430 ok out
-2024/08/04 17:46:31 Accept: TCP{100.66.86.59:56211 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:46:41 Accept: TCP{100.66.86.59:56211 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:46:51 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 210 ok out
-2024/08/04 17:47:01 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 17:47:11 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 46 tcp non-syn
-2024/08/04 17:47:21 Accept: TCP{100.66.86.59:56211 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:47:31 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:47:41 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:47:51 Accept: TCP{100.77.104.102:25565 > 100.66.86.59:56211} 189 ok out
-2024/08/04 17:47:56 wgengine: idle peer [YwsNZ] now active, reconfiguring WireGuard
-2024/08/04 17:47:56 wgengine: Reconfig: configuring userspace WireGuard config (with 3/4 peers)
-2024/08/04 17:47:56 magicsock: disco: node [YwsNZ] d:ced8eef4e2b219cc now using 148.222.129.48:8047 mtu=1360 tx=aa926dc526dc
-2024/08/04 17:48:01 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:48:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 247 ok out
-2024/08/04 17:48:21 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:48:31 Accept: TCP{100.66.86.59:56211 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:48:41 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 159 ok out
-2024/08/04 17:48:51 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 40 ok out
-2024/08/04 17:49:01 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:49:11 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 17:49:21 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:49:31 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 275 ok out
-2024/08/04 17:49:41 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:51962} 40 ok out
-2024/08/04 17:49:51 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 363 ok out
-2024/08/04 17:50:01 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 176 ok out
-2024/08/04 17:50:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 196 ok out
-2024/08/04 17:50:21 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 114 ok out
-2024/08/04 17:50:31 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 240 ok out
-2024/08/04 17:50:41 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 202 ok out
-2024/08/04 17:50:51 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 203 ok out
-2024/08/04 17:51:01 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 257 ok out
-2024/08/04 17:51:11 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:51:21 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 17:51:31 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 17:51:41 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 17:51:51 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 17:52:01 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:52:11 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 17:52:21 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 17:52:31 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:52:41 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:52:51 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 17:53:01 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:53:11 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:53:21 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:53:31 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:53:41 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:53:51 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:54:01 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 17:54:11 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 17:54:21 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:54:31 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:54:41 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 17:54:51 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 17:55:01 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 296 ok out
-2024/08/04 17:55:11 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:55:21 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:55:31 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:55:41 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:55:51 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:56:01 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 17:56:11 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:56:21 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:56:31 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:56:41 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:56:51 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:57:01 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 226 ok out
-2024/08/04 17:57:11 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:57:21 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 210 ok out
-2024/08/04 17:57:31 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:57:41 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:57:51 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 330 ok out
-2024/08/04 17:58:01 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 225 ok out
-2024/08/04 17:58:11 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 47 tcp non-syn
-2024/08/04 17:58:21 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:58:31 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:58:41 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:58:51 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:59:01 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 17:59:11 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 44 tcp non-syn
-2024/08/04 17:59:21 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:59:31 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 369 ok out
-2024/08/04 17:59:41 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 17:59:51 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:00:01 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 328 ok out
-2024/08/04 18:00:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 210 ok out
-2024/08/04 18:00:21 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 377 ok out
-2024/08/04 18:00:31 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:00:41 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:00:51 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:01:01 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:01:11 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 84 tcp non-syn
-2024/08/04 18:01:21 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 47 tcp non-syn
-2024/08/04 18:01:31 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:01:41 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 61 tcp non-syn
-2024/08/04 18:01:48 magicsock: home is now derp-1 (nyc)
-2024/08/04 18:01:48 health("overall"): error: not connected to home DERP region 1
-2024/08/04 18:01:48 magicsock: adding connection to derp-1 for home-keep-alive
-2024/08/04 18:01:48 control: NetInfo: NetInfo{varies=false hairpin= ipv6=false ipv6os=true udp=true icmpv4=false derp=#1 portmap= link="" firewallmode="ipt-default"}
-2024/08/04 18:01:48 magicsock: 2 active derp conns: derp-1=cr0s,wr0s derp-21=cr25m0s,wr10m0s
-2024/08/04 18:01:48 derphttp.Client.Recv: connecting to derp-1 (nyc)
-2024/08/04 18:01:48 magicsock: derp-1 connected; connGen=1
-2024/08/04 18:01:48 health("overall"): ok
-2024/08/04 18:01:51 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:02:01 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 221 ok out
-2024/08/04 18:02:03 magicsock: closing connection to derp-21 (idle), age 25m35s
-2024/08/04 18:02:03 magicsock: 1 active derp conns: derp-1=cr15s,wr15s
-2024/08/04 18:02:11 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:02:21 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:02:31 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:02:41 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:02:51 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:03:01 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:03:11 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:03:21 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:03:31 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:03:41 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 52 tcp non-syn
-2024/08/04 18:03:51 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:04:01 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 363 ok out
-2024/08/04 18:04:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 226 ok out
-2024/08/04 18:04:21 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:04:31 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:04:41 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:04:51 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:05:01 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 498 ok out
-2024/08/04 18:05:11 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:05:21 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:05:31 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:05:41 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:05:51 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:06:01 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 294 ok out
-2024/08/04 18:06:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 218 ok out
-2024/08/04 18:06:21 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 210 ok out
-2024/08/04 18:06:31 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:06:41 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:06:51 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:07:01 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:07:11 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:07:15 magicsock: home is now derp-21 (tor)
-2024/08/04 18:07:15 health("overall"): error: not connected to home DERP region 21
-2024/08/04 18:07:15 magicsock: adding connection to derp-21 for home-keep-alive
-2024/08/04 18:07:15 magicsock: 2 active derp conns: derp-1=cr5m0s,wr13s derp-21=cr0s,wr0s
-2024/08/04 18:07:15 control: NetInfo: NetInfo{varies=false hairpin= ipv6=false ipv6os=true udp=true icmpv4=false derp=#21 portmap= link="" firewallmode="ipt-default"}
-2024/08/04 18:07:15 derphttp.Client.Recv: connecting to derp-21 (tor)
-2024/08/04 18:07:15 magicsock: derp-21 connected; connGen=1
-2024/08/04 18:07:15 health("overall"): ok
-2024/08/04 18:07:21 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:07:31 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:07:41 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 18:07:51 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:08:01 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:08:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 203 ok out
-2024/08/04 18:08:21 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:08:31 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:08:38 magicsock: adding connection to derp-11 for [BLsGf]
-2024/08/04 18:08:38 magicsock: 3 active derp conns: derp-1=cr7m0s,wr36s derp-11=cr0s,wr0s derp-21=cr1m0s,wr1m0s
-2024/08/04 18:08:38 derphttp.Client.Send: connecting to derp-11 (sao)
-2024/08/04 18:08:38 magicsock: derp-11 connected; connGen=1
-2024/08/04 18:08:41 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 44 tcp non-syn
-2024/08/04 18:08:51 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 52 tcp non-syn
-2024/08/04 18:09:01 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:09:11 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:09:15 magicsock: closing connection to derp-1 (idle), age 7m27s
-2024/08/04 18:09:15 magicsock: 2 active derp conns: derp-11=cr37s,wr13s derp-21=cr2m0s,wr2m0s
-2024/08/04 18:09:21 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:09:31 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 225 ok out
-2024/08/04 18:09:41 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 177 ok out
-2024/08/04 18:09:51 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:10:01 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:10:11 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 18:10:21 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 45 tcp non-syn
-2024/08/04 18:10:31 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:10:41 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:10:51 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:11:01 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:11:11 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:11:21 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:11:31 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:11:41 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 52 tcp non-syn
-2024/08/04 18:11:51 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:12:01 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 51 tcp non-syn
-2024/08/04 18:12:11 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 18:12:21 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 18:12:31 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:12:41 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:12:51 Accept: TCP{100.77.104.102:25565 > 100.66.86.59:56528} 40 ok out
-2024/08/04 18:13:01 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:13:11 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 52 tcp non-syn
-2024/08/04 18:13:21 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 301 ok out
-2024/08/04 18:13:31 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 44 tcp non-syn
-2024/08/04 18:13:41 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:13:51 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 18:13:54 Received error: PollNetMap: unexpected EOF
-2024/08/04 18:13:55 control: netmap: got new dial plan from control
-2024/08/04 18:14:01 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 18:14:11 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 44 tcp non-syn
-2024/08/04 18:14:21 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:14:31 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 18:14:41 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 40 ok out
-2024/08/04 18:14:51 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:15:01 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:15:11 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:15:21 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:15:31 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 18:15:41 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:15:51 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 18:16:01 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:16:11 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:16:21 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:16:31 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:16:41 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:16:51 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:17:01 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:17:11 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:17:21 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 18:17:31 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 52 tcp non-syn
-2024/08/04 18:17:41 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 18:17:51 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 47 tcp non-syn
-2024/08/04 18:18:01 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:51962} 133 ok out
-2024/08/04 18:18:11 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:18:21 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 52 tcp non-syn
-2024/08/04 18:18:31 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 18:18:41 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 18:18:51 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:19:01 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:51962} 40 ok out
-2024/08/04 18:19:11 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:19:21 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 18:19:31 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:19:41 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:19:51 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:20:01 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 18:20:11 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:20:21 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:20:31 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:20:41 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:20:51 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:21:01 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 55 tcp non-syn
-2024/08/04 18:21:11 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 18:21:21 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:21:31 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 18:21:41 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:21:51 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 183 ok out
-2024/08/04 18:22:01 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:22:11 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:22:21 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 18:22:31 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 18:22:41 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:22:51 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:23:01 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:23:11 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 18:23:21 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:23:31 Accept: TCP{100.77.104.102:25565 > 100.66.86.59:56528} 230 ok out
-2024/08/04 18:23:41 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 18:23:51 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:24:01 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 18:24:11 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 18:24:21 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 18:24:31 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:24:41 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 365 ok out
-2024/08/04 18:24:51 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 212 ok out
-2024/08/04 18:25:01 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:51962} 40 ok out
-2024/08/04 18:25:11 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:25:21 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:25:31 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:25:41 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:25:51 Accept: TCP{100.66.86.59:56528 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:26:01 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:26:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 224 ok out
-2024/08/04 18:26:21 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 196 ok out
-2024/08/04 18:26:31 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:26:41 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 18:26:51 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:27:01 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 115 ok out
-2024/08/04 18:27:11 Accept: TCP{100.66.86.59:56595 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:27:21 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 18:27:31 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:27:41 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 18:27:51 Accept: TCP{100.66.86.59:56595 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:28:01 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:28:11 Accept: TCP{100.66.86.59:56595 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:28:21 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:28:31 Accept: TCP{100.66.86.59:56595 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:28:41 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 52 tcp non-syn
-2024/08/04 18:28:51 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 18:29:01 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 44 tcp non-syn
-2024/08/04 18:29:11 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:29:21 Accept: TCP{100.66.86.59:56595 > 100.77.104.102:25565} 52 tcp non-syn
-2024/08/04 18:29:31 Accept: TCP{100.66.86.59:56595 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:29:41 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 18:29:51 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:30:01 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 18:30:11 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:30:21 Accept: TCP{100.66.86.59:56595 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:30:31 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 18:30:41 Accept: TCP{100.66.86.59:56595 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:30:51 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 113 ok out
-2024/08/04 18:31:01 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:31:11 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 18:31:21 magicsock: home is now derp-1 (nyc)
-2024/08/04 18:31:21 health("overall"): error: not connected to home DERP region 1
-2024/08/04 18:31:21 magicsock: adding connection to derp-1 for home-keep-alive
-2024/08/04 18:31:21 magicsock: 3 active derp conns: derp-1=cr0s,wr0s derp-11=cr23m0s,wr19s derp-21=cr24m0s,wr24m0s
-2024/08/04 18:31:21 control: NetInfo: NetInfo{varies=false hairpin= ipv6=false ipv6os=true udp=true icmpv4=false derp=#1 portmap= link="" firewallmode="ipt-default"}
-2024/08/04 18:31:21 derphttp.Client.Recv: connecting to derp-1 (nyc)
-2024/08/04 18:31:21 magicsock: derp-1 connected; connGen=1
-2024/08/04 18:31:21 health("overall"): ok
-2024/08/04 18:31:21 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 18:31:30 magicsock: closing connection to derp-21 (idle), age 24m15s
-2024/08/04 18:31:30 magicsock: 2 active derp conns: derp-1=cr9s,wr9s derp-11=cr23m0s,wr27s
-2024/08/04 18:31:31 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 54 ok out
-2024/08/04 18:31:41 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:31:51 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 199 ok out
-2024/08/04 18:32:01 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 65 ok out
-2024/08/04 18:32:11 Accept: TCP{100.66.86.59:56595 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:32:21 Accept: TCP{100.66.86.59:56595 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:32:31 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:32:41 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:32:51 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:33:01 Accept: TCP{100.66.86.59:56595 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:33:11 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:33:21 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 79 ok out
-2024/08/04 18:33:31 Accept: TCP{100.66.86.59:56595 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:33:41 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:33:43 magicsock: home is now derp-21 (tor)
-2024/08/04 18:33:43 health("overall"): error: not connected to home DERP region 21
-2024/08/04 18:33:43 magicsock: adding connection to derp-21 for home-keep-alive
-2024/08/04 18:33:43 magicsock: 3 active derp conns: derp-1=cr2m0s,wr2m0s derp-11=cr25m0s,wr41s derp-21=cr0s,wr0s
-2024/08/04 18:33:43 control: NetInfo: NetInfo{varies=false hairpin= ipv6=false ipv6os=true udp=true icmpv4=false derp=#21 portmap= link="" firewallmode="ipt-default"}
-2024/08/04 18:33:43 derphttp.Client.Recv: connecting to derp-21 (tor)
-2024/08/04 18:33:44 magicsock: derp-21 connected; connGen=1
-2024/08/04 18:33:44 health("overall"): ok
-2024/08/04 18:33:45 magicsock: closing connection to derp-1 (idle), age 2m24s
-2024/08/04 18:33:45 magicsock: 2 active derp conns: derp-11=cr25m0s,wr42s derp-21=cr1s,wr1s
-2024/08/04 18:33:51 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:34:01 Accept: TCP{100.66.86.59:56595 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:34:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 113 ok out
-2024/08/04 18:34:21 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:34:31 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 18:34:41 Accept: TCP{100.66.86.59:56595 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:34:51 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 95 ok out
-2024/08/04 18:35:01 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 18:35:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 106 ok out
-2024/08/04 18:35:21 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 18:35:31 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:51962} 216 ok out
-2024/08/04 18:35:41 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:51962} 201 ok out
-2024/08/04 18:35:51 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 18:36:01 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 18:36:11 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:51962} 240 ok out
-2024/08/04 18:36:21 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 300 ok out
-2024/08/04 18:36:31 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 54 ok out
-2024/08/04 18:36:41 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 18:36:51 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:37:01 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 52 tcp non-syn
-2024/08/04 18:37:11 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 18:37:21 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 18:37:31 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:51962} 238 ok out
-2024/08/04 18:37:41 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:51962} 272 ok out
-2024/08/04 18:37:51 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 44 tcp non-syn
-2024/08/04 18:38:01 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 18:38:11 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 44 tcp non-syn
-2024/08/04 18:38:21 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 58 ok out
-2024/08/04 18:38:31 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 52 tcp non-syn
-2024/08/04 18:38:41 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:38:45 magicsock: home is now derp-16 (mia)
-2024/08/04 18:38:45 health("overall"): error: not connected to home DERP region 16
-2024/08/04 18:38:45 magicsock: adding connection to derp-16 for home-keep-alive
-2024/08/04 18:38:45 control: NetInfo: NetInfo{varies=false hairpin= ipv6=false ipv6os=true udp=true icmpv4=false derp=#16 portmap= link="" firewallmode="ipt-default"}
-2024/08/04 18:38:45 magicsock: 3 active derp conns: derp-11=cr30m0s,wr43s derp-16=cr0s,wr0s derp-21=cr5m0s,wr5m0s
-2024/08/04 18:38:45 derphttp.Client.Recv: connecting to derp-16 (mia)
-2024/08/04 18:38:45 magicsock: derp-16 connected; connGen=1
-2024/08/04 18:38:45 health("overall"): ok
-2024/08/04 18:38:51 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 18:39:00 magicsock: closing connection to derp-21 (idle), age 5m16s
-2024/08/04 18:39:00 magicsock: 2 active derp conns: derp-11=cr30m0s,wr11s derp-16=cr14s,wr14s
-2024/08/04 18:39:01 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:39:11 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:39:21 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:39:31 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:39:41 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 18:39:51 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 52 tcp non-syn
-2024/08/04 18:40:01 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 52 tcp non-syn
-2024/08/04 18:40:11 Accept: TCP{100.66.86.59:56595 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:40:21 Accept: TCP{100.66.86.59:56595 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:40:31 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 18:40:41 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 18:40:51 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 47 tcp non-syn
-2024/08/04 18:41:01 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:41:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 62 ok out
-2024/08/04 18:41:21 Accept: TCP{100.66.86.59:56595 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:41:31 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 18:41:41 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 18:41:51 Accept: TCP{100.66.86.59:56595 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:42:01 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 18:42:11 Accept: TCP{100.66.86.59:56595 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:42:21 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 53 ok out
-2024/08/04 18:42:31 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 101 ok out
-2024/08/04 18:42:41 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 18:42:51 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:43:01 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 53 ok out
-2024/08/04 18:43:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 50 ok out
-2024/08/04 18:43:21 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:43:31 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 18:43:41 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:51962} 265 ok out
-2024/08/04 18:43:51 Accept: TCP{100.66.86.59:56595 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:44:01 Accept: TCP{100.66.86.59:56595 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:44:11 Accept: TCP{100.66.86.59:56595 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:44:21 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:51962} 52 ok out
-2024/08/04 18:44:31 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 85 ok out
-2024/08/04 18:44:41 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:44:51 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 53 ok out
-2024/08/04 18:45:01 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 56 ok out
-2024/08/04 18:45:11 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 18:45:21 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:45:31 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:51962} 201 ok out
-2024/08/04 18:45:41 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:51962} 276 ok out
-2024/08/04 18:45:51 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 44 tcp non-syn
-2024/08/04 18:46:01 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:51962} 265 ok out
-2024/08/04 18:46:11 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 18:46:21 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:46:31 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:46:41 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 56 ok out
-2024/08/04 18:46:51 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:51962} 529 ok out
-2024/08/04 18:47:01 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 18:47:11 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:51962} 124 ok out
-2024/08/04 18:47:21 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:51962} 425 ok out
-2024/08/04 18:47:31 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:51962} 376 ok out
-2024/08/04 18:47:41 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:51962} 197 ok out
-2024/08/04 18:47:51 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 18:48:01 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:48:11 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:51962} 240 ok out
-2024/08/04 18:48:21 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:48:31 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:51962} 380 ok out
-2024/08/04 18:48:41 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:51962} 205 ok out
-2024/08/04 18:48:51 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 18:49:01 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:49:11 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:51962} 241 ok out
-2024/08/04 18:49:21 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 52 tcp non-syn
-2024/08/04 18:49:31 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:49:41 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 18:49:51 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 18:50:01 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:51962} 281 ok out
-2024/08/04 18:50:11 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 44 tcp non-syn
-2024/08/04 18:50:21 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:50:31 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 18:50:41 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 40 ok out
-2024/08/04 18:50:51 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 52 tcp non-syn
-2024/08/04 18:51:01 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 18:51:11 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 18:51:21 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:51:31 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:51:41 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 56 ok out
-2024/08/04 18:51:51 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 18:52:01 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 18:52:11 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:51962} 258 ok out
-2024/08/04 18:52:21 Accept: TCP{100.66.86.59:56595 > 100.77.104.102:25565} 44 tcp non-syn
-2024/08/04 18:52:31 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:52:41 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 77 ok out
-2024/08/04 18:52:51 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 40 ok out
-2024/08/04 18:53:01 Accept: TCP{100.66.86.59:56595 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:53:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 55 ok out
-2024/08/04 18:53:21 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 18:53:31 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:53:41 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 53 ok out
-2024/08/04 18:53:51 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:54:01 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 18:54:11 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 18:54:21 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 62 ok out
-2024/08/04 18:54:31 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 18:54:41 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:54:51 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 18:55:01 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 49 ok out
-2024/08/04 18:55:11 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 18:55:21 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:55:31 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:55:41 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:55:51 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 18:56:01 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:56:11 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:56:21 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 62 ok out
-2024/08/04 18:56:31 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 18:56:41 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 18:56:51 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:57:01 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 40 ok out
-2024/08/04 18:57:11 Accept: TCP{100.66.86.59:56595 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:57:21 Accept: TCP{100.66.86.59:56595 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:57:31 Accept: TCP{100.66.86.59:56595 > 100.77.104.102:25565} 52 tcp non-syn
-2024/08/04 18:57:41 Accept: TCP{100.66.86.59:56595 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:57:51 Accept: TCP{100.66.86.59:56595 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 18:58:01 Accept: TCP{100.66.86.59:56595 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 18:58:11 Accept: TCP{100.66.86.59:56595 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 18:58:21 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 18:58:31 Accept: TCP{100.66.86.59:56595 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 18:58:41 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 18:58:51 Accept: TCP{100.66.86.59:56595 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 18:59:01 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 18:59:11 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 18:59:20 magicsock: home is now derp-12 (ord)
-2024/08/04 18:59:20 health("overall"): error: not connected to home DERP region 12
-2024/08/04 18:59:20 magicsock: adding connection to derp-12 for home-keep-alive
-2024/08/04 18:59:20 control: NetInfo: NetInfo{varies=false hairpin= ipv6=false ipv6os=true udp=true icmpv4=false derp=#12 portmap= link="" firewallmode="ipt-default"}
-2024/08/04 18:59:20 magicsock: 3 active derp conns: derp-11=cr51m0s,wr18s derp-12=cr0s,wr0s derp-16=cr21m0s,wr21m0s
-2024/08/04 18:59:20 derphttp.Client.Recv: connecting to derp-12 (ord)
-2024/08/04 18:59:20 magicsock: derp-12 connected; connGen=1
-2024/08/04 18:59:20 health("overall"): ok
-2024/08/04 18:59:21 Accept: TCP{100.66.86.59:56595 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 18:59:30 magicsock: closing connection to derp-16 (idle), age 20m44s
-2024/08/04 18:59:30 magicsock: 2 active derp conns: derp-11=cr51m0s,wr27s derp-12=cr10s,wr10s
-2024/08/04 18:59:31 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 18:59:41 Accept: TCP{100.66.86.59:56595 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 18:59:51 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 19:00:01 Accept: TCP{100.66.86.59:56595 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 19:00:11 Accept: TCP{100.66.86.59:56595 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 19:00:21 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 19:00:31 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 46 tcp non-syn
-2024/08/04 19:00:41 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 19:00:51 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 19:01:01 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 52 tcp non-syn
-2024/08/04 19:01:11 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 19:01:21 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:51962} 301 ok out
-2024/08/04 19:01:31 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 19:01:41 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:51962} 216 ok out
-2024/08/04 19:01:51 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 52 tcp non-syn
-2024/08/04 19:02:01 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 19:02:11 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 19:02:21 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 19:02:31 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 19:02:41 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 69 ok out
-2024/08/04 19:02:51 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 19:03:01 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:51962} 138 ok out
-2024/08/04 19:03:11 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 19:03:21 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 60 ok out
-2024/08/04 19:03:31 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 19:03:41 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 19:03:51 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 19:04:01 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 19:04:11 Accept: TCP{100.66.86.59:56595 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 19:04:21 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 19:04:31 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 52 tcp non-syn
-2024/08/04 19:04:41 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 74 ok out
-2024/08/04 19:04:51 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 19:05:01 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 19:05:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 54 ok out
-2024/08/04 19:05:21 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 19:05:31 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 19:05:41 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:51962} 269 ok out
-2024/08/04 19:05:51 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 124 ok out
-2024/08/04 19:06:01 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 19:06:11 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:51962} 266 ok out
-2024/08/04 19:06:21 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 56 ok out
-2024/08/04 19:06:31 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 19:06:41 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:51962} 40 ok out
-2024/08/04 19:06:51 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 19:07:01 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 19:07:11 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:51962} 299 ok out
-2024/08/04 19:07:21 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 88 ok out
-2024/08/04 19:07:31 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:51962} 122 ok out
-2024/08/04 19:07:41 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:51962} 274 ok out
-2024/08/04 19:07:51 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 47 tcp non-syn
-2024/08/04 19:08:01 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 19:08:11 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 19:08:21 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 19:08:31 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 54 tcp non-syn
-2024/08/04 19:08:41 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 53 ok out
-2024/08/04 19:08:51 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:51962} 288 ok out
-2024/08/04 19:09:01 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 47 tcp non-syn
-2024/08/04 19:09:11 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 19:09:21 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 19:09:31 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 19:09:41 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 149 ok out
-2024/08/04 19:09:51 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 19:10:01 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 19:10:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 177 ok out
-2024/08/04 19:10:21 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 181 ok out
-2024/08/04 19:10:31 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 19:10:41 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 19:10:51 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 145 ok out
-2024/08/04 19:11:01 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 19:11:11 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 19:11:21 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 19:11:31 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 52 tcp non-syn
-2024/08/04 19:11:41 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 19:11:51 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 40 ok out
-2024/08/04 19:12:01 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 19:12:11 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 19:12:21 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 19:12:31 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 19:12:41 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 19:12:51 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 19:13:01 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 19:13:11 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 19:13:21 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 19:13:31 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 418 ok out
-2024/08/04 19:13:41 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 52 tcp non-syn
-2024/08/04 19:13:51 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 19:14:01 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 44 tcp non-syn
-2024/08/04 19:14:11 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 19:14:21 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 52 tcp non-syn
-2024/08/04 19:14:31 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 275 ok out
-2024/08/04 19:14:41 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 208 ok out
-2024/08/04 19:14:51 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 341 ok out
-2024/08/04 19:15:01 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 19:15:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 391 ok out
-2024/08/04 19:15:21 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 19:15:31 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 19:15:41 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 237 ok out
-2024/08/04 19:15:51 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 147 ok out
-2024/08/04 19:16:01 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 19:16:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 351 ok out
-2024/08/04 19:16:21 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 110 ok out
-2024/08/04 19:16:31 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 102 ok out
-2024/08/04 19:16:41 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 73 ok out
-2024/08/04 19:16:51 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 51 tcp non-syn
-2024/08/04 19:17:01 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 85 ok out
-2024/08/04 19:17:11 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 19:17:14 magicsock: home is now derp-1 (nyc)
-2024/08/04 19:17:14 health("overall"): error: not connected to home DERP region 1
-2024/08/04 19:17:14 magicsock: adding connection to derp-1 for home-keep-alive
-2024/08/04 19:17:14 magicsock: 3 active derp conns: derp-1=cr0s,wr0s derp-11=cr1h9m0s,wr11s derp-12=cr18m0s,wr18m0s
-2024/08/04 19:17:14 control: NetInfo: NetInfo{varies=false hairpin= ipv6=false ipv6os=true udp=true icmpv4=false derp=#1 portmap= link="" firewallmode="ipt-default"}
-2024/08/04 19:17:14 derphttp.Client.Recv: connecting to derp-1 (nyc)
-2024/08/04 19:17:14 magicsock: derp-1 connected; connGen=1
-2024/08/04 19:17:14 health("overall"): ok
-2024/08/04 19:17:15 magicsock: closing connection to derp-12 (idle), age 17m55s
-2024/08/04 19:17:15 magicsock: 2 active derp conns: derp-1=cr713ms,wr713ms derp-11=cr1h9m0s,wr12s
-2024/08/04 19:17:21 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:51962} 40 ok out
-2024/08/04 19:17:31 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 53 tcp non-syn
-2024/08/04 19:17:41 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 92 ok out
-2024/08/04 19:17:51 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 51 tcp non-syn
-2024/08/04 19:18:01 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 44 tcp non-syn
-2024/08/04 19:18:11 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 44 tcp non-syn
-2024/08/04 19:18:21 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 19:18:31 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 19:18:41 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 134 ok out
-2024/08/04 19:18:51 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 78 ok out
-2024/08/04 19:19:01 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 40 ok out
-2024/08/04 19:19:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 121 ok out
-2024/08/04 19:19:21 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 52 tcp non-syn
-2024/08/04 19:19:31 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 19:19:41 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 84 ok out
-2024/08/04 19:19:51 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 122 ok out
-2024/08/04 19:20:01 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 54 ok out
-2024/08/04 19:20:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 108 ok out
-2024/08/04 19:20:21 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 52 ok out
-2024/08/04 19:20:31 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 52 tcp non-syn
-2024/08/04 19:20:41 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 54 ok out
-2024/08/04 19:20:51 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 51 tcp non-syn
-2024/08/04 19:21:01 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 47 ok out
-2024/08/04 19:21:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 40 ok out
-2024/08/04 19:21:21 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 51 tcp non-syn
-2024/08/04 19:21:31 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 58 tcp non-syn
-2024/08/04 19:21:41 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 52 tcp non-syn
-2024/08/04 19:21:51 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 52 tcp non-syn
-2024/08/04 19:22:01 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 19:22:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 63 ok out
-2024/08/04 19:22:15 magicsock: closing connection to derp-11 (idle), age 1h13m37s
-2024/08/04 19:22:15 magicsock: 1 active derp conns: derp-1=cr5m0s,wr5m0s
-2024/08/04 19:22:21 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 74 ok out
-2024/08/04 19:22:31 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 52 ok out
-2024/08/04 19:22:41 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 52 tcp non-syn
-2024/08/04 19:22:51 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 19:23:01 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 47 ok out
-2024/08/04 19:23:11 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 19:23:21 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 19:23:31 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 19:23:41 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 74 ok out
-2024/08/04 19:23:51 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 52 tcp non-syn
-2024/08/04 19:24:01 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 47 ok out
-2024/08/04 19:24:11 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 19:24:21 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 52 tcp non-syn
-2024/08/04 19:24:31 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 82 ok out
-2024/08/04 19:24:41 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 19:24:51 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 64 ok out
-2024/08/04 19:25:01 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 104 ok out
-2024/08/04 19:25:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 60 ok out
-2024/08/04 19:25:21 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 119 ok out
-2024/08/04 19:25:31 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 19:25:41 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 72 ok out
-2024/08/04 19:25:51 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 19:26:01 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 58 ok out
-2024/08/04 19:26:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 63 ok out
-2024/08/04 19:26:21 Accept: TCP{100.66.86.59:56800 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 19:26:31 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 52 tcp non-syn
-2024/08/04 19:26:41 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 84 ok out
-2024/08/04 19:26:51 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 97 ok out
-2024/08/04 19:27:01 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 52 tcp non-syn
-2024/08/04 19:27:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 85 ok out
-2024/08/04 19:27:21 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 81 ok out
-2024/08/04 19:27:31 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 19:27:41 Accept: TCP{100.66.86.59:56800 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 19:27:51 Accept: TCP{100.66.86.59:56800 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 19:28:01 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 52 tcp non-syn
-2024/08/04 19:28:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 60 ok out
-2024/08/04 19:28:17 magicsock: adding connection to derp-11 for [Lzp+I]
-2024/08/04 19:28:17 magicsock: 2 active derp conns: derp-1=cr11m0s,wr2m0s derp-11=cr0s,wr0s
-2024/08/04 19:28:17 derphttp.Client.Send: connecting to derp-11 (sao)
-2024/08/04 19:28:17 magicsock: derp-11 connected; connGen=1
-2024/08/04 19:28:17 [unexpected] magicsock: derp-11 does not know about peer [Lzp+I], removing route
-2024/08/04 19:28:21 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 52 tcp non-syn
-2024/08/04 19:28:23 [unexpected] magicsock: derp-11 does not know about peer [Lzp+I], removing route
-2024/08/04 19:28:29 [unexpected] magicsock: derp-11 does not know about peer [Lzp+I], removing route
-2024/08/04 19:28:31 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 19:28:35 [unexpected] magicsock: derp-11 does not know about peer [Lzp+I], removing route
-2024/08/04 19:28:41 [unexpected] magicsock: derp-11 does not know about peer [Lzp+I], removing route
-2024/08/04 19:28:41 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 52 tcp non-syn
-2024/08/04 19:28:47 [unexpected] magicsock: derp-11 does not know about peer [Lzp+I], removing route
-2024/08/04 19:28:51 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 51 ok out
-2024/08/04 19:28:53 [unexpected] magicsock: derp-11 does not know about peer [Lzp+I], removing route
-2024/08/04 19:28:58 [unexpected] magicsock: derp-11 does not know about peer [Lzp+I], removing route
-2024/08/04 19:29:01 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:51962} 72 ok out
-2024/08/04 19:29:03 [unexpected] magicsock: derp-11 does not know about peer [Lzp+I], removing route
-2024/08/04 19:29:09 [unexpected] magicsock: derp-11 does not know about peer [Lzp+I], removing route
-2024/08/04 19:29:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 58 ok out
-2024/08/04 19:29:14 [unexpected] magicsock: derp-11 does not know about peer [Lzp+I], removing route
-2024/08/04 19:29:19 [unexpected] magicsock: derp-11 does not know about peer [Lzp+I], removing route
-2024/08/04 19:29:21 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 65 ok out
-2024/08/04 19:29:24 [unexpected] magicsock: derp-11 does not know about peer [Lzp+I], removing route
-2024/08/04 19:29:29 [unexpected] magicsock: derp-11 does not know about peer [Lzp+I], removing route
-2024/08/04 19:29:31 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 19:29:34 [unexpected] magicsock: derp-11 does not know about peer [Lzp+I], removing route
-2024/08/04 19:29:40 [unexpected] magicsock: derp-11 does not know about peer [Lzp+I], removing route
-2024/08/04 19:29:41 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 77 ok out
-2024/08/04 19:29:45 [unexpected] magicsock: derp-11 does not know about peer [Lzp+I], removing route
-2024/08/04 19:29:50 [unexpected] magicsock: derp-11 does not know about peer [Lzp+I], removing route
-2024/08/04 19:29:51 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 94 ok out
-2024/08/04 19:29:55 [unexpected] magicsock: derp-11 does not know about peer [Lzp+I], removing route
-2024/08/04 19:30:01 [unexpected] magicsock: derp-11 does not know about peer [Lzp+I], removing route
-2024/08/04 19:30:01 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 109 ok out
-2024/08/04 19:30:08 [unexpected] magicsock: derp-11 does not know about peer [Lzp+I], removing route
-2024/08/04 19:30:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 84 ok out
-2024/08/04 19:30:14 [unexpected] magicsock: derp-11 does not know about peer [Lzp+I], removing route
-2024/08/04 19:30:20 [unexpected] magicsock: derp-11 does not know about peer [Lzp+I], removing route
-2024/08/04 19:30:21 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 104 ok out
-2024/08/04 19:30:26 [unexpected] magicsock: derp-11 does not know about peer [Lzp+I], removing route
-2024/08/04 19:30:31 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 92 ok out
-2024/08/04 19:30:32 [unexpected] magicsock: derp-11 does not know about peer [Lzp+I], removing route
-2024/08/04 19:30:33 magicsock: home is now derp-16 (mia)
-2024/08/04 19:30:33 health("overall"): error: not connected to home DERP region 16
-2024/08/04 19:30:33 magicsock: adding connection to derp-16 for home-keep-alive
-2024/08/04 19:30:33 control: NetInfo: NetInfo{varies=false hairpin= ipv6=false ipv6os=true udp=true icmpv4=false derp=#16 portmap= link="" firewallmode="ipt-default"}
-2024/08/04 19:30:33 magicsock: 3 active derp conns: derp-1=cr13m0s,wr4m0s derp-11=cr2m0s,wr913ms derp-16=cr0s,wr0s
-2024/08/04 19:30:33 derphttp.Client.Recv: connecting to derp-16 (mia)
-2024/08/04 19:30:33 magicsock: derp-16 connected; connGen=1
-2024/08/04 19:30:33 health("overall"): ok
-2024/08/04 19:30:38 [unexpected] magicsock: derp-11 does not know about peer [Lzp+I], removing route
-2024/08/04 19:30:41 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 19:30:44 [unexpected] magicsock: derp-11 does not know about peer [Lzp+I], removing route
-2024/08/04 19:30:47 magicsock: closing connection to derp-1 (idle), age 13m33s
-2024/08/04 19:30:47 magicsock: 2 active derp conns: derp-11=cr3m0s,wr3s derp-16=cr14s,wr14s
-2024/08/04 19:30:51 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 52 tcp non-syn
-2024/08/04 19:31:01 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 19:31:11 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 19:31:21 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 19:31:31 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 58 ok out
-2024/08/04 19:31:41 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 40 ok out
-2024/08/04 19:31:51 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 60 ok out
-2024/08/04 19:32:01 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 52 tcp non-syn
-2024/08/04 19:32:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 79 ok out
-2024/08/04 19:32:21 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 94 ok out
-2024/08/04 19:32:31 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 19:32:41 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 60 ok out
-2024/08/04 19:32:51 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 19:33:01 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 19:33:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 60 ok out
-2024/08/04 19:33:17 magicsock: closing connection to derp-11 (idle), age 5m0s
-2024/08/04 19:33:17 magicsock: 1 active derp conns: derp-16=cr3m0s,wr3m0s
-2024/08/04 19:33:18 magicsock: adding connection to derp-11 for [BLsGf]
-2024/08/04 19:33:18 magicsock: 2 active derp conns: derp-11=cr0s,wr0s derp-16=cr3m0s,wr3m0s
-2024/08/04 19:33:18 derphttp.Client.Send: connecting to derp-11 (sao)
-2024/08/04 19:33:18 magicsock: derp-11 connected; connGen=1
-2024/08/04 19:33:21 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 52 tcp non-syn
-2024/08/04 19:33:31 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 52 tcp non-syn
-2024/08/04 19:33:41 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 19:33:51 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 52 tcp non-syn
-2024/08/04 19:34:01 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 44 tcp non-syn
-2024/08/04 19:34:11 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 19:34:18 magicsock: closing connection to derp-11 (idle), age 1m0s
-2024/08/04 19:34:18 magicsock: 1 active derp conns: derp-16=cr4m0s,wr4m0s
-2024/08/04 19:34:21 magicsock: adding connection to derp-11 for [BLsGf]
-2024/08/04 19:34:21 magicsock: 2 active derp conns: derp-11=cr0s,wr0s derp-16=cr4m0s,wr4m0s
-2024/08/04 19:34:21 derphttp.Client.Recv: connecting to derp-11 (sao)
-2024/08/04 19:34:21 magicsock: derp-11 connected; connGen=1
-2024/08/04 19:34:21 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 52 tcp non-syn
-2024/08/04 19:34:31 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 60 ok out
-2024/08/04 19:34:41 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 213 ok out
-2024/08/04 19:34:51 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 879 ok out
-2024/08/04 19:35:01 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 19:35:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 649 ok out
-2024/08/04 19:35:21 magicsock: closing connection to derp-11 (idle), age 1m0s
-2024/08/04 19:35:21 magicsock: 1 active derp conns: derp-16=cr5m0s,wr5m0s
-2024/08/04 19:35:21 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 52 tcp non-syn
-2024/08/04 19:35:24 magicsock: adding connection to derp-11 for [BLsGf]
-2024/08/04 19:35:24 magicsock: 2 active derp conns: derp-11=cr0s,wr0s derp-16=cr5m0s,wr5m0s
-2024/08/04 19:35:24 derphttp.Client.Send: connecting to derp-11 (sao)
-2024/08/04 19:35:24 magicsock: derp-11 connected; connGen=1
-2024/08/04 19:35:31 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 19:35:41 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 495 ok out
-2024/08/04 19:35:51 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 19:35:53 magicsock: home is now derp-12 (ord)
-2024/08/04 19:35:53 health("overall"): error: not connected to home DERP region 12
-2024/08/04 19:35:53 magicsock: adding connection to derp-12 for home-keep-alive
-2024/08/04 19:35:53 magicsock: 3 active derp conns: derp-11=cr29s,wr29s derp-12=cr0s,wr0s derp-16=cr5m0s,wr5m0s
-2024/08/04 19:35:53 control: NetInfo: NetInfo{varies=false hairpin= ipv6=false ipv6os=true udp=true icmpv4=false derp=#12 portmap= link="" firewallmode="ipt-default"}
-2024/08/04 19:35:53 derphttp.Client.Recv: connecting to derp-12 (ord)
-2024/08/04 19:35:53 magicsock: derp-12 connected; connGen=1
-2024/08/04 19:35:53 health("overall"): ok
-2024/08/04 19:35:54 magicsock: closing connection to derp-16 (idle), age 5m21s
-2024/08/04 19:35:54 magicsock: 2 active derp conns: derp-11=cr30s,wr30s derp-12=cr824ms,wr824ms
-2024/08/04 19:36:01 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 371 ok out
-2024/08/04 19:36:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 242 ok out
-2024/08/04 19:36:21 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 52 tcp non-syn
-2024/08/04 19:36:24 magicsock: closing connection to derp-11 (idle), age 1m0s
-2024/08/04 19:36:24 magicsock: 1 active derp conns: derp-12=cr31s,wr31s
-2024/08/04 19:36:27 magicsock: adding connection to derp-11 for [BLsGf]
-2024/08/04 19:36:27 magicsock: 2 active derp conns: derp-11=cr0s,wr0s derp-12=cr34s,wr34s
-2024/08/04 19:36:27 derphttp.Client.Send: connecting to derp-11 (sao)
-2024/08/04 19:36:27 magicsock: derp-11 connected; connGen=1
-2024/08/04 19:36:31 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 421 ok out
-2024/08/04 19:36:41 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 546 ok out
-2024/08/04 19:36:51 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 451 ok out
-2024/08/04 19:37:01 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 19:37:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 495 ok out
-2024/08/04 19:37:21 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 19:37:27 magicsock: closing connection to derp-11 (idle), age 1m0s
-2024/08/04 19:37:27 magicsock: 1 active derp conns: derp-12=cr2m0s,wr2m0s
-2024/08/04 19:37:30 magicsock: adding connection to derp-11 for [BLsGf]
-2024/08/04 19:37:30 magicsock: 2 active derp conns: derp-11=cr0s,wr0s derp-12=cr2m0s,wr2m0s
-2024/08/04 19:37:30 derphttp.Client.Send: connecting to derp-11 (sao)
-2024/08/04 19:37:30 magicsock: derp-11 connected; connGen=1
-2024/08/04 19:37:31 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 388 ok out
-2024/08/04 19:37:41 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 524 ok out
-2024/08/04 19:37:51 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 298 ok out
-2024/08/04 19:38:01 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 19:38:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 585 ok out
-2024/08/04 19:38:21 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 676 ok out
-2024/08/04 19:38:30 magicsock: closing connection to derp-11 (idle), age 1m0s
-2024/08/04 19:38:30 magicsock: 1 active derp conns: derp-12=cr3m0s,wr3m0s
-2024/08/04 19:38:31 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:51962} 225 ok out
-2024/08/04 19:38:41 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 516 ok out
-2024/08/04 19:38:51 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 19:39:01 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 19:39:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 1280 ok out
-2024/08/04 19:39:21 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 700 ok out
-2024/08/04 19:39:31 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 680 ok out
-2024/08/04 19:39:41 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 690 ok out
-2024/08/04 19:39:51 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 19:40:01 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 19:40:06 magicsock: adding connection to derp-11 for [YwsNZ]
-2024/08/04 19:40:06 magicsock: 2 active derp conns: derp-11=cr0s,wr0s derp-12=cr4m0s,wr4m0s
-2024/08/04 19:40:06 derphttp.Client.Send: connecting to derp-11 (sao)
-2024/08/04 19:40:06 magicsock: derp-11 connected; connGen=1
-2024/08/04 19:40:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 560 ok out
-2024/08/04 19:40:21 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 1026 ok out
-2024/08/04 19:40:31 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 786 ok out
-2024/08/04 19:40:41 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 213 ok out
-2024/08/04 19:40:51 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 875 ok out
-2024/08/04 19:41:01 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 1280 ok out
-2024/08/04 19:41:06 magicsock: closing connection to derp-11 (idle), age 1m0s
-2024/08/04 19:41:06 magicsock: 1 active derp conns: derp-12=cr5m0s,wr5m0s
-2024/08/04 19:41:09 magicsock: adding connection to derp-11 for [YwsNZ]
-2024/08/04 19:41:09 magicsock: 2 active derp conns: derp-11=cr0s,wr0s derp-12=cr5m0s,wr5m0s
-2024/08/04 19:41:09 derphttp.Client.Send: connecting to derp-11 (sao)
-2024/08/04 19:41:09 magicsock: derp-11 connected; connGen=1
-2024/08/04 19:41:11 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:51962} 76 ok out
-2024/08/04 19:41:21 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 613 ok out
-2024/08/04 19:41:31 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 860 ok out
-2024/08/04 19:41:41 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 972 ok out
-2024/08/04 19:41:51 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 48 tcp non-syn
-2024/08/04 19:42:01 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 19:42:11 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 44 tcp non-syn
-2024/08/04 19:42:21 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 1280 ok out
-2024/08/04 19:42:31 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 48 tcp non-syn
-2024/08/04 19:42:41 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 19:42:51 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 19:43:01 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 19:43:11 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 19:43:21 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 19:43:31 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 1280 ok out
-2024/08/04 19:43:41 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 19:43:51 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 19:44:00 magicsock: home is now derp-1 (nyc)
-2024/08/04 19:44:00 health("overall"): error: not connected to home DERP region 1
-2024/08/04 19:44:00 magicsock: adding connection to derp-1 for home-keep-alive
-2024/08/04 19:44:00 magicsock: 3 active derp conns: derp-1=cr0s,wr0s derp-11=cr3m0s,wr45s derp-12=cr8m0s,wr8m0s
-2024/08/04 19:44:00 control: NetInfo: NetInfo{varies=false hairpin= ipv6=false ipv6os=true udp=true icmpv4=false derp=#1 portmap= link="" firewallmode="ipt-default"}
-2024/08/04 19:44:00 derphttp.Client.Recv: connecting to derp-1 (nyc)
-2024/08/04 19:44:00 magicsock: derp-1 connected; connGen=1
-2024/08/04 19:44:00 health("overall"): ok
-2024/08/04 19:44:01 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 527 ok out
-2024/08/04 19:44:09 magicsock: closing connection to derp-12 (idle), age 8m16s
-2024/08/04 19:44:09 magicsock: 2 active derp conns: derp-1=cr9s,wr9s derp-11=cr3m0s,wr54s
-2024/08/04 19:44:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 1220 ok out
-2024/08/04 19:44:21 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 52 tcp non-syn
-2024/08/04 19:44:24 magicsock: closing connection to derp-11 (idle), age 3m15s
-2024/08/04 19:44:24 magicsock: 1 active derp conns: derp-1=cr24s,wr24s
-2024/08/04 19:44:31 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:51962} 255 ok out
-2024/08/04 19:44:41 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 19:44:51 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 19:45:01 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 19:45:11 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 52 tcp non-syn
-2024/08/04 19:45:21 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 19:45:31 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 225 ok out
-2024/08/04 19:45:41 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 19:45:51 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 19:46:01 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 189 ok out
-2024/08/04 19:46:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 92 ok out
-2024/08/04 19:46:21 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 151 ok out
-2024/08/04 19:46:31 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 19:46:41 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 52 tcp non-syn
-2024/08/04 19:46:51 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 116 ok out
-2024/08/04 19:47:01 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 19:47:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 271 ok out
-2024/08/04 19:47:21 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 161 ok out
-2024/08/04 19:47:31 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 19:47:36 magicsock: adding connection to derp-11 for [BLsGf]
-2024/08/04 19:47:36 magicsock: 2 active derp conns: derp-1=cr4m0s,wr4m0s derp-11=cr0s,wr0s
-2024/08/04 19:47:36 derphttp.Client.Send: connecting to derp-11 (sao)
-2024/08/04 19:47:36 magicsock: derp-11 connected; connGen=1
-2024/08/04 19:47:41 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 75 ok out
-2024/08/04 19:47:51 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 319 ok out
-2024/08/04 19:48:01 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 220 ok out
-2024/08/04 19:48:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 411 ok out
-2024/08/04 19:48:21 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 272 ok out
-2024/08/04 19:48:31 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 324 ok out
-2024/08/04 19:48:36 magicsock: closing connection to derp-11 (idle), age 1m0s
-2024/08/04 19:48:36 magicsock: 1 active derp conns: derp-1=cr5m0s,wr5m0s
-2024/08/04 19:48:41 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 330 ok out
-2024/08/04 19:48:51 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 289 ok out
-2024/08/04 19:49:01 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 251 ok out
-2024/08/04 19:49:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 252 ok out
-2024/08/04 19:49:21 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 337 ok out
-2024/08/04 19:49:31 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 162 ok out
-2024/08/04 19:49:41 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 203 ok out
-2024/08/04 19:49:51 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:51962} 40 ok out
-2024/08/04 19:50:01 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 397 ok out
-2024/08/04 19:50:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 519 ok out
-2024/08/04 19:50:21 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 507 ok out
-2024/08/04 19:50:31 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 19:50:41 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 277 ok out
-2024/08/04 19:50:51 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 162 ok out
-2024/08/04 19:51:01 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 284 ok out
-2024/08/04 19:51:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 204 ok out
-2024/08/04 19:51:19 magicsock: adding connection to derp-11 for [BLsGf]
-2024/08/04 19:51:19 magicsock: 2 active derp conns: derp-1=cr7m0s,wr7m0s derp-11=cr0s,wr0s
-2024/08/04 19:51:19 derphttp.Client.Send: connecting to derp-11 (sao)
-2024/08/04 19:51:19 magicsock: derp-11 connected; connGen=1
-2024/08/04 19:51:21 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 226 ok out
-2024/08/04 19:51:31 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 342 ok out
-2024/08/04 19:51:41 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 120 ok out
-2024/08/04 19:51:51 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 257 ok out
-2024/08/04 19:52:01 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 40 ok out
-2024/08/04 19:52:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 219 ok out
-2024/08/04 19:52:21 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 181 ok out
-2024/08/04 19:52:31 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 221 ok out
-2024/08/04 19:52:34 magicsock: closing connection to derp-11 (idle), age 1m15s
-2024/08/04 19:52:34 magicsock: 1 active derp conns: derp-1=cr9m0s,wr9m0s
-2024/08/04 19:52:41 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 145 ok out
-2024/08/04 19:52:51 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:51962} 213 ok out
-2024/08/04 19:53:01 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 433 ok out
-2024/08/04 19:53:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 201 ok out
-2024/08/04 19:53:21 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 311 ok out
-2024/08/04 19:53:31 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 19:53:41 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 52 tcp non-syn
-2024/08/04 19:53:51 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 19:54:01 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 222 ok out
-2024/08/04 19:54:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 206 ok out
-2024/08/04 19:54:21 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 19:54:31 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 124 ok out
-2024/08/04 19:54:41 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 223 ok out
-2024/08/04 19:54:51 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 305 ok out
-2024/08/04 19:55:01 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:51962} 155 ok out
-2024/08/04 19:55:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 266 ok out
-2024/08/04 19:55:21 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 266 ok out
-2024/08/04 19:55:31 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 238 ok out
-2024/08/04 19:55:41 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 278 ok out
-2024/08/04 19:55:51 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 168 ok out
-2024/08/04 19:56:01 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 198 ok out
-2024/08/04 19:56:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 213 ok out
-2024/08/04 19:56:21 magicsock: adding connection to derp-11 for [BLsGf]
-2024/08/04 19:56:21 magicsock: 2 active derp conns: derp-1=cr12m0s,wr12m0s derp-11=cr0s,wr0s
-2024/08/04 19:56:21 derphttp.Client.Send: connecting to derp-11 (sao)
-2024/08/04 19:56:21 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 19:56:22 magicsock: derp-11 connected; connGen=1
-2024/08/04 19:56:31 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 19:56:41 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 1138 ok out
-2024/08/04 19:56:51 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 19:56:55 magicsock: home is now derp-12 (ord)
-2024/08/04 19:56:55 health("overall"): error: not connected to home DERP region 12
-2024/08/04 19:56:55 control: NetInfo: NetInfo{varies=false hairpin= ipv6=false ipv6os=true udp=true icmpv4=false derp=#12 portmap= link="" firewallmode="ipt-default"}
-2024/08/04 19:56:55 magicsock: adding connection to derp-12 for home-keep-alive
-2024/08/04 19:56:55 magicsock: 3 active derp conns: derp-1=cr13m0s,wr13m0s derp-11=cr34s,wr34s derp-12=cr0s,wr0s
-2024/08/04 19:56:55 derphttp.Client.Recv: connecting to derp-12 (ord)
-2024/08/04 19:56:55 magicsock: derp-12 connected; connGen=1
-2024/08/04 19:56:55 health("overall"): ok
-2024/08/04 19:57:01 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 19:57:06 magicsock: closing connection to derp-1 (idle), age 13m6s
-2024/08/04 19:57:06 magicsock: 2 active derp conns: derp-11=cr45s,wr45s derp-12=cr11s,wr11s
-2024/08/04 19:57:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 1042 ok out
-2024/08/04 19:57:21 magicsock: closing connection to derp-11 (idle), age 1m0s
-2024/08/04 19:57:21 magicsock: 1 active derp conns: derp-12=cr26s,wr26s
-2024/08/04 19:57:21 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 19:57:24 magicsock: adding connection to derp-11 for [BLsGf]
-2024/08/04 19:57:24 magicsock: 2 active derp conns: derp-11=cr0s,wr0s derp-12=cr29s,wr29s
-2024/08/04 19:57:24 derphttp.Client.Send: connecting to derp-11 (sao)
-2024/08/04 19:57:25 magicsock: derp-11 connected; connGen=1
-2024/08/04 19:57:31 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 1280 ok out
-2024/08/04 19:57:41 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 1016 ok out
-2024/08/04 19:57:51 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 1280 ok out
-2024/08/04 19:58:01 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 1225 ok out
-2024/08/04 19:58:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 1280 ok out
-2024/08/04 19:58:21 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 1122 ok out
-2024/08/04 19:58:24 magicsock: closing connection to derp-11 (idle), age 1m0s
-2024/08/04 19:58:24 magicsock: 1 active derp conns: derp-12=cr1m0s,wr1m0s
-2024/08/04 19:58:27 magicsock: adding connection to derp-11 for [BLsGf]
-2024/08/04 19:58:27 magicsock: 2 active derp conns: derp-11=cr0s,wr0s derp-12=cr2m0s,wr2m0s
-2024/08/04 19:58:27 derphttp.Client.Send: connecting to derp-11 (sao)
-2024/08/04 19:58:28 magicsock: derp-11 connected; connGen=1
-2024/08/04 19:58:31 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 19:58:41 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 19:58:51 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 19:59:01 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 19:59:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 917 ok out
-2024/08/04 19:59:21 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 19:59:27 magicsock: closing connection to derp-11 (idle), age 1m0s
-2024/08/04 19:59:27 magicsock: 1 active derp conns: derp-12=cr3m0s,wr3m0s
-2024/08/04 19:59:30 magicsock: adding connection to derp-11 for [BLsGf]
-2024/08/04 19:59:30 magicsock: 2 active derp conns: derp-11=cr0s,wr0s derp-12=cr3m0s,wr3m0s
-2024/08/04 19:59:30 derphttp.Client.Send: connecting to derp-11 (sao)
-2024/08/04 19:59:31 magicsock: derp-11 connected; connGen=1
-2024/08/04 19:59:31 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 1280 ok out
-2024/08/04 19:59:41 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 1280 ok out
-2024/08/04 19:59:51 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 1280 ok out
-2024/08/04 20:00:01 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 1280 ok out
-2024/08/04 20:00:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 1158 ok out
-2024/08/04 20:00:21 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 20:00:30 magicsock: closing connection to derp-11 (idle), age 1m0s
-2024/08/04 20:00:30 magicsock: 1 active derp conns: derp-12=cr4m0s,wr4m0s
-2024/08/04 20:00:31 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 20:00:33 magicsock: adding connection to derp-11 for [BLsGf]
-2024/08/04 20:00:33 magicsock: 2 active derp conns: derp-11=cr0s,wr0s derp-12=cr4m0s,wr4m0s
-2024/08/04 20:00:33 derphttp.Client.Send: connecting to derp-11 (sao)
-2024/08/04 20:00:34 magicsock: derp-11 connected; connGen=1
-2024/08/04 20:00:41 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 20:00:51 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 948 ok out
-2024/08/04 20:01:01 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 20:01:11 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:51962} 213 ok out
-2024/08/04 20:01:21 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 20:01:31 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 1122 ok out
-2024/08/04 20:01:33 magicsock: closing connection to derp-11 (idle), age 1m0s
-2024/08/04 20:01:33 magicsock: 1 active derp conns: derp-12=cr5m0s,wr5m0s
-2024/08/04 20:01:36 magicsock: adding connection to derp-11 for [BLsGf]
-2024/08/04 20:01:36 magicsock: 2 active derp conns: derp-11=cr0s,wr0s derp-12=cr5m0s,wr5m0s
-2024/08/04 20:01:36 derphttp.Client.Send: connecting to derp-11 (sao)
-2024/08/04 20:01:37 magicsock: derp-11 connected; connGen=1
-2024/08/04 20:01:41 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 832 ok out
-2024/08/04 20:01:51 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 1088 ok out
-2024/08/04 20:02:01 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 1280 ok out
-2024/08/04 20:02:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 1280 ok out
-2024/08/04 20:02:21 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 20:02:31 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 226 ok out
-2024/08/04 20:02:36 magicsock: closing connection to derp-11 (idle), age 1m0s
-2024/08/04 20:02:36 magicsock: 1 active derp conns: derp-12=cr6m0s,wr6m0s
-2024/08/04 20:02:39 magicsock: adding connection to derp-11 for [BLsGf]
-2024/08/04 20:02:39 magicsock: 2 active derp conns: derp-11=cr0s,wr0s derp-12=cr6m0s,wr6m0s
-2024/08/04 20:02:39 derphttp.Client.Send: connecting to derp-11 (sao)
-2024/08/04 20:02:40 magicsock: derp-11 connected; connGen=1
-2024/08/04 20:02:41 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 1280 ok out
-2024/08/04 20:02:51 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 20:03:01 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 20:03:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 1280 ok out
-2024/08/04 20:03:21 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 20:03:31 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 20:03:41 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 1280 ok out
-2024/08/04 20:03:51 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 1280 ok out
-2024/08/04 20:04:01 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 1249 ok out
-2024/08/04 20:04:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 1088 ok out
-2024/08/04 20:04:21 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:51962} 225 ok out
-2024/08/04 20:04:31 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 20:04:41 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 205 ok out
-2024/08/04 20:04:51 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 20:05:01 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 20:05:11 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 20:05:21 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:51962} 284 ok out
-2024/08/04 20:05:31 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:51962} 317 ok out
-2024/08/04 20:05:41 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 20:05:51 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 20:06:01 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 68 tcp non-syn
-2024/08/04 20:06:11 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 20:06:14 magicsock: home is now derp-1 (nyc)
-2024/08/04 20:06:14 health("overall"): error: not connected to home DERP region 1
-2024/08/04 20:06:14 magicsock: adding connection to derp-1 for home-keep-alive
-2024/08/04 20:06:14 control: NetInfo: NetInfo{varies=false hairpin= ipv6=false ipv6os=true udp=true icmpv4=false derp=#1 portmap= link="" firewallmode="ipt-default"}
-2024/08/04 20:06:14 magicsock: 3 active derp conns: derp-1=cr0s,wr0s derp-11=cr4m0s,wr32s derp-12=cr9m0s,wr9m0s
-2024/08/04 20:06:14 derphttp.Client.Recv: connecting to derp-1 (nyc)
-2024/08/04 20:06:14 magicsock: derp-1 connected; connGen=1
-2024/08/04 20:06:14 health("overall"): ok
-2024/08/04 20:06:21 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 46 tcp non-syn
-2024/08/04 20:06:24 magicsock: closing connection to derp-12 (idle), age 9m29s
-2024/08/04 20:06:24 magicsock: 2 active derp conns: derp-1=cr10s,wr10s derp-11=cr4m0s,wr42s
-2024/08/04 20:06:31 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 20:06:41 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:51962} 213 ok out
-2024/08/04 20:06:51 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 135 ok out
-2024/08/04 20:07:01 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 20:07:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 269 ok out
-2024/08/04 20:07:21 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 20:07:31 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 20:07:41 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 145 ok out
-2024/08/04 20:07:51 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 100 ok out
-2024/08/04 20:08:01 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:51962} 228 ok out
-2024/08/04 20:08:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 155 ok out
-2024/08/04 20:08:21 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 233 ok out
-2024/08/04 20:08:31 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 232 ok out
-2024/08/04 20:08:41 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 142 ok out
-2024/08/04 20:08:51 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:51962} 225 ok out
-2024/08/04 20:09:01 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 351 ok out
-2024/08/04 20:09:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 197 ok out
-2024/08/04 20:09:21 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 206 ok out
-2024/08/04 20:09:31 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 20:09:41 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 190 ok out
-2024/08/04 20:09:51 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 166 ok out
-2024/08/04 20:10:01 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 20:10:11 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 65 tcp non-syn
-2024/08/04 20:10:21 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 20:10:31 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 20:10:41 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 396 ok out
-2024/08/04 20:10:51 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 20:11:01 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:51962} 122 ok out
-2024/08/04 20:11:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 1018 ok out
-2024/08/04 20:11:21 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 20:11:31 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 1280 ok out
-2024/08/04 20:11:41 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 1269 ok out
-2024/08/04 20:11:51 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 20:12:01 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 1242 ok out
-2024/08/04 20:12:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 918 ok out
-2024/08/04 20:12:21 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 1071 ok out
-2024/08/04 20:12:31 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 20:12:41 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 20:12:51 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 56 tcp non-syn
-2024/08/04 20:13:01 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 20:13:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 732 ok out
-2024/08/04 20:13:21 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 20:13:31 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 20:13:41 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 1160 ok out
-2024/08/04 20:13:51 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 798 ok out
-2024/08/04 20:14:01 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 1072 ok out
-2024/08/04 20:14:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 748 ok out
-2024/08/04 20:14:21 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 20:14:31 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 978 ok out
-2024/08/04 20:14:41 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:51962} 382 ok out
-2024/08/04 20:14:51 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 47 tcp non-syn
-2024/08/04 20:15:01 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 76 tcp non-syn
-2024/08/04 20:15:11 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 52 tcp non-syn
-2024/08/04 20:15:21 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 20:15:31 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:51962} 1245 ok out
-2024/08/04 20:15:41 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:51962} 622 ok out
-2024/08/04 20:15:51 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
-2024/08/04 20:16:02 Accept: TCP{100.64.45.92:55080 > 100.77.104.102:25565} 52 tcp ok
-2024/08/04 20:16:05 tailscaled got signal interrupt; shutting down
-2024/08/04 20:16:05 control: client.Shutdown ...
-2024/08/04 20:16:05 control: updateRoutine: exiting
-2024/08/04 20:16:05 control: mapRoutine: exiting
-2024/08/04 20:16:05 control: authRoutine: exiting
-2024/08/04 20:16:05 control: Client.Shutdown done.
-2024/08/04 20:16:05 magicsock: closing connection to derp-11 (conn-close), age 13m25s
-2024/08/04 20:16:05 magicsock: closing connection to derp-1 (conn-close), age 9m50s
-2024/08/04 20:16:05 magicsock: 0 active derp conns
-2024/08/04 20:16:05 restarting systemd-resolved...
-2024/08/04 20:16:05 restarted systemd-resolved
-2024/08/04 20:16:05 monitor: RTM_DELROUTE: src=, dst=fe80::/64, gw=, outif=4, table=254
-2024/08/04 20:16:05 monitor: RTM_DELROUTE: src=, dst=fe80::a404:3cdd:b952:c169/128, gw=, outif=4, table=255
-2024/08/04 20:16:05 monitor: RTM_DELROUTE: src=, dst=ff00::/8, gw=, outif=4, table=255
-2024/08/04 20:16:05 monitor: ip rule deleted: {Family:2 DstLength:0 SrcLength:0 Tos:0 Table:254 Protocol:0 Scope:0 Type:1 Flags:0 Attributes:{Dst:<nil> Src:<nil> Gateway:<nil> OutIface:0 Priority:5210 Table:254 Mark:16711680 Pref:<nil> Expires:<nil> Metrics:<nil> Multipath:[]}}
-2024/08/04 20:16:05 monitor: ip rule deleted: {Family:2 DstLength:0 SrcLength:0 Tos:0 Table:253 Protocol:0 Scope:0 Type:1 Flags:0 Attributes:{Dst:<nil> Src:<nil> Gateway:<nil> OutIface:0 Priority:5230 Table:253 Mark:16711680 Pref:<nil> Expires:<nil> Metrics:<nil> Multipath:[]}}
-2024/08/04 20:16:05 monitor: ip rule deleted: {Family:2 DstLength:0 SrcLength:0 Tos:0 Table:0 Protocol:0 Scope:0 Type:7 Flags:0 Attributes:{Dst:<nil> Src:<nil> Gateway:<nil> OutIface:0 Priority:5250 Table:0 Mark:16711680 Pref:<nil> Expires:<nil> Metrics:<nil> Multipath:[]}}
-2024/08/04 20:16:05 monitor: ip rule deleted: {Family:2 DstLength:0 SrcLength:0 Tos:0 Table:52 Protocol:0 Scope:0 Type:1 Flags:0 Attributes:{Dst:<nil> Src:<nil> Gateway:<nil> OutIface:0 Priority:5270 Table:52 Mark:0 Pref:<nil> Expires:<nil> Metrics:<nil> Multipath:[]}}
-2024/08/04 20:16:05 flushing log.
-2024/08/04 20:16:05 logger closing down
+2024/08/04 20:16:49 router: netfilter running in iptables mode v6 = true, v6filter = false, v6nat = false
+2024/08/04 20:16:49 onPortUpdate(port=49850, network=udp4)
+2024/08/04 20:16:49 magicsock: disco key = d:6b7c873358d60b83
+2024/08/04 20:16:49 Creating WireGuard device...
+2024/08/04 20:16:49 Bringing WireGuard device up...
+2024/08/04 20:16:49 external route: up
+2024/08/04 20:16:49 Bringing router up...
+2024/08/04 20:16:49 Clearing router settings...
+2024/08/04 20:16:49 Starting network monitor...
+2024/08/04 20:16:49 Engine created.
+2024/08/04 20:16:49 monitor: [unexpected] network state changed, but stringification didn't: interfaces.State{defaultRoute=eth0 ifs={docker0:[172.17.0.1/16] eth0:[10.0.1.157/16 llu6]} v4=true v6=false}
+2024/08/04 20:16:49 monitor: [unexpected] old: {"InterfaceIPs":{"docker0":["172.17.0.1/16"],"eth0":["10.0.1.157/16","fe80::20d:3aff:fee3:358d/64"],"lo":["127.0.0.1/8","::1/128"]},"Interface":{"docker0":{"Index":3,"MTU":1500,"Name":"docker0","HardwareAddr":"AkLuwoXz","Flags":19,"AltAddrs":null,"Desc":""},"eth0":{"Index":2,"MTU":1500,"Name":"eth0","HardwareAddr":"AA064zWN","Flags":51,"AltAddrs":null,"Desc":""},"lo":{"Index":1,"MTU":65536,"Name":"lo","HardwareAddr":null,"Flags":37,"AltAddrs":null,"Desc":""}},"HaveV6":false,"HaveV4":true,"IsExpensive":false,"DefaultRouteInterface":"eth0","HTTPProxy":"","PAC":""}
+2024/08/04 20:16:49 monitor: [unexpected] new: {"InterfaceIPs":{"docker0":["172.17.0.1/16"],"eth0":["10.0.1.157/16","fe80::20d:3aff:fee3:358d/64"],"lo":["127.0.0.1/8","::1/128"],"tailscale0":["fe80::2b4c:55ae:a410:40a9/64"]},"Interface":{"docker0":{"Index":3,"MTU":1500,"Name":"docker0","HardwareAddr":"AkLuwoXz","Flags":19,"AltAddrs":null,"Desc":""},"eth0":{"Index":2,"MTU":1500,"Name":"eth0","HardwareAddr":"AA064zWN","Flags":51,"AltAddrs":null,"Desc":""},"lo":{"Index":1,"MTU":65536,"Name":"lo","HardwareAddr":null,"Flags":37,"AltAddrs":null,"Desc":""},"tailscale0":{"Index":5,"MTU":1280,"Name":"tailscale0","HardwareAddr":null,"Flags":57,"AltAddrs":null,"Desc":""}},"HaveV6":false,"HaveV4":true,"IsExpensive":false,"DefaultRouteInterface":"eth0","HTTPProxy":"","PAC":""}
+2024/08/04 20:16:49 LinkChange: major, rebinding. New state: interfaces.State{defaultRoute=eth0 ifs={docker0:[172.17.0.1/16] eth0:[10.0.1.157/16 llu6]} v4=true v6=false}
+2024/08/04 20:16:49 onPortUpdate(port=49066, network=udp6)
+2024/08/04 20:16:49 onPortUpdate(port=49850, network=udp4)
+2024/08/04 20:16:49 Rebind; defIf="eth0", ips=[10.0.1.157/16 fe80::20d:3aff:fee3:358d/64]
+2024/08/04 20:16:49 magicsock: 0 active derp conns
+2024/08/04 20:16:49 monitor: gateway and self IP changed: gw=10.0.0.1 self=10.0.1.157
+2024/08/04 20:16:49 pm: using backend prefs for "profile-7fa0": Prefs{ra=false dns=true want=true routes=[] statefulFiltering=false nf=on update=check Persist{lm=, o=, n=[OH/SP] u="marceivandenis@gmail.com"}}
+2024/08/04 20:16:49 logpolicy: using system state directory "/var/lib/tailscale"
+2024/08/04 20:16:49 got LocalBackend in 23ms
+2024/08/04 20:16:49 Start
+2024/08/04 20:16:50 timeout waiting for initial portlist
+2024/08/04 20:16:50 Backend: logs: be:5469b3b11667bbe90b5a48688667ff878cd931d638109cb721ce768b76ef5e2f fe:
+2024/08/04 20:16:50 control: client.Login(0)
+2024/08/04 20:16:50 health("overall"): error: not in map poll
+2024/08/04 20:16:50 control: doLogin(regen=false, hasUrl=false)
+2024/08/04 20:16:50 control: control server key from https://controlplane.tailscale.com: ts2021=[fSeS+], legacy=[nlFWp]
+2024/08/04 20:16:50 control: RegisterReq: onode= node=[OH/SP] fup=false nks=false
+2024/08/04 20:16:51 control: RegisterReq: got response; nodeKeyExpired=false, machineAuthorized=true; authURL=false
+2024/08/04 20:16:51 control: netmap: got new dial plan from control
+2024/08/04 20:16:51 active login: marceivandenis@gmail.com
+2024/08/04 20:16:51 Switching ipn state NoState -> Starting (WantRunning=true, nm=true)
+2024/08/04 20:16:51 magicsock: SetPrivateKey called (init)
+2024/08/04 20:16:51 wgengine: Reconfig: configuring userspace WireGuard config (with 0/4 peers)
+2024/08/04 20:16:51 wgengine: Reconfig: configuring router
+2024/08/04 20:16:51 wgengine: Reconfig: configuring DNS
+2024/08/04 20:16:51 dns: Set: {DefaultResolvers:[] Routes:{tailff5cfc.ts.net.:[] ts.net.:[199.247.155.53 2620:111:8007::53]}+65arpa SearchDomains:[tailff5cfc.ts.net.] Hosts:3}
+2024/08/04 20:16:51 dns: Resolvercfg: {Routes:{.:[127.0.0.53 168.63.129.16] ts.net.:[199.247.155.53 2620:111:8007::53]} Hosts:3 LocalDomains:[tailff5cfc.ts.net.]+65arpa, cloud="azure"}
+2024/08/04 20:16:51 dns: OScfg: {Nameservers:[100.100.100.100] SearchDomains:[tailff5cfc.ts.net. as3oyaxyermercpknrxo0v1cld.cx.internal.cloudapp.net.] }
+2024/08/04 20:16:51 rename of "/etc/resolv.conf" to "/etc/resolv.pre-tailscale-backup.conf" failed (rename /etc/resolv.conf /etc/resolv.pre-tailscale-backup.conf: device or resource busy), falling back to copy+delete
+2024/08/04 20:16:51 restarted resolved after 1ms
+2024/08/04 20:16:51 peerapi: serving on http://100.77.104.102:57923
+2024/08/04 20:16:51 peerapi: serving on http://[fd7a:115c:a1e0::3501:6867]:42609
+2024/08/04 20:16:51 magicsock: home is now derp-1 (nyc)
+2024/08/04 20:16:51 magicsock: adding connection to derp-1 for home-keep-alive
+2024/08/04 20:16:51 magicsock: 1 active derp conns: derp-1=cr0s,wr0s
+2024/08/04 20:16:51 Switching ipn state Starting -> Running (WantRunning=true, nm=true)
+2024/08/04 20:16:51 control: NetInfo: NetInfo{varies=false hairpin= ipv6=false ipv6os=true udp=true icmpv4=false derp=#1 portmap= link="" firewallmode="ipt-default"}
+2024/08/04 20:16:51 magicsock: endpoints changed: 172.210.174.83:1025 (stun), 10.0.1.157:49850 (local), 172.17.0.1:49850 (local)
+2024/08/04 20:16:51 derphttp.Client.Connect: connecting to derp-1 (nyc)
+2024/08/04 20:16:51 magicsock: derp-1 connected; connGen=1
+2024/08/04 20:16:51 health("overall"): ok
+2024/08/04 20:17:27 wgengine: idle peer [BLsGf] now active, reconfiguring WireGuard
+2024/08/04 20:17:27 wgengine: Reconfig: configuring userspace WireGuard config (with 1/4 peers)
+2024/08/04 20:17:27 magicsock: disco: node [BLsGf] d:e17e23714b3c1c2c now using 186.158.200.226:16501 mtu=1360 tx=ffa141a68cc9
+2024/08/04 20:17:27 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 48 tcp ok
+2024/08/04 20:17:27 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 48 ok out
+2024/08/04 20:17:27 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 48 tcp ok
+2024/08/04 20:17:31 wgengine: idle peer [YwsNZ] now active, reconfiguring WireGuard
+2024/08/04 20:17:31 wgengine: Reconfig: configuring userspace WireGuard config (with 2/4 peers)
+2024/08/04 20:17:31 magicsock: disco: node [YwsNZ] d:ced8eef4e2b219cc now using 148.222.129.48:8047 mtu=1360 tx=bddd0e7bdd83
+2024/08/04 20:17:37 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 20:17:47 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 327 ok out
+2024/08/04 20:17:49 Received error: PollNetMap: unexpected EOF
+2024/08/04 20:17:49 control: netmap: got new dial plan from control
+2024/08/04 20:17:57 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 20:18:07 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 205 ok out
+2024/08/04 20:18:17 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 225 ok out
+2024/08/04 20:18:27 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 171 ok out
+2024/08/04 20:18:37 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 20:18:47 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 20:18:57 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 1280 ok out
+2024/08/04 20:19:07 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:55149} 742 ok out
+2024/08/04 20:19:17 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 929 ok out
+2024/08/04 20:19:27 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 20:19:31 magicsock: adding connection to derp-11 for [YwsNZ]
+2024/08/04 20:19:31 magicsock: 2 active derp conns: derp-1=cr3m0s,wr1m0s derp-11=cr0s,wr0s
+2024/08/04 20:19:31 derphttp.Client.Send: connecting to derp-11 (sao)
+2024/08/04 20:19:32 magicsock: derp-11 connected; connGen=1
+2024/08/04 20:19:37 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 1013 ok out
+2024/08/04 20:19:47 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 566 ok out
+2024/08/04 20:19:57 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 905 ok out
+2024/08/04 20:20:07 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 122 ok out
+2024/08/04 20:20:17 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 281 ok out
+2024/08/04 20:20:27 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 316 ok out
+2024/08/04 20:20:31 magicsock: closing connection to derp-11 (idle), age 1m0s
+2024/08/04 20:20:31 magicsock: 1 active derp conns: derp-1=cr4m0s,wr2m0s
+2024/08/04 20:20:31 magicsock: adding connection to derp-11 for [YwsNZ]
+2024/08/04 20:20:31 magicsock: 2 active derp conns: derp-1=cr4m0s,wr2m0s derp-11=cr0s,wr0s
+2024/08/04 20:20:31 derphttp.Client.Send: connecting to derp-11 (sao)
+2024/08/04 20:20:32 magicsock: derp-11 connected; connGen=1
+2024/08/04 20:20:37 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 166 ok out
+2024/08/04 20:20:47 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 271 ok out
+2024/08/04 20:20:57 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 372 ok out
+2024/08/04 20:21:07 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 104 ok out
+2024/08/04 20:21:17 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 276 ok out
+2024/08/04 20:21:27 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 228 ok out
+2024/08/04 20:21:31 magicsock: closing connection to derp-11 (idle), age 1m0s
+2024/08/04 20:21:31 magicsock: 1 active derp conns: derp-1=cr5m0s,wr3m0s
+2024/08/04 20:21:31 magicsock: adding connection to derp-11 for [YwsNZ]
+2024/08/04 20:21:31 magicsock: 2 active derp conns: derp-1=cr5m0s,wr3m0s derp-11=cr0s,wr0s
+2024/08/04 20:21:31 derphttp.Client.Send: connecting to derp-11 (sao)
+2024/08/04 20:21:32 magicsock: derp-11 connected; connGen=1
+2024/08/04 20:21:37 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 20:21:47 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 52 tcp non-syn
+2024/08/04 20:21:57 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 281 ok out
+2024/08/04 20:22:07 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 68 tcp non-syn
+2024/08/04 20:22:17 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 1280 ok out
+2024/08/04 20:22:27 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 295 ok out
+2024/08/04 20:22:31 magicsock: closing connection to derp-11 (idle), age 1m0s
+2024/08/04 20:22:31 magicsock: 1 active derp conns: derp-1=cr6m0s,wr4m0s
+2024/08/04 20:22:31 magicsock: adding connection to derp-11 for [YwsNZ]
+2024/08/04 20:22:31 magicsock: 2 active derp conns: derp-1=cr6m0s,wr4m0s derp-11=cr0s,wr0s
+2024/08/04 20:22:31 derphttp.Client.Recv: connecting to derp-11 (sao)
+2024/08/04 20:22:32 magicsock: derp-11 connected; connGen=1
+2024/08/04 20:22:37 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 46 tcp non-syn
+2024/08/04 20:22:47 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 20:22:57 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 52 tcp non-syn
+2024/08/04 20:23:07 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 54 tcp non-syn
+2024/08/04 20:23:17 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 20:23:27 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 20:23:31 magicsock: closing connection to derp-11 (idle), age 1m0s
+2024/08/04 20:23:31 magicsock: 1 active derp conns: derp-1=cr7m0s,wr5m0s
+2024/08/04 20:23:31 magicsock: adding connection to derp-11 for [YwsNZ]
+2024/08/04 20:23:31 magicsock: 2 active derp conns: derp-1=cr7m0s,wr5m0s derp-11=cr0s,wr0s
+2024/08/04 20:23:31 derphttp.Client.Send: connecting to derp-11 (sao)
+2024/08/04 20:23:32 magicsock: derp-11 connected; connGen=1
+2024/08/04 20:23:37 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 20:23:47 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 52 tcp non-syn
+2024/08/04 20:23:57 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 52 tcp non-syn
+2024/08/04 20:24:07 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 55 tcp non-syn
+2024/08/04 20:24:17 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 44 tcp non-syn
+2024/08/04 20:24:27 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 55 tcp non-syn
+2024/08/04 20:24:37 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 55 tcp non-syn
+2024/08/04 20:24:47 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 708 ok out
+2024/08/04 20:24:57 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 44 tcp non-syn
+2024/08/04 20:25:07 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 20:25:17 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 55 tcp non-syn
+2024/08/04 20:25:27 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 20:25:37 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 20:25:47 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 55 tcp non-syn
+2024/08/04 20:25:57 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 20:26:07 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 1023 ok out
+2024/08/04 20:26:17 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 52 tcp non-syn
+2024/08/04 20:26:27 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 1280 ok out
+2024/08/04 20:26:37 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 74 ok out
+2024/08/04 20:26:47 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 405 ok out
+2024/08/04 20:26:57 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 306 ok out
+2024/08/04 20:27:07 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 1280 ok out
+2024/08/04 20:27:17 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 280 ok out
+2024/08/04 20:27:27 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 425 ok out
+2024/08/04 20:27:37 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 427 ok out
+2024/08/04 20:27:47 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 122 ok out
+2024/08/04 20:27:57 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 1280 ok out
+2024/08/04 20:28:07 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 537 ok out
+2024/08/04 20:28:17 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 20:28:27 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 749 ok out
+2024/08/04 20:28:37 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 342 ok out
+2024/08/04 20:28:47 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 1280 ok out
+2024/08/04 20:28:57 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 889 ok out
+2024/08/04 20:29:07 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 282 ok out
+2024/08/04 20:29:17 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 78 ok out
+2024/08/04 20:29:27 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 255 ok out
+2024/08/04 20:29:37 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 20:29:47 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 160 ok out
+2024/08/04 20:29:57 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:55149} 105 ok out
+2024/08/04 20:30:07 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 254 ok out
+2024/08/04 20:30:17 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 181 ok out
+2024/08/04 20:30:27 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 228 ok out
+2024/08/04 20:30:37 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 229 ok out
+2024/08/04 20:30:47 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 169 ok out
+2024/08/04 20:30:57 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 221 ok out
+2024/08/04 20:31:07 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 374 ok out
+2024/08/04 20:31:17 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 20:31:27 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 196 ok out
+2024/08/04 20:31:37 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 336 ok out
+2024/08/04 20:31:47 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 254 ok out
+2024/08/04 20:31:57 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 211 ok out
+2024/08/04 20:32:07 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 299 ok out
+2024/08/04 20:32:17 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 283 ok out
+2024/08/04 20:32:27 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 181 ok out
+2024/08/04 20:32:37 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 330 ok out
+2024/08/04 20:32:47 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 190 ok out
+2024/08/04 20:32:57 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 186 ok out
+2024/08/04 20:33:07 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 339 ok out
+2024/08/04 20:33:17 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 225 ok out
+2024/08/04 20:33:27 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 292 ok out
+2024/08/04 20:33:37 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 257 ok out
+2024/08/04 20:33:47 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 200 ok out
+2024/08/04 20:33:57 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 208 ok out
+2024/08/04 20:34:07 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 364 ok out
+2024/08/04 20:34:17 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 280 ok out
+2024/08/04 20:34:27 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 216 ok out
+2024/08/04 20:34:37 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 268 ok out
+2024/08/04 20:34:47 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 20:34:57 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:55149} 1280 ok out
+2024/08/04 20:35:07 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 20:35:17 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 338 ok out
+2024/08/04 20:35:27 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 232 ok out
+2024/08/04 20:35:37 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 249 ok out
+2024/08/04 20:35:47 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 214 ok out
+2024/08/04 20:35:57 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 207 ok out
+2024/08/04 20:36:07 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 211 ok out
+2024/08/04 20:36:17 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 138 ok out
+2024/08/04 20:36:27 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 261 ok out
+2024/08/04 20:36:37 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 230 ok out
+2024/08/04 20:36:47 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 151 ok out
+2024/08/04 20:36:57 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 47 tcp non-syn
+2024/08/04 20:37:07 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 229 ok out
+2024/08/04 20:37:17 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 201 ok out
+2024/08/04 20:37:27 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 213 ok out
+2024/08/04 20:37:37 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 227 ok out
+2024/08/04 20:37:47 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 142 ok out
+2024/08/04 20:37:57 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:55149} 269 ok out
+2024/08/04 20:38:07 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:55149} 186 ok out
+2024/08/04 20:38:17 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 99 ok out
+2024/08/04 20:38:27 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 310 ok out
+2024/08/04 20:38:37 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 20:38:47 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 131 ok out
+2024/08/04 20:38:57 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 242 ok out
+2024/08/04 20:39:07 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 222 ok out
+2024/08/04 20:39:17 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 104 ok out
+2024/08/04 20:39:27 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 130 ok out
+2024/08/04 20:39:37 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 178 ok out
+2024/08/04 20:39:47 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 81 ok out
+2024/08/04 20:39:57 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 244 ok out
+2024/08/04 20:40:06 magicsock: adding connection to derp-16 for [BLsGf]
+2024/08/04 20:40:06 magicsock: 3 active derp conns: derp-1=cr23m0s,wr1m0s derp-11=cr17m0s,wr35s derp-16=cr0s,wr0s
+2024/08/04 20:40:06 derphttp.Client.Send: connecting to derp-16 (mia)
+2024/08/04 20:40:06 magicsock: derp-16 connected; connGen=1
+2024/08/04 20:40:07 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 69 ok out
+2024/08/04 20:40:17 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 69 ok out
+2024/08/04 20:40:27 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 244 ok out
+2024/08/04 20:40:37 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 358 ok out
+2024/08/04 20:40:47 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 20:40:57 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 123 ok out
+2024/08/04 20:41:07 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 310 ok out
+2024/08/04 20:41:17 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 208 ok out
+2024/08/04 20:41:27 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 134 ok out
+2024/08/04 20:41:37 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 273 ok out
+2024/08/04 20:41:47 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 249 ok out
+2024/08/04 20:41:57 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 68 tcp non-syn
+2024/08/04 20:42:07 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 231 ok out
+2024/08/04 20:42:17 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 212 ok out
+2024/08/04 20:42:27 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 214 ok out
+2024/08/04 20:42:37 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 233 ok out
+2024/08/04 20:42:47 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 154 ok out
+2024/08/04 20:42:57 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 239 ok out
+2024/08/04 20:43:07 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 211 ok out
+2024/08/04 20:43:17 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 176 ok out
+2024/08/04 20:43:27 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 167 ok out
+2024/08/04 20:43:37 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 271 ok out
+2024/08/04 20:43:47 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 442 ok out
+2024/08/04 20:43:57 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 176 ok out
+2024/08/04 20:44:07 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 252 ok out
+2024/08/04 20:44:16 magicsock: closing connection to derp-16 (idle), age 4m10s
+2024/08/04 20:44:16 magicsock: 2 active derp conns: derp-1=cr27m0s,wr5m0s derp-11=cr21m0s,wr10s
+2024/08/04 20:44:17 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 317 ok out
+2024/08/04 20:44:27 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 312 ok out
+2024/08/04 20:44:37 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 237 ok out
+2024/08/04 20:44:47 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 255 ok out
+2024/08/04 20:44:57 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 278 ok out
+2024/08/04 20:45:07 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 154 ok out
+2024/08/04 20:45:17 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 487 ok out
+2024/08/04 20:45:27 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 20:45:37 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 228 ok out
+2024/08/04 20:45:47 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 567 ok out
+2024/08/04 20:45:57 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 262 ok out
+2024/08/04 20:46:07 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 270 ok out
+2024/08/04 20:46:17 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 428 ok out
+2024/08/04 20:46:27 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 272 ok out
+2024/08/04 20:46:37 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 20:46:47 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 326 ok out
+2024/08/04 20:46:57 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 286 ok out
+2024/08/04 20:47:07 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 269 ok out
+2024/08/04 20:47:17 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 297 ok out
+2024/08/04 20:47:27 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 225 ok out
+2024/08/04 20:47:37 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 287 ok out
+2024/08/04 20:47:47 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 247 ok out
+2024/08/04 20:47:57 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:55149} 329 ok out
+2024/08/04 20:48:07 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 320 ok out
+2024/08/04 20:48:17 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 318 ok out
+2024/08/04 20:48:27 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:55149} 204 ok out
+2024/08/04 20:48:37 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 443 ok out
+2024/08/04 20:48:47 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 278 ok out
+2024/08/04 20:48:57 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 20:49:07 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 20:49:17 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 235 ok out
+2024/08/04 20:49:27 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 232 ok out
+2024/08/04 20:49:37 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 238 ok out
+2024/08/04 20:49:47 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 300 ok out
+2024/08/04 20:49:57 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 272 ok out
+2024/08/04 20:50:07 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 321 ok out
+2024/08/04 20:50:17 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 232 ok out
+2024/08/04 20:50:27 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 334 ok out
+2024/08/04 20:50:37 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 488 ok out
+2024/08/04 20:50:47 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 218 ok out
+2024/08/04 20:50:57 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 252 ok out
+2024/08/04 20:51:07 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 539 ok out
+2024/08/04 20:51:17 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 256 ok out
+2024/08/04 20:51:27 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 373 ok out
+2024/08/04 20:51:37 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 557 ok out
+2024/08/04 20:51:47 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 371 ok out
+2024/08/04 20:51:57 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 281 ok out
+2024/08/04 20:52:07 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 402 ok out
+2024/08/04 20:52:17 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 282 ok out
+2024/08/04 20:52:27 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 436 ok out
+2024/08/04 20:52:37 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 368 ok out
+2024/08/04 20:52:47 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 351 ok out
+2024/08/04 20:52:57 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 259 ok out
+2024/08/04 20:53:07 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 52 tcp non-syn
+2024/08/04 20:53:17 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:55149} 396 ok out
+2024/08/04 20:53:27 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 319 ok out
+2024/08/04 20:53:37 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 285 ok out
+2024/08/04 20:53:47 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 377 ok out
+2024/08/04 20:53:57 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 460 ok out
+2024/08/04 20:54:07 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 345 ok out
+2024/08/04 20:54:17 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 316 ok out
+2024/08/04 20:54:27 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 180 ok out
+2024/08/04 20:54:37 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 364 ok out
+2024/08/04 20:54:47 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 302 ok out
+2024/08/04 20:54:57 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 287 ok out
+2024/08/04 20:55:07 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 370 ok out
+2024/08/04 20:55:17 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 293 ok out
+2024/08/04 20:55:27 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 278 ok out
+2024/08/04 20:55:37 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 360 ok out
+2024/08/04 20:55:47 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 368 ok out
+2024/08/04 20:55:57 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 281 ok out
+2024/08/04 20:56:07 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 292 ok out
+2024/08/04 20:56:17 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 246 ok out
+2024/08/04 20:56:27 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 249 ok out
+2024/08/04 20:56:37 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 315 ok out
+2024/08/04 20:56:47 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 263 ok out
+2024/08/04 20:56:57 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:55149} 385 ok out
+2024/08/04 20:57:07 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 44 tcp non-syn
+2024/08/04 20:57:17 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 44 tcp non-syn
+2024/08/04 20:57:27 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 68 tcp non-syn
+2024/08/04 20:57:37 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 52 tcp non-syn
+2024/08/04 20:57:47 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 68 tcp non-syn
+2024/08/04 20:57:57 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 20:58:07 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 68 tcp non-syn
+2024/08/04 20:58:17 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 52 tcp non-syn
+2024/08/04 20:58:27 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 20:58:37 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 20:58:47 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 20:58:57 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 20:59:07 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 20:59:17 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 20:59:27 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 20:59:37 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:55149} 266 ok out
+2024/08/04 20:59:47 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 68 tcp non-syn
+2024/08/04 20:59:57 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 86 tcp non-syn
+2024/08/04 21:00:07 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:00:17 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:55149} 468 ok out
+2024/08/04 21:00:27 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:55149} 236 ok out
+2024/08/04 21:00:37 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:55149} 225 ok out
+2024/08/04 21:00:47 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:00:57 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:01:07 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:01:17 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:01:27 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:01:37 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:01:47 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:01:57 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:02:07 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:55149} 337 ok out
+2024/08/04 21:02:17 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 21:02:27 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 52 tcp non-syn
+2024/08/04 21:02:37 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:02:47 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:02:57 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:55149} 197 ok out
+2024/08/04 21:03:07 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 52 tcp non-syn
+2024/08/04 21:03:17 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 21:03:27 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:03:37 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 52 tcp non-syn
+2024/08/04 21:03:47 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 21:03:57 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:04:07 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:04:17 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 68 tcp non-syn
+2024/08/04 21:04:27 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:04:37 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:55149} 152 ok out
+2024/08/04 21:04:47 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:04:57 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:05:07 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 52 tcp non-syn
+2024/08/04 21:05:17 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 21:05:27 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 68 tcp non-syn
+2024/08/04 21:05:37 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:05:47 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:05:57 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:55149} 1280 ok out
+2024/08/04 21:06:07 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:55149} 110 ok out
+2024/08/04 21:06:17 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:06:27 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:55149} 332 ok out
+2024/08/04 21:06:37 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:06:47 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:06:57 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:55149} 207 ok out
+2024/08/04 21:07:07 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:07:17 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:07:27 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:55149} 345 ok out
+2024/08/04 21:07:37 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:07:47 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:07:57 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:08:07 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:08:17 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:08:27 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:55149} 235 ok out
+2024/08/04 21:08:37 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:55149} 1280 ok out
+2024/08/04 21:08:47 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 201 ok out
+2024/08/04 21:08:57 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:55149} 657 ok out
+2024/08/04 21:09:07 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:55149} 1280 ok out
+2024/08/04 21:09:17 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 411 ok out
+2024/08/04 21:09:27 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 179 ok out
+2024/08/04 21:09:37 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 305 ok out
+2024/08/04 21:09:47 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 183 ok out
+2024/08/04 21:09:57 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:10:07 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 218 ok out
+2024/08/04 21:10:17 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 250 ok out
+2024/08/04 21:10:27 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:10:37 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:10:47 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:10:57 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 281 ok out
+2024/08/04 21:11:07 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 205 ok out
+2024/08/04 21:11:17 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 216 ok out
+2024/08/04 21:11:27 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 560 ok out
+2024/08/04 21:11:37 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 205 ok out
+2024/08/04 21:11:47 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 21:11:57 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 68 tcp non-syn
+2024/08/04 21:12:07 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 54 tcp non-syn
+2024/08/04 21:12:17 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:12:27 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 170 ok out
+2024/08/04 21:12:37 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 309 ok out
+2024/08/04 21:12:47 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:12:57 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 21:13:07 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:13:17 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:13:27 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:13:37 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 46 tcp non-syn
+2024/08/04 21:13:47 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:13:57 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:14:07 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 68 tcp non-syn
+2024/08/04 21:14:17 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:14:27 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:14:37 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 410 ok out
+2024/08/04 21:14:47 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 333 ok out
+2024/08/04 21:14:57 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 249 ok out
+2024/08/04 21:15:07 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 239 ok out
+2024/08/04 21:15:17 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 21:15:27 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 52 tcp non-syn
+2024/08/04 21:15:37 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:15:47 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 250 ok out
+2024/08/04 21:15:57 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 382 ok out
+2024/08/04 21:16:07 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 191 ok out
+2024/08/04 21:16:17 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 44 tcp non-syn
+2024/08/04 21:16:27 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 316 ok out
+2024/08/04 21:16:37 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 282 ok out
+2024/08/04 21:16:47 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 304 ok out
+2024/08/04 21:16:57 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:17:07 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 1270 ok out
+2024/08/04 21:17:17 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 1280 ok out
+2024/08/04 21:17:27 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:17:37 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 52 tcp non-syn
+2024/08/04 21:17:47 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:17:57 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 68 tcp non-syn
+2024/08/04 21:18:07 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:18:17 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 21:18:27 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 21:18:37 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:18:47 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 21:18:57 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 21:19:07 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 170 ok out
+2024/08/04 21:19:17 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 238 ok out
+2024/08/04 21:19:27 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 205 ok out
+2024/08/04 21:19:37 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 122 ok out
+2024/08/04 21:19:47 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 163 ok out
+2024/08/04 21:19:57 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 242 ok out
+2024/08/04 21:20:07 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 21:20:17 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 234 ok out
+2024/08/04 21:20:27 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 245 ok out
+2024/08/04 21:20:37 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 293 ok out
+2024/08/04 21:20:47 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 259 ok out
+2024/08/04 21:20:57 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:55149} 225 ok out
+2024/08/04 21:21:07 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 1156 ok out
+2024/08/04 21:21:17 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 21:21:27 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 48 tcp non-syn
+2024/08/04 21:21:37 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:21:47 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:21:57 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:22:07 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 21:22:17 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 68 tcp non-syn
+2024/08/04 21:22:27 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:22:37 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 21:22:47 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 52 tcp non-syn
+2024/08/04 21:22:57 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 401 ok out
+2024/08/04 21:23:07 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:23:17 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:23:27 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 21:23:37 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 21:23:47 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 52 tcp non-syn
+2024/08/04 21:23:57 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 68 tcp non-syn
+2024/08/04 21:24:07 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 52 tcp non-syn
+2024/08/04 21:24:17 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 21:24:27 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:24:37 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:24:47 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 68 tcp non-syn
+2024/08/04 21:24:57 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 21:25:07 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 862 ok out
+2024/08/04 21:25:17 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 55 ok out
+2024/08/04 21:25:27 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 111 ok out
+2024/08/04 21:25:37 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 46 tcp non-syn
+2024/08/04 21:25:47 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 68 tcp non-syn
+2024/08/04 21:25:57 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 242 ok out
+2024/08/04 21:26:07 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:26:17 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:26:27 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 21:26:37 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 52 tcp non-syn
+2024/08/04 21:26:47 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 21:26:57 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 68 tcp non-syn
+2024/08/04 21:27:07 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 68 tcp non-syn
+2024/08/04 21:27:17 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 21:27:27 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 21:27:37 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:55149} 333 ok out
+2024/08/04 21:27:47 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 68 tcp non-syn
+2024/08/04 21:27:57 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 21:28:07 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 21:28:17 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:28:27 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 44 tcp non-syn
+2024/08/04 21:28:37 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 21:28:47 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 21:28:57 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 68 tcp non-syn
+2024/08/04 21:29:07 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 46 tcp non-syn
+2024/08/04 21:29:17 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 21:29:27 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 46 tcp non-syn
+2024/08/04 21:29:32 magicsock: closing connection to derp-11 (idle), age 1h6m0s
+2024/08/04 21:29:32 magicsock: 1 active derp conns: derp-1=cr1h13m0s,wr50m0s
+2024/08/04 21:29:37 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 21:29:47 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 21:29:57 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 337 ok out
+2024/08/04 21:30:07 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 52 tcp non-syn
+2024/08/04 21:30:17 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:30:27 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 52 tcp non-syn
+2024/08/04 21:30:37 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 52 tcp non-syn
+2024/08/04 21:30:47 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:30:57 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 335 ok out
+2024/08/04 21:31:07 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 347 ok out
+2024/08/04 21:31:17 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:31:27 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 166 ok out
+2024/08/04 21:31:37 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 61 ok out
+2024/08/04 21:31:47 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 318 ok out
+2024/08/04 21:31:57 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 55 tcp non-syn
+2024/08/04 21:32:07 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:32:17 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 52 tcp non-syn
+2024/08/04 21:32:27 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 1280 ok out
+2024/08/04 21:32:37 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:32:47 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:32:57 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:33:07 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:33:17 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:33:27 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:33:37 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 52 tcp non-syn
+2024/08/04 21:33:47 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:33:57 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:34:00 magicsock: adding connection to derp-11 for [YwsNZ]
+2024/08/04 21:34:00 magicsock: 2 active derp conns: derp-1=cr1h17m0s,wr55m0s derp-11=cr0s,wr0s
+2024/08/04 21:34:00 derphttp.Client.Send: connecting to derp-11 (sao)
+2024/08/04 21:34:00 magicsock: derp-11 connected; connGen=1
+2024/08/04 21:34:07 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:34:17 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:34:27 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:34:37 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:34:47 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:34:57 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:35:07 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:35:17 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:35:27 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:55149} 113 ok out
+2024/08/04 21:35:37 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:35:47 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:35:57 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:36:00 magicsock: closing connection to derp-11 (idle), age 2m0s
+2024/08/04 21:36:00 magicsock: 1 active derp conns: derp-1=cr1h19m0s,wr57m0s
+2024/08/04 21:36:07 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:36:17 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 131 ok out
+2024/08/04 21:36:27 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 1280 ok out
+2024/08/04 21:36:37 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:36:47 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:36:57 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 21:37:07 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:37:17 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 21:37:27 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:37:37 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 21:37:47 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 52 tcp non-syn
+2024/08/04 21:37:57 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 21:38:07 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:38:13 magicsock: adding connection to derp-11 for [BLsGf]
+2024/08/04 21:38:13 magicsock: 2 active derp conns: derp-1=cr1h21m0s,wr59m0s derp-11=cr0s,wr0s
+2024/08/04 21:38:13 derphttp.Client.Send: connecting to derp-11 (sao)
+2024/08/04 21:38:13 magicsock: derp-11 connected; connGen=1
+2024/08/04 21:38:17 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 68 tcp non-syn
+2024/08/04 21:38:27 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:38:37 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 21:38:47 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 68 tcp non-syn
+2024/08/04 21:38:57 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 21:39:07 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 68 tcp non-syn
+2024/08/04 21:39:13 magicsock: closing connection to derp-11 (idle), age 1m0s
+2024/08/04 21:39:13 magicsock: 1 active derp conns: derp-1=cr1h22m0s,wr1h0m0s
+2024/08/04 21:39:16 magicsock: adding connection to derp-11 for [BLsGf]
+2024/08/04 21:39:16 magicsock: 2 active derp conns: derp-1=cr1h22m0s,wr1h0m0s derp-11=cr0s,wr0s
+2024/08/04 21:39:16 derphttp.Client.Send: connecting to derp-11 (sao)
+2024/08/04 21:39:16 magicsock: derp-11 connected; connGen=1
+2024/08/04 21:39:17 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 46 tcp non-syn
+2024/08/04 21:39:27 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 68 tcp non-syn
+2024/08/04 21:39:37 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 1280 ok out
+2024/08/04 21:39:47 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 316 ok out
+2024/08/04 21:39:57 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 1280 ok out
+2024/08/04 21:40:07 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 21:40:16 magicsock: closing connection to derp-11 (idle), age 1m0s
+2024/08/04 21:40:16 magicsock: 1 active derp conns: derp-1=cr1h23m0s,wr1h1m0s
+2024/08/04 21:40:17 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 21:40:19 magicsock: adding connection to derp-11 for [BLsGf]
+2024/08/04 21:40:19 magicsock: 2 active derp conns: derp-1=cr1h23m0s,wr1h1m0s derp-11=cr0s,wr0s
+2024/08/04 21:40:19 derphttp.Client.Send: connecting to derp-11 (sao)
+2024/08/04 21:40:19 magicsock: derp-11 connected; connGen=1
+2024/08/04 21:40:27 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 21:40:37 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:40:47 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 117 ok out
+2024/08/04 21:40:57 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 68 tcp non-syn
+2024/08/04 21:41:07 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 21:41:17 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 51 tcp non-syn
+2024/08/04 21:41:19 magicsock: closing connection to derp-11 (idle), age 1m0s
+2024/08/04 21:41:19 magicsock: 1 active derp conns: derp-1=cr1h24m0s,wr1h2m0s
+2024/08/04 21:41:22 magicsock: adding connection to derp-11 for [BLsGf]
+2024/08/04 21:41:22 magicsock: 2 active derp conns: derp-1=cr1h25m0s,wr1h2m0s derp-11=cr0s,wr0s
+2024/08/04 21:41:22 derphttp.Client.Send: connecting to derp-11 (sao)
+2024/08/04 21:41:22 magicsock: derp-11 connected; connGen=1
+2024/08/04 21:41:27 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:41:37 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 52 tcp non-syn
+2024/08/04 21:41:47 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:41:57 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:42:07 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:42:17 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:42:22 magicsock: closing connection to derp-11 (idle), age 1m0s
+2024/08/04 21:42:22 magicsock: 1 active derp conns: derp-1=cr1h26m0s,wr1h3m0s
+2024/08/04 21:42:25 magicsock: adding connection to derp-11 for [BLsGf]
+2024/08/04 21:42:25 magicsock: 2 active derp conns: derp-1=cr1h26m0s,wr1h3m0s derp-11=cr0s,wr0s
+2024/08/04 21:42:25 derphttp.Client.Send: connecting to derp-11 (sao)
+2024/08/04 21:42:25 magicsock: derp-11 connected; connGen=1
+2024/08/04 21:42:27 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:42:37 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:42:47 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:42:57 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 160 ok out
+2024/08/04 21:43:07 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:43:17 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 68 tcp non-syn
+2024/08/04 21:43:25 magicsock: closing connection to derp-11 (idle), age 1m0s
+2024/08/04 21:43:25 magicsock: 1 active derp conns: derp-1=cr1h27m0s,wr1h4m0s
+2024/08/04 21:43:27 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 21:43:28 magicsock: adding connection to derp-11 for [BLsGf]
+2024/08/04 21:43:28 magicsock: 2 active derp conns: derp-1=cr1h27m0s,wr1h4m0s derp-11=cr0s,wr0s
+2024/08/04 21:43:28 derphttp.Client.Send: connecting to derp-11 (sao)
+2024/08/04 21:43:28 magicsock: derp-11 connected; connGen=1
+2024/08/04 21:43:37 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:43:47 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:43:57 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 55 tcp non-syn
+2024/08/04 21:44:07 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:44:17 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 68 tcp non-syn
+2024/08/04 21:44:27 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 68 tcp non-syn
+2024/08/04 21:44:28 magicsock: closing connection to derp-11 (idle), age 1m0s
+2024/08/04 21:44:28 magicsock: 1 active derp conns: derp-1=cr1h28m0s,wr1h5m0s
+2024/08/04 21:44:31 magicsock: adding connection to derp-11 for [BLsGf]
+2024/08/04 21:44:31 magicsock: 2 active derp conns: derp-1=cr1h28m0s,wr1h5m0s derp-11=cr0s,wr0s
+2024/08/04 21:44:31 derphttp.Client.Send: connecting to derp-11 (sao)
+2024/08/04 21:44:31 magicsock: derp-11 connected; connGen=1
+2024/08/04 21:44:37 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 21:44:47 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 21:44:57 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:45:07 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:45:17 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 21:45:27 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:45:31 magicsock: closing connection to derp-11 (idle), age 1m0s
+2024/08/04 21:45:31 magicsock: 1 active derp conns: derp-1=cr1h29m0s,wr1h6m0s
+2024/08/04 21:45:34 magicsock: adding connection to derp-11 for [BLsGf]
+2024/08/04 21:45:34 magicsock: 2 active derp conns: derp-1=cr1h29m0s,wr1h6m0s derp-11=cr0s,wr0s
+2024/08/04 21:45:34 derphttp.Client.Send: connecting to derp-11 (sao)
+2024/08/04 21:45:34 magicsock: derp-11 connected; connGen=1
+2024/08/04 21:45:37 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 44 tcp non-syn
+2024/08/04 21:45:47 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 140 ok out
+2024/08/04 21:45:57 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:46:07 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 570 ok out
+2024/08/04 21:46:17 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 44 tcp non-syn
+2024/08/04 21:46:27 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:46:34 magicsock: closing connection to derp-11 (idle), age 1m0s
+2024/08/04 21:46:34 magicsock: 1 active derp conns: derp-1=cr1h30m0s,wr1h7m0s
+2024/08/04 21:46:37 magicsock: adding connection to derp-11 for [BLsGf]
+2024/08/04 21:46:37 magicsock: 2 active derp conns: derp-1=cr1h30m0s,wr1h8m0s derp-11=cr0s,wr0s
+2024/08/04 21:46:37 derphttp.Client.Send: connecting to derp-11 (sao)
+2024/08/04 21:46:37 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:46:38 magicsock: derp-11 connected; connGen=1
+2024/08/04 21:46:47 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:46:57 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 21:47:07 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:47:17 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:47:27 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 68 tcp non-syn
+2024/08/04 21:47:37 magicsock: closing connection to derp-11 (idle), age 1m0s
+2024/08/04 21:47:37 magicsock: 1 active derp conns: derp-1=cr1h31m0s,wr1h9m0s
+2024/08/04 21:47:37 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:47:47 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 186 ok out
+2024/08/04 21:47:57 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 82 ok out
+2024/08/04 21:48:07 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 186 ok out
+2024/08/04 21:48:17 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 214 ok out
+2024/08/04 21:48:27 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 122 ok out
+2024/08/04 21:48:37 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 394 ok out
+2024/08/04 21:48:47 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 191 ok out
+2024/08/04 21:48:57 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:49:07 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 126 ok out
+2024/08/04 21:49:17 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 303 ok out
+2024/08/04 21:49:27 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 331 ok out
+2024/08/04 21:49:37 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 200 ok out
+2024/08/04 21:49:47 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 52 tcp non-syn
+2024/08/04 21:49:57 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 68 tcp non-syn
+2024/08/04 21:50:07 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 68 tcp non-syn
+2024/08/04 21:50:17 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 654 ok out
+2024/08/04 21:50:27 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 356 ok out
+2024/08/04 21:50:37 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 345 ok out
+2024/08/04 21:50:47 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 21:50:57 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 52 tcp non-syn
+2024/08/04 21:51:07 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:51:17 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 52 tcp non-syn
+2024/08/04 21:51:27 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 155 ok out
+2024/08/04 21:51:37 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 21:51:47 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:55149} 1280 ok out
+2024/08/04 21:51:57 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 496 ok out
+2024/08/04 21:52:07 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 52 tcp non-syn
+2024/08/04 21:52:17 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 44 tcp non-syn
+2024/08/04 21:52:27 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 819 ok out
+2024/08/04 21:52:37 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 1280 ok out
+2024/08/04 21:52:47 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:52:57 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 68 tcp non-syn
+2024/08/04 21:53:07 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 68 tcp non-syn
+2024/08/04 21:53:17 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 1280 ok out
+2024/08/04 21:53:27 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 1274 ok out
+2024/08/04 21:53:37 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 1280 ok out
+2024/08/04 21:53:47 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 1280 ok out
+2024/08/04 21:53:57 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 1280 ok out
+2024/08/04 21:54:07 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 1280 ok out
+2024/08/04 21:54:17 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 1280 ok out
+2024/08/04 21:54:27 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:54:37 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 1280 ok out
+2024/08/04 21:54:47 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 1280 ok out
+2024/08/04 21:54:57 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:55:07 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 513 ok out
+2024/08/04 21:55:17 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:55:27 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:55:37 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 563 ok out
+2024/08/04 21:55:47 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 1164 ok out
+2024/08/04 21:55:57 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:55149} 350 ok out
+2024/08/04 21:56:07 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 1280 ok out
+2024/08/04 21:56:17 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:56:27 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 21:56:37 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:56:47 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 21:56:57 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 21:57:07 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:57:17 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 21:57:27 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:57:37 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 68 tcp non-syn
+2024/08/04 21:57:47 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 68 tcp non-syn
+2024/08/04 21:57:57 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 54 tcp non-syn
+2024/08/04 21:58:07 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 132 ok out
+2024/08/04 21:58:17 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:58:27 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 68 tcp non-syn
+2024/08/04 21:58:37 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:58:47 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:58:57 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:59:07 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:59:17 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 213 ok out
+2024/08/04 21:59:27 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 21:59:37 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 257 ok out
+2024/08/04 21:59:47 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 295 ok out
+2024/08/04 21:59:57 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 46 tcp non-syn
+2024/08/04 22:00:00 magicsock: adding connection to derp-11 for [YwsNZ]
+2024/08/04 22:00:00 magicsock: 2 active derp conns: derp-1=cr1h43m0s,wr1h21m0s derp-11=cr0s,wr0s
+2024/08/04 22:00:00 derphttp.Client.Send: connecting to derp-11 (sao)
+2024/08/04 22:00:00 magicsock: derp-11 connected; connGen=1
+2024/08/04 22:00:07 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 52 tcp non-syn
+2024/08/04 22:00:17 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 22:00:27 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 68 tcp non-syn
+2024/08/04 22:00:37 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 68 tcp non-syn
+2024/08/04 22:00:47 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 249 ok out
+2024/08/04 22:00:57 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:55149} 60 ok out
+2024/08/04 22:01:00 magicsock: closing connection to derp-11 (idle), age 1m0s
+2024/08/04 22:01:00 magicsock: 1 active derp conns: derp-1=cr1h44m0s,wr1h22m0s
+2024/08/04 22:01:03 magicsock: adding connection to derp-11 for [YwsNZ]
+2024/08/04 22:01:03 magicsock: 2 active derp conns: derp-1=cr1h44m0s,wr1h22m0s derp-11=cr0s,wr0s
+2024/08/04 22:01:03 derphttp.Client.Send: connecting to derp-11 (sao)
+2024/08/04 22:01:03 magicsock: derp-11 connected; connGen=1
+2024/08/04 22:01:07 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 22:01:17 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 22:01:27 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 68 tcp non-syn
+2024/08/04 22:01:37 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 22:01:47 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 22:01:57 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 22:02:03 magicsock: closing connection to derp-11 (idle), age 1m0s
+2024/08/04 22:02:03 magicsock: 1 active derp conns: derp-1=cr1h45m0s,wr1h23m0s
+2024/08/04 22:02:06 magicsock: adding connection to derp-11 for [YwsNZ]
+2024/08/04 22:02:06 magicsock: 2 active derp conns: derp-1=cr1h45m0s,wr1h23m0s derp-11=cr0s,wr0s
+2024/08/04 22:02:06 derphttp.Client.Send: connecting to derp-11 (sao)
+2024/08/04 22:02:06 magicsock: derp-11 connected; connGen=1
+2024/08/04 22:02:07 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 52 tcp non-syn
+2024/08/04 22:02:17 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 22:02:27 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 22:02:37 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 22:02:47 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 22:02:57 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:49286} 226 ok out
+2024/08/04 22:03:06 magicsock: closing connection to derp-11 (idle), age 1m0s
+2024/08/04 22:03:06 magicsock: 1 active derp conns: derp-1=cr1h46m0s,wr1h24m0s
+2024/08/04 22:03:07 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 22:03:17 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 22:03:27 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 22:03:37 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 22:03:47 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 22:03:57 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 22:04:07 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 22:04:17 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 22:04:27 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 22:04:37 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 22:04:47 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 22:04:57 Accept: TCP{100.64.199.21:49286 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 22:05:07 Accept: TCP{100.64.45.92:55149 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 22:05:17 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:55149} 213 ok out
+2024/08/04 22:05:28 tailscaled got signal interrupt; shutting down
+2024/08/04 22:05:28 control: client.Shutdown ...
+2024/08/04 22:05:28 control: authRoutine: exiting
+2024/08/04 22:05:28 control: updateRoutine: exiting
+2024/08/04 22:05:28 control: mapRoutine: exiting
+2024/08/04 22:05:28 control: Client.Shutdown done.
+2024/08/04 22:05:28 magicsock: closing connection to derp-1 (conn-close), age 1h48m37s
+2024/08/04 22:05:28 magicsock: 0 active derp conns
+2024/08/04 22:05:28 restarting systemd-resolved...
+2024/08/04 22:05:28 restarted systemd-resolved
+2024/08/04 22:05:28 monitor: RTM_DELROUTE: src=, dst=fe80::/64, gw=, outif=5, table=254
+2024/08/04 22:05:28 monitor: RTM_DELROUTE: src=, dst=fe80::2b4c:55ae:a410:40a9/128, gw=, outif=5, table=255
+2024/08/04 22:05:28 monitor: RTM_DELROUTE: src=, dst=ff00::/8, gw=, outif=5, table=255
+2024/08/04 22:05:28 monitor: ip rule deleted: {Family:2 DstLength:0 SrcLength:0 Tos:0 Table:254 Protocol:0 Scope:0 Type:1 Flags:0 Attributes:{Dst:<nil> Src:<nil> Gateway:<nil> OutIface:0 Priority:5210 Table:254 Mark:16711680 Pref:<nil> Expires:<nil> Metrics:<nil> Multipath:[]}}
+2024/08/04 22:05:28 monitor: ip rule deleted: {Family:2 DstLength:0 SrcLength:0 Tos:0 Table:253 Protocol:0 Scope:0 Type:1 Flags:0 Attributes:{Dst:<nil> Src:<nil> Gateway:<nil> OutIface:0 Priority:5230 Table:253 Mark:16711680 Pref:<nil> Expires:<nil> Metrics:<nil> Multipath:[]}}
+2024/08/04 22:05:28 monitor: ip rule deleted: {Family:2 DstLength:0 SrcLength:0 Tos:0 Table:0 Protocol:0 Scope:0 Type:7 Flags:0 Attributes:{Dst:<nil> Src:<nil> Gateway:<nil> OutIface:0 Priority:5250 Table:0 Mark:16711680 Pref:<nil> Expires:<nil> Metrics:<nil> Multipath:[]}}
+2024/08/04 22:05:28 monitor: ip rule deleted: {Family:2 DstLength:0 SrcLength:0 Tos:0 Table:52 Protocol:0 Scope:0 Type:1 Flags:0 Attributes:{Dst:<nil> Src:<nil> Gateway:<nil> OutIface:0 Priority:5270 Table:52 Mark:0 Pref:<nil> Expires:<nil> Metrics:<nil> Multipath:[]}}
+2024/08/04 22:05:28 flushing log.
+2024/08/04 22:05:28 logger closing down
