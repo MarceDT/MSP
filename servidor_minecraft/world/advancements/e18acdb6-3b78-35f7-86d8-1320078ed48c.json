@@ -313,6 +313,7 @@
       "minecraft:skeleton": "2024-07-28 20:53:55 +0000",
       "minecraft:phantom": "2024-07-30 17:38:34 +0000",
       "minecraft:zombified_piglin": "2024-07-31 18:35:28 +0000",
+      "minecraft:witch": "2024-08-04 18:19:46 +0000",
       "minecraft:wither_skeleton": "2024-07-31 18:32:49 +0000",
       "minecraft:ghast": "2024-08-02 02:57:03 +0000",
       "minecraft:hoglin": "2024-08-02 02:51:36 +0000",
@@ -3633,21 +3634,15 @@
     },
     "done": true
   },
+  "bosses_of_mass_destruction:recipes/void_lily": {
+    "criteria": {
+      "has_amethyst_shard": "2024-08-04 17:54:49 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/diamond": {
     "criteria": {
       "has_diamond_block": "2024-08-04 17:58:28 +0000"
-    },
-    "done": true
-  },
-  "travelersbackpack:recipes/misc/creeper": {
-    "criteria": {
-      "has_gunpowder": "2024-08-04 18:14:14 +0000"
-    },
-    "done": true
-  },
-  "cinderscapes:recipes/redstone/observer": {
-    "criteria": {
-      "has_quartz": "2024-08-04 18:00:51 +0000"
     },
     "done": true
   },
@@ -3657,15 +3652,21 @@
     },
     "done": true
   },
-  "cinderscapes:recipes/redstone/comparator": {
+  "bosses_of_mass_destruction:recipes/brimstone_nectar": {
+    "criteria": {
+      "has_netherite_scrap": "2024-08-04 17:58:59 +0000"
+    },
+    "done": true
+  },
+  "cinderscapes:recipes/redstone/observer": {
     "criteria": {
       "has_quartz": "2024-08-04 18:00:51 +0000"
     },
     "done": true
   },
-  "bosses_of_mass_destruction:recipes/void_lily": {
+  "cinderscapes:recipes/redstone/comparator": {
     "criteria": {
-      "has_amethyst_shard": "2024-08-04 17:54:49 +0000"
+      "has_quartz": "2024-08-04 18:00:51 +0000"
     },
     "done": true
   },
@@ -3675,9 +3676,9 @@
     },
     "done": true
   },
-  "bosses_of_mass_destruction:recipes/brimstone_nectar": {
+  "minecraft:recipes/misc/mojang_banner_pattern": {
     "criteria": {
-      "has_netherite_scrap": "2024-08-04 17:58:59 +0000"
+      "has_enchanted_golden_apple": "2024-08-04 18:01:41 +0000"
     },
     "done": true
   },
@@ -3687,9 +3688,75 @@
     },
     "done": true
   },
-  "minecraft:recipes/misc/mojang_banner_pattern": {
+  "travelersbackpack:recipes/misc/creeper": {
     "criteria": {
-      "has_enchanted_golden_apple": "2024-08-04 18:01:41 +0000"
+      "has_gunpowder": "2024-08-04 18:14:14 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cherry_planks": {
+    "criteria": {
+      "has_log": "2024-08-04 18:23:09 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cherry_wood": {
+    "criteria": {
+      "has_log": "2024-08-04 18:23:09 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cherry_slab": {
+    "criteria": {
+      "has_planks": "2024-08-04 18:23:14 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/cherry_fence": {
+    "criteria": {
+      "has_planks": "2024-08-04 18:23:14 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cherry_stairs": {
+    "criteria": {
+      "has_planks": "2024-08-04 18:23:14 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/cherry_trapdoor": {
+    "criteria": {
+      "has_planks": "2024-08-04 18:23:14 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/cherry_button": {
+    "criteria": {
+      "has_planks": "2024-08-04 18:23:14 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/cherry_fence_gate": {
+    "criteria": {
+      "has_planks": "2024-08-04 18:23:14 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/cherry_sign": {
+    "criteria": {
+      "has_planks": "2024-08-04 18:23:14 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/cherry_pressure_plate": {
+    "criteria": {
+      "has_planks": "2024-08-04 18:23:14 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/cherry_door": {
+    "criteria": {
+      "has_planks": "2024-08-04 18:23:14 +0000"
     },
     "done": true
   },

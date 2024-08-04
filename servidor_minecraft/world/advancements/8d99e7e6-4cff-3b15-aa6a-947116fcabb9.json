@@ -4032,6 +4032,12 @@
     },
     "done": true
   },
+  "fwaystones:recipe/abyss_watcher": {
+    "criteria": {
+      "has_ender_pearl": "2024-08-04 18:18:18 +0000"
+    },
+    "done": true
+  },
   "nova_structures:adventure/find_pillager_outpost": {
     "criteria": {
       "minecraft:pillager_outpost": "2024-08-04 18:10:06 +0000"

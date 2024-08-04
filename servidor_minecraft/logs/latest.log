@@ -277,3 +277,14 @@
 [18:15:41] [Server thread/INFO]: [STDOUT]: class_1639['Wither Skeleton'/24144, l='ServerLevel[world]', x=2.50, y=71.00, z=28.50]
 [18:15:41] [Server thread/INFO]: [STDOUT]: class_1639['Wither Skeleton'/24145, l='ServerLevel[world]', x=1.50, y=71.00, z=18.50]
 [18:16:35] [Server thread/INFO]: MarceX has made the advancement [Hot Stuff]
+[18:19:28] [Server thread/INFO]: [STDOUT]: class_1639['Wither Skeleton'/26819, l='ServerLevel[world]', x=95.50, y=-13.00, z=-127.50]
+[18:20:40] [Server thread/INFO]: Reder was slain by Zombie
+[18:26:10] [Server thread/INFO]: Reder lost connection: Disconnected
+[18:26:10] [Server thread/INFO]: Reder left the game
+[18:26:49] [Server thread/INFO]: [_jose_diaz_: Teleported MarceX to -1686.500000, -41.000000, 1203.500000]
+[18:26:52] [Server thread/INFO]: Reder[/100.66.86.59:56595] logged in with entity id 30127 at (93.76249998807907, 59.0, -11.953745664045702)
+[18:26:52] [Server thread/INFO]: Sending server config values to client
+[18:26:52] [Server thread/INFO]: Loading config from file...
+[18:26:52] [Server thread/INFO]: Reder joined the game
+[18:26:52] [Server thread/INFO]: Receiving client config
+[18:27:01] [Server thread/INFO]: [Reder: Teleported Reder to MarceX]
