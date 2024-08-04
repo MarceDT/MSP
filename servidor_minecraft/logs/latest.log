@@ -324,3 +324,17 @@
 [19:10:00] [Server thread/INFO]: [_jose_diaz_: Teleported _jose_diaz_ to MarceX]
 [19:14:13] [Server thread/INFO]: [_jose_diaz_: Teleported _jose_diaz_ to MarceX]
 [19:19:20] [Server thread/INFO]: [_jose_diaz_: Applied 20.0 damage to MarceX]
+[19:23:19] [Server thread/INFO]: [MarceX: Teleported MarceX to _jose_diaz_]
+[19:23:30] [Server thread/INFO]: [MarceX: Teleported MarceX to _jose_diaz_]
+[19:23:30] [Server thread/INFO]: [_jose_diaz_: Teleported _jose_diaz_ to MarceX]
+[19:25:27] [Server thread/INFO]: [MarceX: Teleported MarceX to _jose_diaz_]
+[19:26:11] [Server thread/INFO]: [MarceX: Teleported MarceX to _jose_diaz_]
+[19:26:16] [Server thread/INFO]: Reder[/100.66.86.59:56800] logged in with entity id 47486 at (-14.23800148399805, 42.0, -249.2619416647302)
+[19:26:16] [Server thread/INFO]: Sending server config values to client
+[19:26:16] [Server thread/INFO]: Loading config from file...
+[19:26:16] [Server thread/INFO]: Reder joined the game
+[19:26:16] [Server thread/INFO]: Receiving client config
+[19:27:25] [Server thread/INFO]: Reder fell from a high place
+[19:28:06] [Server thread/INFO]: Reder lost connection: Disconnected
+[19:28:06] [Server thread/INFO]: Reder left the game
+[19:28:52] [Server thread/INFO]: [_jose_diaz_: Teleported _jose_diaz_ to MarceX]

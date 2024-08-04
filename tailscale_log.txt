@@ -804,3 +804,93 @@ Perhaps ip6tables or your kernel needs to be upgraded.
 2024/08/04 19:19:41 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 84 ok out
 2024/08/04 19:19:51 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 122 ok out
 2024/08/04 19:20:01 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 54 ok out
+2024/08/04 19:20:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 108 ok out
+2024/08/04 19:20:21 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 52 ok out
+2024/08/04 19:20:31 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 52 tcp non-syn
+2024/08/04 19:20:41 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 54 ok out
+2024/08/04 19:20:51 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 51 tcp non-syn
+2024/08/04 19:21:01 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 47 ok out
+2024/08/04 19:21:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 40 ok out
+2024/08/04 19:21:21 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 51 tcp non-syn
+2024/08/04 19:21:31 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 58 tcp non-syn
+2024/08/04 19:21:41 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 52 tcp non-syn
+2024/08/04 19:21:51 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 52 tcp non-syn
+2024/08/04 19:22:01 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 19:22:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 63 ok out
+2024/08/04 19:22:15 magicsock: closing connection to derp-11 (idle), age 1h13m37s
+2024/08/04 19:22:15 magicsock: 1 active derp conns: derp-1=cr5m0s,wr5m0s
+2024/08/04 19:22:21 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 74 ok out
+2024/08/04 19:22:31 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 52 ok out
+2024/08/04 19:22:41 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 52 tcp non-syn
+2024/08/04 19:22:51 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 19:23:01 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 47 ok out
+2024/08/04 19:23:11 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 68 tcp non-syn
+2024/08/04 19:23:21 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 68 tcp non-syn
+2024/08/04 19:23:31 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 19:23:41 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 74 ok out
+2024/08/04 19:23:51 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 52 tcp non-syn
+2024/08/04 19:24:01 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 47 ok out
+2024/08/04 19:24:11 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 19:24:21 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 52 tcp non-syn
+2024/08/04 19:24:31 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 82 ok out
+2024/08/04 19:24:41 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 19:24:51 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 64 ok out
+2024/08/04 19:25:01 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 104 ok out
+2024/08/04 19:25:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 60 ok out
+2024/08/04 19:25:21 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 119 ok out
+2024/08/04 19:25:31 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 68 tcp non-syn
+2024/08/04 19:25:41 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 72 ok out
+2024/08/04 19:25:51 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 76 tcp non-syn
+2024/08/04 19:26:01 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 58 ok out
+2024/08/04 19:26:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 63 ok out
+2024/08/04 19:26:21 Accept: TCP{100.66.86.59:56800 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 19:26:31 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 52 tcp non-syn
+2024/08/04 19:26:41 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 84 ok out
+2024/08/04 19:26:51 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 97 ok out
+2024/08/04 19:27:01 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 52 tcp non-syn
+2024/08/04 19:27:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 85 ok out
+2024/08/04 19:27:21 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 81 ok out
+2024/08/04 19:27:31 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 68 tcp non-syn
+2024/08/04 19:27:41 Accept: TCP{100.66.86.59:56800 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 19:27:51 Accept: TCP{100.66.86.59:56800 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 19:28:01 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 52 tcp non-syn
+2024/08/04 19:28:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 60 ok out
+2024/08/04 19:28:17 magicsock: adding connection to derp-11 for [Lzp+I]
+2024/08/04 19:28:17 magicsock: 2 active derp conns: derp-1=cr11m0s,wr2m0s derp-11=cr0s,wr0s
+2024/08/04 19:28:17 derphttp.Client.Send: connecting to derp-11 (sao)
+2024/08/04 19:28:17 magicsock: derp-11 connected; connGen=1
+2024/08/04 19:28:17 [unexpected] magicsock: derp-11 does not know about peer [Lzp+I], removing route
+2024/08/04 19:28:21 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 52 tcp non-syn
+2024/08/04 19:28:23 [unexpected] magicsock: derp-11 does not know about peer [Lzp+I], removing route
+2024/08/04 19:28:29 [unexpected] magicsock: derp-11 does not know about peer [Lzp+I], removing route
+2024/08/04 19:28:31 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 19:28:35 [unexpected] magicsock: derp-11 does not know about peer [Lzp+I], removing route
+2024/08/04 19:28:41 [unexpected] magicsock: derp-11 does not know about peer [Lzp+I], removing route
+2024/08/04 19:28:41 Accept: TCP{100.64.199.21:65214 > 100.77.104.102:25565} 52 tcp non-syn
+2024/08/04 19:28:47 [unexpected] magicsock: derp-11 does not know about peer [Lzp+I], removing route
+2024/08/04 19:28:51 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 51 ok out
+2024/08/04 19:28:53 [unexpected] magicsock: derp-11 does not know about peer [Lzp+I], removing route
+2024/08/04 19:28:58 [unexpected] magicsock: derp-11 does not know about peer [Lzp+I], removing route
+2024/08/04 19:29:01 Accept: TCP{100.77.104.102:25565 > 100.64.45.92:51962} 72 ok out
+2024/08/04 19:29:03 [unexpected] magicsock: derp-11 does not know about peer [Lzp+I], removing route
+2024/08/04 19:29:09 [unexpected] magicsock: derp-11 does not know about peer [Lzp+I], removing route
+2024/08/04 19:29:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 58 ok out
+2024/08/04 19:29:14 [unexpected] magicsock: derp-11 does not know about peer [Lzp+I], removing route
+2024/08/04 19:29:19 [unexpected] magicsock: derp-11 does not know about peer [Lzp+I], removing route
+2024/08/04 19:29:21 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 65 ok out
+2024/08/04 19:29:24 [unexpected] magicsock: derp-11 does not know about peer [Lzp+I], removing route
+2024/08/04 19:29:29 [unexpected] magicsock: derp-11 does not know about peer [Lzp+I], removing route
+2024/08/04 19:29:31 Accept: TCP{100.64.45.92:51962 > 100.77.104.102:25565} 40 tcp non-syn
+2024/08/04 19:29:34 [unexpected] magicsock: derp-11 does not know about peer [Lzp+I], removing route
+2024/08/04 19:29:40 [unexpected] magicsock: derp-11 does not know about peer [Lzp+I], removing route
+2024/08/04 19:29:41 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 77 ok out
+2024/08/04 19:29:45 [unexpected] magicsock: derp-11 does not know about peer [Lzp+I], removing route
+2024/08/04 19:29:50 [unexpected] magicsock: derp-11 does not know about peer [Lzp+I], removing route
+2024/08/04 19:29:51 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 94 ok out
+2024/08/04 19:29:55 [unexpected] magicsock: derp-11 does not know about peer [Lzp+I], removing route
+2024/08/04 19:30:01 [unexpected] magicsock: derp-11 does not know about peer [Lzp+I], removing route
+2024/08/04 19:30:01 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 109 ok out
+2024/08/04 19:30:08 [unexpected] magicsock: derp-11 does not know about peer [Lzp+I], removing route
+2024/08/04 19:30:11 Accept: TCP{100.77.104.102:25565 > 100.64.199.21:65214} 84 ok out
+2024/08/04 19:30:14 [unexpected] magicsock: derp-11 does not know about peer [Lzp+I], removing route
+2024/08/04 19:30:20 [unexpected] magicsock: derp-11 does not know about peer [Lzp+I], removing route
