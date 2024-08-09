@@ -288,3 +288,21 @@
 [03:26:20] [Worker-Main-2/ERROR]: Block-attached entity at invalid position: class_2338{x=203, y=48, z=159}
 [03:27:36] [Worker-Main-2/ERROR]: Block-attached entity at invalid position: class_2338{x=202, y=47, z=211}
 [03:27:58] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2450ms or 49 ticks behind
+[03:29:32] [Worker-Main-2/ERROR]: Block-attached entity at invalid position: class_2338{x=202, y=47, z=211}
+[03:29:59] [Worker-Main-4/WARN]: Empty or non-existent pool: kaisyn:village/sparse_jungle_polynesian/villager_village_chief
+[03:30:10] [Worker-Main-2/ERROR]: Block-attached entity at invalid position: class_2338{x=1417, y=-56, z=226}
+[03:30:12] [Worker-Main-5/WARN]: Skipping Entity with id 
+[03:30:12] [Worker-Main-4/ERROR]: Block-attached entity at invalid position: class_2338{x=-16, y=-54, z=1646}
+[03:30:14] [Worker-Main-2/WARN]: Skipping Entity with id 
+[03:30:15] [Worker-Main-5/WARN]: Skipping Entity with id 
+[03:30:15] [Worker-Main-5/WARN]: Skipping Entity with id 
+[03:30:15] [Worker-Main-2/WARN]: Skipping Entity with id 
+[03:30:15] [Worker-Main-2/WARN]: Skipping Entity with id 
+[03:30:32] [Worker-Main-2/WARN]: Tried to access a block entity before it was created. class_2338{x=555, y=65, z=7875}
+[03:30:32] [Worker-Main-2/WARN]: Tried to access a block entity before it was created. class_2338{x=555, y=65, z=7875}
+[03:30:35] [Worker-Main-2/WARN]: Skipping Entity with id 
+[03:30:35] [Worker-Main-2/ERROR]: Block-attached entity at invalid position: class_2338{x=1405, y=-54, z=211}
+[03:30:35] [Worker-Main-2/WARN]: Skipping Entity with id 
+[03:30:35] [Server thread/WARN]: Tried to load a block entity for block Block{fwaystones:waystone}[active=false,facing=west,generated=true,half=upper,mossy=false,waterlogged=false] but failed at location class_2338{x=555, y=65, z=7875}
+[03:32:26] [Worker-Main-2/ERROR]: Block-attached entity at invalid position: class_2338{x=216, y=47, z=211}
+[03:34:06] [Worker-Main-2/WARN]: Empty or non-existent pool: structory:harvest/well_bottoms
