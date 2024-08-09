@@ -306,3 +306,30 @@
 [03:30:35] [Server thread/WARN]: Tried to load a block entity for block Block{fwaystones:waystone}[active=false,facing=west,generated=true,half=upper,mossy=false,waterlogged=false] but failed at location class_2338{x=555, y=65, z=7875}
 [03:32:26] [Worker-Main-2/ERROR]: Block-attached entity at invalid position: class_2338{x=216, y=47, z=211}
 [03:34:06] [Worker-Main-2/WARN]: Empty or non-existent pool: structory:harvest/well_bottoms
+[03:41:30] [Server thread/INFO]: MarceX lost connection: Disconnected
+[03:41:30] [Server thread/INFO]: MarceX left the game
+[03:41:38] [Server thread/INFO]: Stopping the server
+[03:41:38] [Server thread/INFO]: Stopping server
+[03:41:38] [Server thread/INFO]: Saving players
+[03:41:38] [Server thread/INFO]: Saving worlds
+[03:41:38] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[03:41:39] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/mining_dims:hunting_dim
+[03:41:39] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/mining_dims:mining_dim
+[03:41:39] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/mining_dims:nethering_dim
+[03:41:39] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[03:41:39] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/mining_dims:climbing_dim
+[03:41:39] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[03:41:39] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/mining_dims:sky_dim
+[03:41:39] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/mining_dims:caving_dim
+[03:41:39] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[03:41:39] [Server thread/INFO]: ThreadedAnvilChunkStorage (hunting_dim): All chunks are saved
+[03:41:39] [Server thread/INFO]: ThreadedAnvilChunkStorage (mining_dim): All chunks are saved
+[03:41:39] [Server thread/INFO]: ThreadedAnvilChunkStorage (nethering_dim): All chunks are saved
+[03:41:39] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[03:41:39] [Server thread/INFO]: ThreadedAnvilChunkStorage (climbing_dim): All chunks are saved
+[03:41:39] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[03:41:39] [Server thread/INFO]: ThreadedAnvilChunkStorage (sky_dim): All chunks are saved
+[03:41:39] [Server thread/INFO]: ThreadedAnvilChunkStorage (caving_dim): All chunks are saved
+[03:41:39] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[03:41:42] [Server thread/INFO]: Dispatching unloading event for config at easymagic-server.toml
+[03:41:42] [Server thread/INFO]: Dispatching unloading event for config at tradingpost-server.toml
