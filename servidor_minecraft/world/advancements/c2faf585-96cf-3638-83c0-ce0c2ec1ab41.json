@@ -4821,6 +4821,12 @@
     },
     "done": true
   },
+  "nova_structures:end/find_end_lighthouse": {
+    "criteria": {
+      "end_lighthouse": "2024-08-10 18:50:56 +0000"
+    },
+    "done": true
+  },
   "minecraft:nether/create_beacon": {
     "criteria": {
       "beacon": "2024-08-10 17:48:13 +0000"
@@ -4830,6 +4836,12 @@
   "bosses_of_mass_destruction:adventure/night_lich_defeat": {
     "criteria": {
       "bosses_of_mass_destruction:lich": "2024-08-10 18:35:47 +0000"
+    },
+    "done": true
+  },
+  "bosses_of_mass_destruction:end/obsidilith_defeat": {
+    "criteria": {
+      "bosses_of_mass_destruction:obsidilith": "2024-08-10 18:49:24 +0000"
     },
     "done": true
   },
@@ -4881,6 +4893,12 @@
     },
     "done": true
   },
+  "bosses_of_mass_destruction:recipes/earthdive_spear": {
+    "criteria": {
+      "has_obsidian_heart": "2024-08-10 18:47:00 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/redstone/jungle_trapdoor": {
     "criteria": {
       "has_planks": "2024-08-10 17:54:49 +0000"
@@ -4896,6 +4914,12 @@
   "minecraft:recipes/redstone/jungle_door": {
     "criteria": {
       "has_planks": "2024-08-10 17:54:49 +0000"
+    },
+    "done": true
+  },
+  "bosses_of_mass_destruction:recipes/blast_amplifier": {
+    "criteria": {
+      "has_obsidian_heart": "2024-08-10 18:47:00 +0000"
     },
     "done": true
   },

@@ -4136,9 +4136,21 @@
     },
     "done": true
   },
+  "nova_structures:end/find_end_lighthouse": {
+    "criteria": {
+      "end_lighthouse": "2024-08-10 18:51:00 +0000"
+    },
+    "done": true
+  },
   "minecraft:nether/create_beacon": {
     "criteria": {
       "beacon": "2024-08-10 17:48:13 +0000"
+    },
+    "done": true
+  },
+  "bosses_of_mass_destruction:end/obsidilith_defeat": {
+    "criteria": {
+      "bosses_of_mass_destruction:obsidilith": "2024-08-10 18:45:49 +0000"
     },
     "done": true
   },
@@ -4154,9 +4166,33 @@
     },
     "done": true
   },
+  "bosses_of_mass_destruction:recipes/mob_ward": {
+    "criteria": {
+      "has_obsidian_heart": "2024-08-10 18:46:10 +0000"
+    },
+    "done": true
+  },
   "minecraft:nether/create_full_beacon": {
     "criteria": {
       "beacon": "2024-08-10 17:48:13 +0000"
+    },
+    "done": true
+  },
+  "bosses_of_mass_destruction:recipes/earthdive_spear": {
+    "criteria": {
+      "has_obsidian_heart": "2024-08-10 18:46:10 +0000"
+    },
+    "done": true
+  },
+  "endreborn:endreborn/ender_transmitter": {
+    "criteria": {
+      "ender_transmitter": "2024-08-10 18:47:18 +0000"
+    },
+    "done": true
+  },
+  "bosses_of_mass_destruction:recipes/blast_amplifier": {
+    "criteria": {
+      "has_obsidian_heart": "2024-08-10 18:46:10 +0000"
     },
     "done": true
   },
