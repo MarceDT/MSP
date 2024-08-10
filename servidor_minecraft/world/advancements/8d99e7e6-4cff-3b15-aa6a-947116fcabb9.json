@@ -523,6 +523,7 @@
       "minecraft:enderman": "2024-07-28 20:43:09 +0000",
       "minecraft:stray": "2024-07-29 21:19:51 +0000",
       "minecraft:silverfish": "2024-08-02 04:07:17 +0000",
+      "minecraft:endermite": "2024-08-10 19:10:39 +0000",
       "minecraft:vex": "2024-08-10 18:27:41 +0000",
       "minecraft:zombie": "2024-07-28 20:19:08 +0000",
       "minecraft:zombie_villager": "2024-08-03 20:18:36 +0000"
@@ -4136,21 +4137,15 @@
     },
     "done": true
   },
-  "nova_structures:end/find_end_lighthouse": {
-    "criteria": {
-      "end_lighthouse": "2024-08-10 18:51:00 +0000"
-    },
-    "done": true
-  },
   "minecraft:nether/create_beacon": {
     "criteria": {
       "beacon": "2024-08-10 17:48:13 +0000"
     },
     "done": true
   },
-  "bosses_of_mass_destruction:end/obsidilith_defeat": {
+  "minecraft:nether/create_full_beacon": {
     "criteria": {
-      "bosses_of_mass_destruction:obsidilith": "2024-08-10 18:45:49 +0000"
+      "beacon": "2024-08-10 17:48:13 +0000"
     },
     "done": true
   },
@@ -4166,19 +4161,31 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/snow_block": {
+    "criteria": {
+      "has_snowball": "2024-08-10 18:06:41 +0000"
+    },
+    "done": true
+  },
+  "bosses_of_mass_destruction:end/obsidilith_defeat": {
+    "criteria": {
+      "bosses_of_mass_destruction:obsidilith": "2024-08-10 18:45:49 +0000"
+    },
+    "done": true
+  },
   "bosses_of_mass_destruction:recipes/mob_ward": {
     "criteria": {
       "has_obsidian_heart": "2024-08-10 18:46:10 +0000"
     },
     "done": true
   },
-  "minecraft:nether/create_full_beacon": {
+  "bosses_of_mass_destruction:recipes/earthdive_spear": {
     "criteria": {
-      "beacon": "2024-08-10 17:48:13 +0000"
+      "has_obsidian_heart": "2024-08-10 18:46:10 +0000"
     },
     "done": true
   },
-  "bosses_of_mass_destruction:recipes/earthdive_spear": {
+  "bosses_of_mass_destruction:recipes/blast_amplifier": {
     "criteria": {
       "has_obsidian_heart": "2024-08-10 18:46:10 +0000"
     },
@@ -4190,15 +4197,81 @@
     },
     "done": true
   },
-  "bosses_of_mass_destruction:recipes/blast_amplifier": {
+  "nova_structures:end/find_end_lighthouse": {
     "criteria": {
-      "has_obsidian_heart": "2024-08-10 18:46:10 +0000"
+      "end_lighthouse": "2024-08-10 18:51:00 +0000"
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/snow_block": {
+  "bosses_of_mass_destruction:recipes/charged_ender_pearl": {
     "criteria": {
-      "has_snowball": "2024-08-10 18:06:41 +0000"
+      "has_ancient_anima": "2024-08-10 19:49:02 +0000"
+    },
+    "done": true
+  },
+  "travelersbackpack:recipes/misc/ghast": {
+    "criteria": {
+      "has_ghast_tear": "2024-08-10 19:21:11 +0000"
+    },
+    "done": true
+  },
+  "cinderscapes:recipes/building_blocks/smoky_quartz_block": {
+    "criteria": {
+      "has_quartz": "2024-08-10 19:38:10 +0000"
+    },
+    "done": true
+  },
+  "nova_structures:end/find_end_castle": {
+    "criteria": {
+      "end_castle": "2024-08-10 19:10:14 +0000"
+    },
+    "done": true
+  },
+  "nova_structures:adventure/kill_all_minibosses": {
+    "criteria": {
+      "kill_phantom_boss": "2024-08-10 19:17:13 +0000"
+    },
+    "done": false
+  },
+  "bosses_of_mass_destruction:recipes/levitation_block": {
+    "criteria": {
+      "has_blazing_eye": "2024-08-10 19:45:37 +0000"
+    },
+    "done": true
+  },
+  "bosses_of_mass_destruction:nether/gauntlet_defeat": {
+    "criteria": {
+      "bosses_of_mass_destruction:gauntlet": "2024-08-10 19:45:19 +0000"
+    },
+    "done": true
+  },
+  "nova_structures:end/kill_phantom_boss": {
+    "criteria": {
+      "kill_phantom_boss": "2024-08-10 19:17:13 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/spire_armor_trim_smithing_template": {
+    "criteria": {
+      "has_spire_armor_trim_smithing_template": "2024-08-10 19:32:26 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/spire_armor_trim_smithing_template_smithing_trim": {
+    "criteria": {
+      "has_smithing_trim_template": "2024-08-10 19:32:26 +0000"
+    },
+    "done": true
+  },
+  "bosses_of_mass_destruction:recipes/brimstone_nectar": {
+    "criteria": {
+      "has_ghast_tear": "2024-08-10 19:21:11 +0000"
+    },
+    "done": true
+  },
+  "cinderscapes:recipes/building_blocks/sulfur_quartz_block": {
+    "criteria": {
+      "has_quartz": "2024-08-10 19:38:52 +0000"
     },
     "done": true
   },
