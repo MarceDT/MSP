@@ -22,5 +22,11 @@
     "name": "Reder",
     "level": 4,
     "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "bc22072d-6cbd-4820-a309-5e7af63dce6c",
+    "name": "Marsex",
+    "level": 4,
+    "bypassesPlayerLimit": false
   }
 ]
