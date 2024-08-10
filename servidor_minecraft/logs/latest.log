@@ -282,3 +282,32 @@
 [17:39:16] [Server thread/INFO]: Receiving client config
 [17:39:46] [Server thread/INFO]: [MarceX: Teleported MarceX to _jose_diaz_]
 [17:41:10] [Server thread/INFO]: [MarceX: Teleported MarceX to _jose_diaz_]
+[17:48:13] [Server thread/INFO]: MarceX has reached the goal [Beaconator]
+[17:48:13] [Server thread/INFO]: MarceX has made the advancement [Bring Home the Beacon]
+[17:48:13] [Server thread/INFO]: _jose_diaz_ has reached the goal [Beaconator]
+[17:48:13] [Server thread/INFO]: _jose_diaz_ has made the advancement [Bring Home the Beacon]
+[17:50:45] [Server thread/INFO]: [MarceX: Teleported MarceX to -71.500000, 72.000000, -11.500000]
+[17:51:26] [Server thread/INFO]: [MarceX: Teleported MarceX to _jose_diaz_]
+[17:51:33] [Server thread/INFO]: [MarceX: Teleported MarceX to _jose_diaz_]
+[17:51:49] [Server thread/WARN]: MarceX moved too quickly! 8.999014877051877,-12.459598977976711,-9.184673142533939
+[17:51:55] [Server thread/WARN]: _jose_diaz_ moved too quickly! -15.055553169917857,3.42575912565799,-8.127815009066808
+[17:52:11] [Worker-Main-2/WARN]: Couldn't find template pool reference: ctov:village/waystone/normal
+[17:52:11] [Worker-Main-2/WARN]: Couldn't find template pool reference: ctov:village/bounty/plains
+[17:52:11] [Worker-Main-2/WARN]: Couldn't find template pool reference: ctov:village/vampirism/totem
+[17:52:31] [Worker-Main-2/ERROR]: Block-attached entity at invalid position: class_2338{x=217, y=48, z=159}
+[17:52:52] [Server thread/WARN]: Tried to over-fill a container
+[17:54:16] [Server thread/WARN]: MarceX moved too quickly! -9.563654189029421,11.62906785134031,-10.68126809264595
+[17:54:16] [Server thread/WARN]: _jose_diaz_ moved too quickly! -6.984341351438161,14.554727936013663,-6.819053283199537
+[17:56:42] [Server thread/INFO]: [MarceX: Teleported MarceX to _jose_diaz_]
+[17:57:00] [Server thread/INFO]: [MarceX: Teleported MarceX to _jose_diaz_]
+[17:57:22] [Worker-Main-1/WARN]: Couldn't find template pool reference: ctov:village/waystone/sand
+[17:57:22] [Worker-Main-1/WARN]: Couldn't find template pool reference: ctov:village/waystone/sand
+[17:58:23] [Server thread/INFO]: [MarceX: Teleported MarceX to _jose_diaz_]
+[17:59:34] [Server thread/INFO]: [MarceX: Teleported MarceX to _jose_diaz_]
+[17:59:37] [Server thread/INFO]: [MarceX: Teleported MarceX to _jose_diaz_]
+[18:00:25] [Worker-Main-5/ERROR]: Block-attached entity at invalid position: class_2338{x=217, y=48, z=159}
+[18:06:12] [Server thread/INFO]: [_jose_diaz_: Teleported _jose_diaz_ to MarceX]
+[18:06:47] [Server thread/INFO]: [_jose_diaz_: Set the time to 13000]
+[18:12:58] [Server thread/INFO]: [MarceX: Teleported MarceX to _jose_diaz_]
+[18:13:54] [Server thread/WARN]: _jose_diaz_ moved too quickly! -1.0279952146806863,3.1661092609382138,9.750851469214467
+[18:13:54] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2237ms or 44 ticks behind

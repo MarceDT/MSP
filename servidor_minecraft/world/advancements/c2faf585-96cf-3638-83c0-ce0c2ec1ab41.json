@@ -8,12 +8,14 @@
   "minecraft:adventure/adventuring_time": {
     "criteria": {
       "minecraft:cold_ocean": "2024-07-28 22:48:30 +0000",
+      "minecraft:snowy_slopes": "2024-08-10 17:50:09 +0000",
       "minecraft:mushroom_fields": "2024-08-02 05:22:12 +0000",
       "minecraft:forest": "2024-07-28 20:11:46 +0000",
       "minecraft:taiga": "2024-07-28 23:27:20 +0000",
       "minecraft:deep_ocean": "2024-08-02 03:25:48 +0000",
       "minecraft:lush_caves": "2024-08-03 20:49:08 +0000",
       "minecraft:desert": "2024-07-29 20:11:56 +0000",
+      "minecraft:frozen_river": "2024-08-10 18:01:16 +0000",
       "minecraft:ocean": "2024-07-28 22:49:09 +0000",
       "minecraft:jungle": "2024-08-09 03:05:11 +0000",
       "minecraft:cherry_grove": "2024-08-04 15:43:56 +0000",
@@ -35,6 +37,7 @@
       "minecraft:river": "2024-07-28 22:03:50 +0000",
       "minecraft:lukewarm_ocean": "2024-08-03 23:11:31 +0000",
       "minecraft:stony_shore": "2024-07-28 21:50:35 +0000",
+      "minecraft:snowy_plains": "2024-08-10 18:01:12 +0000",
       "minecraft:dripstone_caves": "2024-07-30 15:30:16 +0000",
       "minecraft:frozen_peaks": "2024-07-28 21:08:13 +0000",
       "minecraft:old_growth_birch_forest": "2024-07-28 22:52:09 +0000",
@@ -497,6 +500,7 @@
       "minecraft:piglin": "2024-07-29 01:08:25 +0000",
       "minecraft:enderman": "2024-07-29 01:08:57 +0000",
       "minecraft:silverfish": "2024-08-02 03:58:09 +0000",
+      "minecraft:stray": "2024-08-10 18:07:45 +0000",
       "minecraft:zombie": "2024-07-28 20:16:02 +0000",
       "minecraft:drowned": "2024-08-09 03:08:56 +0000",
       "minecraft:zombie_villager": "2024-07-28 21:44:56 +0000"
@@ -823,6 +827,7 @@
   },
   "minecraft:husbandry/whole_pack": {
     "criteria": {
+      "minecraft:spotted": "2024-08-10 17:51:22 +0000",
       "minecraft:woods": "2024-07-28 20:44:54 +0000"
     },
     "done": false
@@ -4804,6 +4809,72 @@
   "minecraft:story/cure_zombie_villager": {
     "criteria": {
       "cured_zombie": "2024-08-10 17:05:39 +0000"
+    },
+    "done": true
+  },
+  "minecraft:nether/create_beacon": {
+    "criteria": {
+      "beacon": "2024-08-10 17:48:13 +0000"
+    },
+    "done": true
+  },
+  "minecraft:nether/create_full_beacon": {
+    "criteria": {
+      "beacon": "2024-08-10 17:48:13 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/jungle_button": {
+    "criteria": {
+      "has_planks": "2024-08-10 17:54:49 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/jungle_stairs": {
+    "criteria": {
+      "has_planks": "2024-08-10 17:54:49 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/jungle_fence_gate": {
+    "criteria": {
+      "has_planks": "2024-08-10 17:54:49 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/jungle_trapdoor": {
+    "criteria": {
+      "has_planks": "2024-08-10 17:54:49 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/jungle_sign": {
+    "criteria": {
+      "has_planks": "2024-08-10 17:54:49 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/jungle_door": {
+    "criteria": {
+      "has_planks": "2024-08-10 17:54:49 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/jungle_fence": {
+    "criteria": {
+      "has_planks": "2024-08-10 17:54:49 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/jungle_pressure_plate": {
+    "criteria": {
+      "has_planks": "2024-08-10 17:54:49 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/jungle_slab": {
+    "criteria": {
+      "has_planks": "2024-08-10 17:54:49 +0000"
     },
     "done": true
   },

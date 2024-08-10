@@ -12,6 +12,7 @@
       "minecraft:mushroom_fields": "2024-08-02 05:22:03 +0000",
       "minecraft:forest": "2024-07-28 20:07:58 +0000",
       "minecraft:taiga": "2024-07-28 23:26:17 +0000",
+      "minecraft:deep_ocean": "2024-08-10 17:51:28 +0000",
       "minecraft:desert": "2024-08-02 03:56:00 +0000",
       "minecraft:frozen_river": "2024-08-02 02:37:30 +0000",
       "minecraft:ocean": "2024-08-03 19:41:14 +0000",
@@ -29,6 +30,7 @@
       "minecraft:river": "2024-07-29 20:29:39 +0000",
       "minecraft:lukewarm_ocean": "2024-07-29 23:02:40 +0000",
       "minecraft:stony_shore": "2024-07-28 20:31:19 +0000",
+      "minecraft:snowy_plains": "2024-08-10 18:01:21 +0000",
       "minecraft:snowy_taiga": "2024-08-02 02:37:36 +0000",
       "minecraft:frozen_peaks": "2024-07-28 21:54:05 +0000",
       "minecraft:deep_dark": "2024-07-28 21:31:13 +0000",
@@ -4129,6 +4131,36 @@
   "minecraft:recipes/building_blocks/waxed_oxidized_cut_copper_slab": {
     "criteria": {
       "has_waxed_oxidized_cut_copper": "2024-08-04 22:25:02 +0000"
+    },
+    "done": true
+  },
+  "minecraft:nether/create_beacon": {
+    "criteria": {
+      "beacon": "2024-08-10 17:48:13 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/snow": {
+    "criteria": {
+      "has_snowball": "2024-08-10 18:06:41 +0000"
+    },
+    "done": true
+  },
+  "travelersbackpack:recipes/misc/snow": {
+    "criteria": {
+      "has_snowball": "2024-08-10 18:06:41 +0000"
+    },
+    "done": true
+  },
+  "minecraft:nether/create_full_beacon": {
+    "criteria": {
+      "beacon": "2024-08-10 17:48:13 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/snow_block": {
+    "criteria": {
+      "has_snowball": "2024-08-10 18:06:41 +0000"
     },
     "done": true
   },
