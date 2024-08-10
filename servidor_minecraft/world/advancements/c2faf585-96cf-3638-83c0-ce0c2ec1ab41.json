@@ -39,6 +39,7 @@
       "minecraft:stony_shore": "2024-07-28 21:50:35 +0000",
       "minecraft:snowy_plains": "2024-08-10 18:01:12 +0000",
       "minecraft:dripstone_caves": "2024-07-30 15:30:16 +0000",
+      "minecraft:snowy_taiga": "2024-08-10 18:31:14 +0000",
       "minecraft:frozen_peaks": "2024-07-28 21:08:13 +0000",
       "minecraft:old_growth_birch_forest": "2024-07-28 22:52:09 +0000",
       "minecraft:deep_dark": "2024-07-28 21:31:59 +0000",
@@ -493,6 +494,7 @@
       "minecraft:creeper": "2024-07-30 01:51:00 +0000",
       "minecraft:wither": "2024-08-03 23:07:59 +0000",
       "minecraft:phantom": "2024-08-09 03:08:50 +0000",
+      "minecraft:witch": "2024-08-10 18:15:34 +0000",
       "minecraft:wither_skeleton": "2024-07-31 18:03:39 +0000",
       "minecraft:husk": "2024-08-03 22:50:20 +0000",
       "minecraft:shulker": "2024-08-02 04:37:41 +0000",
@@ -536,6 +538,7 @@
       "mutton": "2024-07-28 20:37:34 +0000",
       "chicken": "2024-07-28 21:54:38 +0000",
       "bread": "2024-07-29 00:46:01 +0000",
+      "golden_apple": "2024-08-10 18:17:52 +0000",
       "rotten_flesh": "2024-07-28 20:24:17 +0000",
       "suspicious_stew": "2024-08-03 22:42:47 +0000",
       "cooked_mutton": "2024-07-28 20:17:39 +0000",
@@ -4812,9 +4815,39 @@
     },
     "done": true
   },
+  "bosses_of_mass_destruction:recipes/charged_ender_pearl": {
+    "criteria": {
+      "has_ancient_anima": "2024-08-10 18:35:50 +0000"
+    },
+    "done": true
+  },
   "minecraft:nether/create_beacon": {
     "criteria": {
       "beacon": "2024-08-10 17:48:13 +0000"
+    },
+    "done": true
+  },
+  "bosses_of_mass_destruction:adventure/night_lich_defeat": {
+    "criteria": {
+      "bosses_of_mass_destruction:lich": "2024-08-10 18:35:47 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/snow": {
+    "criteria": {
+      "has_snowball": "2024-08-10 18:35:43 +0000"
+    },
+    "done": true
+  },
+  "travelersbackpack:recipes/misc/snow": {
+    "criteria": {
+      "has_snowball": "2024-08-10 18:35:43 +0000"
+    },
+    "done": true
+  },
+  "bosses_of_mass_destruction:recipes/mob_ward": {
+    "criteria": {
+      "has_ancient_anima": "2024-08-10 18:35:50 +0000"
     },
     "done": true
   },
@@ -4842,6 +4875,12 @@
     },
     "done": true
   },
+  "bosses_of_mass_destruction:recipes/levitation_block": {
+    "criteria": {
+      "has_ancient_anima": "2024-08-10 18:35:50 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/redstone/jungle_trapdoor": {
     "criteria": {
       "has_planks": "2024-08-10 17:54:49 +0000"
@@ -4866,6 +4905,12 @@
     },
     "done": true
   },
+  "travelersbackpack:recipes/misc/blaze": {
+    "criteria": {
+      "has_blaze_rod": "2024-08-10 18:43:57 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/redstone/jungle_pressure_plate": {
     "criteria": {
       "has_planks": "2024-08-10 17:54:49 +0000"
@@ -4875,6 +4920,12 @@
   "minecraft:recipes/building_blocks/jungle_slab": {
     "criteria": {
       "has_planks": "2024-08-10 17:54:49 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/snow_block": {
+    "criteria": {
+      "has_snowball": "2024-08-10 18:35:43 +0000"
     },
     "done": true
   },

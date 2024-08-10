@@ -311,3 +311,29 @@
 [18:12:58] [Server thread/INFO]: [MarceX: Teleported MarceX to _jose_diaz_]
 [18:13:54] [Server thread/WARN]: _jose_diaz_ moved too quickly! -1.0279952146806863,3.1661092609382138,9.750851469214467
 [18:13:54] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2237ms or 44 ticks behind
+[18:16:48] [Server thread/INFO]: [Not Secure] <_jose_diaz_> -3146 -536
+[18:17:07] [Server thread/INFO]: [Not Secure] <_jose_diaz_> -3146 -2536
+[18:22:59] [Server thread/INFO]: [STDOUT]: class_1639['Wither Skeleton'/44627, l='ServerLevel[world]', x=-3416.50, y=22.00, z=-2447.50]
+[18:23:08] [Server thread/INFO]: [STDOUT]: class_1639['Wither Skeleton'/44657, l='ServerLevel[world]', x=-3403.50, y=61.00, z=-2387.50]
+[18:25:15] [Server thread/INFO]: [STDOUT]: class_1639['Wither Skeleton'/45545, l='ServerLevel[world]', x=-3387.50, y=55.00, z=-2448.50]
+[18:25:15] [Server thread/INFO]: [STDOUT]: class_1639['Wither Skeleton'/45546, l='ServerLevel[world]', x=-3392.50, y=55.00, z=-2444.50]
+[18:25:54] [Server thread/INFO]: [STDOUT]: class_1639['Wither Skeleton'/45958, l='ServerLevel[world]', x=-3497.50, y=66.00, z=-2888.50]
+[18:25:58] [Server thread/INFO]: [STDOUT]: class_1639['Wither Skeleton'/45993, l='ServerLevel[world]', x=-3313.50, y=18.00, z=-2397.50]
+[18:26:33] [Server thread/INFO]: MarceX was slain by Piglin Brute
+[18:26:37] [Server thread/INFO]: [MarceX: Teleported MarceX to _jose_diaz_]
+[18:27:02] [Server thread/INFO]: [STDOUT]: class_1639['Wither Skeleton'/47012, l='ServerLevel[world]', x=-3361.50, y=56.00, z=-2714.50]
+[18:30:10] [Server thread/INFO]: [MarceX: Teleported MarceX to _jose_diaz_]
+[18:30:10] [Server thread/INFO]: [_jose_diaz_: Set own game mode to Creative Mode]
+[18:30:22] [Server thread/INFO]: [_jose_diaz_: Set own game mode to Survival Mode]
+[18:30:59] [Server thread/INFO]: [MarceX: Teleported MarceX to _jose_diaz_]
+[18:31:18] [Server thread/INFO]: [MarceX: Teleported MarceX to _jose_diaz_]
+[18:31:33] [Server thread/INFO]: [_jose_diaz_: Teleported _jose_diaz_ to -3145.500000, 63.000000, -2535.500000]
+[18:31:36] [Server thread/INFO]: [MarceX: Teleported MarceX to _jose_diaz_]
+[18:31:47] [Server thread/INFO]: [_jose_diaz_: Teleported _jose_diaz_ to -3145.500000, 100.000000, -2535.500000]
+[18:31:50] [Server thread/INFO]: [MarceX: Teleported MarceX to _jose_diaz_]
+[18:31:51] [Server thread/INFO]: [_jose_diaz_: Teleported _jose_diaz_ to -3145.500000, 200.000000, -2535.500000]
+[18:31:59] [Server thread/INFO]: [MarceX: Teleported MarceX to _jose_diaz_]
+[18:33:09] [Server thread/INFO]: [MarceX: Teleported MarceX to _jose_diaz_]
+[18:35:47] [Server thread/INFO]: MarceX has completed the challenge [Night Vanquisher]
+[18:36:07] [Server thread/INFO]: Villager class_1646['Villager'/50070, l='ServerLevel[world]', x=-3314.42, y=67.00, z=-2732.48] died, message: 'Villager was slain by Zombie'
+[18:44:03] [Server thread/INFO]: [MarceX: Teleported MarceX to _jose_diaz_]
