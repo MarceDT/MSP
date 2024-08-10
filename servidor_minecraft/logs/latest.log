@@ -269,3 +269,7 @@
 [17:10:34] [Server thread/INFO]: [_jose_diaz_: Teleported MarceX to _jose_diaz_]
 [17:13:52] [Server thread/INFO]: MarceX lost connection: Disconnected
 [17:13:52] [Server thread/INFO]: MarceX left the game
+[17:30:34] [Server thread/INFO]: Locating element minecraft:stronghold took 24 ms
+[17:30:38] [Server thread/INFO]: [_jose_diaz_: Teleported _jose_diaz_ to 1936.500000, 64.000000, -1071.500000]
+[17:30:43] [Server thread/WARN]: _jose_diaz_ moved too quickly! 0.0,-10.80652611000901,0.0
+[17:30:43] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 4465ms or 89 ticks behind
